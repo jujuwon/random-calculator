@@ -108,28 +108,82 @@ public class Server {
 			Random rand = new Random();
 			int num1 = rand.nextInt(101);
 			int num2 = rand.nextInt(101);
-			char operator = "+-*/".charAt(rand.nextInt(4));
+			int num3 = rand.nextInt(101);
+			char operator1 = "+-*/".charAt(rand.nextInt(4));
+			char operator2 = "+-*/".charAt(rand.nextInt(4));
 
-			return "[" + SYSTEM_CLOCK + "] " + num1 + " " + operator + " " + num2 + " = ";
+			return "[" + SYSTEM_CLOCK + "] " + num1 + " " + operator1 + " " + num2 + " " + operator2 + " " + num3 + " = ";
 		}
 
 		private boolean checkAnswer(String question, int answer) {
 			String[] parts = question.split(" ");
 			int num1 = Integer.parseInt(parts[1]);
 			int num2 = Integer.parseInt(parts[3]);
-			char operator = parts[2].charAt(0);
-
-			switch (operator) {
-				case '+':
-					return num1 + num2 == answer;
-				case '-':
-					return num1 - num2 == answer;
-				case '*':
-					return num1 * num2 == answer;
-				case '/':
-					return num2 != 0 && num1 / num2 == answer;
-				default:
+			int num3 = Integer.parseInt(parts[5]);
+			char operator1 = parts[2].charAt(0);
+			char operator2 = parts[4].charAt(0);
+			
+			if (operator1 == '*') {
+				num1 *= num2;
+				switch (operator2) {
+					case '+':
+						return num1 + num3 == answer;
+					case '-':
+						return num1 - num3 == answer;
+					case '*':
+						return num1 * num3 == answer;
+					case '/':
+						return num3 != 0 && num1 / num3 == answer;
+					default:
+						return false;
+				}
+			} else if (operator1 == '/') {
+				if (num2 == 0)
 					return false;
+				num1 /= num2;
+				switch (operator2) {
+					case '+':
+						return num1 + num3 == answer;
+					case '-':
+						return num1 - num3 == answer;
+					case '*':
+						return num1 * num3 == answer;
+					case '/':
+						return num3 != 0 && num1 / num3 == answer;
+					default:
+						return false;
+				}
+			} else {
+				switch (operator2) {
+					case '+':
+						num2 += num3;
+						break;
+					case '-':
+						num2 -= num3;
+						break;
+					case '*':
+						num2 *= num3;
+						break;
+					case '/':
+						if (num3 == 0)
+							return false;
+						num2 /= num3;
+						break;
+					default:
+						return false;
+				}
+				switch (operator1) {
+					case '+':
+						return num1 + num2 == answer;
+					case '-':
+						return num1 - num2 == answer;
+					case '*':
+						return num1 * num2 == answer;
+					case '/':
+						return num2 != 0 && num1 / num3 == answer;
+					default:
+						return false;
+				}
 			}
 		}
 	}
