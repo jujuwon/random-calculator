@@ -17,3 +17,24 @@
   - 프로그램 실행환경 및 실행방법 설명
   - Error or Additional Message Handling 에 대한 사항 설명
   - Additional Comments : 추가로 과제 제출 관련 언급할 내용 작성
+
+## 실행방법
+- client
+
+```shell
+./client/build.sh
+./client/run.sh ${client_id}
+# 예시 ./client/run.sh 1
+```
+
+- server
+  
+```shell
+./server/run.sh
+```
+shell 파일을 실행하면 jar 파일 생성 후 실행합니다.
+shell 파일이 실행되지 않을 경우 권한 추가가 필요합니다.
+```shell
+#예시
+chmod +x ./client/build.sh
+```
