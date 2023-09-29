@@ -8,11 +8,12 @@ public class Client {
     private static final String HOST = "localhost";
     private static final int PORT = 8080;
     private static int CLIENT_ID;
+    private static String LOG_FILE;
 
     public static void main(String[] args) {
         CLIENT_ID = (args.length > 0) ? Integer.parseInt(args[0]) : 1;
 
-        messagePrint(CLIENT_ID + " started.");
+        writeToLog(CLIENT_ID + " started.");
 
         try (Socket socket = new Socket(HOST, PORT);
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
@@ -21,18 +22,18 @@ public class Client {
             while (true) {
                 String question = in.readLine();
                 if (question.equals("TIMEOUT")) {
-                    messagePrint(CLIENT_ID + " 종료");
+                    writeToLog(CLIENT_ID + " 종료");
                     break;
                 }
 
-                messagePrint("질문 받음: " + question);
+                writeToLog("질문 받음: " + question);
                 int answer = computeAnswer(question);
-                messagePrint("계산 결과: " + answer);
+                writeToLog("계산 결과: " + answer);
 
                 int next = new Random().nextInt(5);
 
                 out.println(next + " " + answer);
-                messagePrint("결과 전송: " + answer);
+                writeToLog("결과 전송: " + answer);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -107,7 +108,15 @@ public class Client {
             return -1;
     }
 
-    private static synchronized void messagePrint(String message) {
-        System.out.println("[" + CLIENT_ID + "] " + message);
-    }
+    private static synchronized void writeToLog(String message) {
+        LOG_FILE = "Client" + CLIENT_ID + ".txt";
+		try (FileWriter fw = new FileWriter(LOG_FILE, true);
+			 BufferedWriter bw = new BufferedWriter(fw);
+			 PrintWriter out = new PrintWriter(bw)) {
+			System.out.println("[" + CLIENT_ID + "]" + message);
+			out.println("[" + CLIENT_ID + "]" + message);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
