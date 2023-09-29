@@ -62,7 +62,8 @@ public class Server {
 		try (FileWriter fw = new FileWriter(LOG_FILE, true);
 			 BufferedWriter bw = new BufferedWriter(fw);
 			 PrintWriter out = new PrintWriter(bw)) {
-			out.printf("[%02d:%02d] %s", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, message);
+			System.out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, message);
+			out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, message);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -86,7 +87,7 @@ public class Server {
 				while (SYSTEM_CLOCK.get() < MAX_TIME) {
 					String question = generateMathQuestion();
 					writeToLog("Client" + num + "에게 보낸 질문: \"" + question + "\"");
-					out.println(question);
+					out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
 
 					String answerStr = in.readLine();
 					String[] parts = answerStr.split(" ");
@@ -115,16 +116,16 @@ public class Server {
 			char operator1 = "+-*/".charAt(rand.nextInt(4));
 			char operator2 = "+-*/".charAt(rand.nextInt(4));
 
-			return "[" + SYSTEM_CLOCK.get() / 60 + ":" +  SYSTEM_CLOCK.get() % 60 + "] " + num1 + " " + operator1 + " " + num2 + " " + operator2 + " " + num3 + " = ";
+			return num1 + " " + operator1 + " " + num2 + " " + operator2 + " " + num3 + " = ";
 		}
 
 		private boolean checkAnswer(String question, int answer) {
 			String[] parts = question.split(" ");
-			int num1 = Integer.parseInt(parts[1]);
-			int num2 = Integer.parseInt(parts[3]);
-			int num3 = Integer.parseInt(parts[5]);
-			char operator1 = parts[2].charAt(0);
-			char operator2 = parts[4].charAt(0);
+			int num1 = Integer.parseInt(parts[0]);
+			int num2 = Integer.parseInt(parts[2]);
+			int num3 = Integer.parseInt(parts[4]);
+			char operator1 = parts[1].charAt(0);
+			char operator2 = parts[3].charAt(0);
 
 			if (operator1 == '*') {
 				num1 *= num2;
