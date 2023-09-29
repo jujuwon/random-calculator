@@ -153,38 +153,34 @@ public class Server {
 					default:
 						return false;
 				}
-			} else {
+			} else if (operator1 == '+') {
 				switch (operator2) {
 					case '+':
-						num2 += num3;
-						break;
+						return num1 + num2 + num3 == answer;
 					case '-':
-						num2 -= num3;
-						break;
+						return num1 + num2 - num3 == answer;
 					case '*':
-						num2 *= num3;
-						break;
+						return num1 + num2 * num3 == answer;
 					case '/':
-						if (num3 == 0)
-							return false;
-						num2 /= num3;
-						break;
+						return num3 != 0 && num1 + num2 / num3 == answer;
 					default:
 						return false;
 				}
-				switch (operator1) {
+			} else if (operator1 == '-') {
+				switch (operator2) {
 					case '+':
-						return num1 + num2 == answer;
+						return num1 - num2 + num3 == answer;
 					case '-':
-						return num1 - num2 == answer;
+						return num1 - num2 - num3 == answer;
 					case '*':
-						return num1 * num2 == answer;
+						return num1 - num2 * num3 == answer;
 					case '/':
-						return num2 != 0 && num1 / num3 == answer;
+						return num3 != 0 && num1 - num2 / num3 == answer;
 					default:
 						return false;
 				}
-			}
+			} else
+				return false;
 		}
 	}
 }

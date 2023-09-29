@@ -77,38 +77,34 @@ public class Client {
                 default:
                     return -1;
             }
-        } else {
+        } else if (operator1 == '+') {
             switch (operator2) {
                 case '+':
-                    num2 += num3;
-                    break;
+                    return num1 + num2 + num3;
                 case '-':
-                    num2 -= num3;
-                    break;
+                    return num1 + num2 - num3;
                 case '*':
-                    num2 *= num3;
-                    break;
+                    return num1 + num2 * num3;
                 case '/':
-                    if (num3 == 0)
-                        return -1;
-                    num2 /= num3;
-                    break;
+                    return (num3 != 0) ? num1 + num2 / num3 : -1;
                 default:
                     return -1;
             }
-            switch (operator1) {
+        } else if (operator1 == '-') {
+            switch (operator2) {
                 case '+':
-                    return num1 + num2;
+                    return num1 - num2 + num3;
                 case '-':
-                    return num1 - num2;
+                    return num1 - num2 - num3;
                 case '*':
-                    return num1 * num2;
+                    return num1 - num2 * num3;
                 case '/':
-                    return (num2 != 0) ? num1 / num3 : -1;
+                    return (num3 != 0) ? num1 - num2 / num3 : -1;
                 default:
                     return -1;
             }
-        }
+        } else
+            return -1;
     }
 
     private static synchronized void messagePrint(String message) {
