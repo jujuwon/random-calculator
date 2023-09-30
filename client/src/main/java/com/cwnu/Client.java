@@ -13,7 +13,7 @@ public class Client {
     public static void main(String[] args) {
         CLIENT_ID = (args.length > 0) ? Integer.parseInt(args[0]) : 1;
 
-        writeToLog(CLIENT_ID + " started.");
+        writeToLog("Client" + CLIENT_ID + " 연결됨");
 
         try (Socket socket = new Socket(HOST, PORT);
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
@@ -22,7 +22,7 @@ public class Client {
             while (true) {
                 String question = in.readLine();
                 if (question.equals("TIMEOUT")) {
-                    writeToLog(CLIENT_ID + " 종료");
+                    writeToLog("Client" + CLIENT_ID + " 연결종료");
                     break;
                 }
 
@@ -113,8 +113,8 @@ public class Client {
 		try (FileWriter fw = new FileWriter(LOG_FILE, true);
 			 BufferedWriter bw = new BufferedWriter(fw);
 			 PrintWriter out = new PrintWriter(bw)) {
-			System.out.println("[" + CLIENT_ID + "]" + message);
-			out.println("[" + CLIENT_ID + "]" + message);
+			System.out.println(message);
+			out.println(message);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -91,7 +91,8 @@ public class Server {
 
 					String answerStr = in.readLine();
 					String[] parts = answerStr.split(" ");
-					int time = Integer.parseInt(parts[0]);
+					// trim() 삽입
+					int time = Integer.parseInt(parts[0].trim());
 					int answer = Integer.parseInt(parts[1]);
 					if (checkAnswer(question, answer)) {
 						addToTotalSum(answer);
