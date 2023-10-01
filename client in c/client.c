@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <winsock2.h>
 #include <time.h>
+#include <winsock2.h>
 
 void errorHandling(char* message);
-
 int computeAnswer(char *message);
-
 void writeToLog(FILE *fp, char *message);
 
 int main(int argc, char *argv[]) {
-	
+
 	WSADATA wsaData;
 	SOCKET clientSock;
 	SOCKADDR_IN servAddr;
@@ -25,7 +23,8 @@ int main(int argc, char *argv[]) {
 	char log[40];
 	int answer;
 	int next;
-	char tmp[10];
+	char res[10];
+    char sec[10];
 
 	if(WSAStartup(MAKEWORD(2,2), &wsaData) != 0)
 		errorHandling("WSAStartup() error!");
@@ -42,57 +41,58 @@ int main(int argc, char *argv[]) {
 	if(connect(clientSock, (SOCKADDR*)&servAddr, sizeof(servAddr)) == SOCKET_ERROR)
 		errorHandling("connect() error!");
 	
+    LOG_FILE[0] = log[0] = '\0';
 	strcat(log, "Client");
 	strcat(log, argv[1]);
 	strcat(LOG_FILE, log);
 	strcat(LOG_FILE, ".txt");
 	fp = fopen(LOG_FILE, "w");
 
-	strcat(log, " 연결됨");
+	strcat(log, " is connected.");
 	writeToLog(fp, log);
 	
 	srand(time(NULL));
 
 	while(1){
-		message[0] = '\0';
+        message[0] = '\0';
 		strLen = recv(clientSock, message, sizeof(message) - 1, 0);
 		if(strLen <= 0)
 			errorHandling("read() error!");
+
 		log[0] = '\0';
 		if(!strncmp(message, "TIMEOUT", 7)){
 			strcat(log, "Client");
 			strcat(log, argv[1]);
-			strcat(log, " 연결종료");
+			strcat(log, " terminated.");
 			writeToLog(fp, log);
 			break;
 		}
 		
-		strcat(log, "질문 받음: ");
+        message[strLen - 1] = '\0';
+		strcat(log, "Question: ");
 		strcat(log, message);
 		writeToLog(fp, log);
-		answer = computeAnswer(message);
 
 		log[0] = '\0';
-		strcat(log, "계산 결과: ");
-		itoa(answer, tmp, 10);
-		strcat(log, tmp);
+		answer = computeAnswer(message);
+		itoa(answer, res, 10);
+		strcat(log, "Answer: ");
+		strcat(log, res);
 		writeToLog(fp, log);
 
 		next = rand() % 5;
 		message[0] = '\0';
-		itoa(next, tmp, 10);
-		strcat(message, tmp);
+		itoa(next, sec, 10);
+		strcat(message, sec);
 		strcat(message, " ");
-		itoa(answer, tmp, 10);
-		strcat(message, tmp);
+		strcat(message, res);
 		strcat(message, "\n");
 		
 		send(clientSock, message, strlen(message) + 1, 0);
 
 		log[0] = '\0';
-		strcat(log, "결과 전송: ");
-		itoa(answer, tmp, 10);
-		strcat(log, tmp);
+		strcat(log, "send: ");
+		strcat(log, res);
 		writeToLog(fp, log);
 	}
 	
@@ -197,5 +197,5 @@ int computeAnswer(char *message){
 
 void writeToLog(FILE *fp, char *message){
 	printf("%s\n", message);
-	fprintf(fp, message);
+	fprintf(fp, "%s\n", message);
 }

@@ -1,0 +1,218 @@
+Client3 is connected.
+Question: [00:00] 55 / 65 - 24 = 
+Answer: -24
+send: -24
+Question: [00:09] 93 - 22 + 34 = 
+Answer: 105
+send: 105
+Question: [00:22] 43 - 59 + 4 = 
+Answer: -12
+send: -12
+Question: [00:26] 95 + 39 + 81 = 
+Answer: 215
+send: 215
+Question: [00:32] 38 - 5 - 92 = 
+Answer: -59
+send: -59
+Question: [00:42] 44 * 5 * 80 = 
+Answer: 17600
+send: 17600
+Question: [00:53] 29 - 69 / 98 = 
+Answer: 29
+send: 29
+Question: [00:57] 61 + 41 / 59 = 
+Answer: 61
+send: 61
+Question: [00:59] 60 + 77 * 68 = 
+Answer: 5296
+send: 5296
+Question: [01:09] 11 * 49 - 34 = 
+Answer: 505
+send: 505
+Question: [01:16] 84 + 36 / 5 = 
+Answer: 91
+send: 91
+Question: [01:29] 100 * 25 * 16 = 
+Answer: 40000
+send: 40000
+Question: [01:41] 21 - 64 / 59 = 
+Answer: 20
+send: 20
+Question: [01:47] 50 + 94 * 60 = 
+Answer: 5690
+send: 5690
+Question: [01:59] 40 - 11 + 98 = 
+Answer: 127
+send: 127
+Question: [02:05] 41 + 44 - 65 = 
+Answer: 20
+send: 20
+Question: [02:08] 14 - 25 + 54 = 
+Answer: 43
+send: 43
+Question: [02:11] 54 / 43 + 77 = 
+Answer: 78
+send: 78
+Question: [02:20] 15 * 33 - 85 = 
+Answer: 410
+send: 410
+Question: [02:29] 24 / 41 - 83 = 
+Answer: -83
+send: -83
+Question: [02:36] 68 * 35 * 92 = 
+Answer: 218960
+send: 218960
+Question: [02:44] 39 + 16 + 82 = 
+Answer: 137
+send: 137
+Question: [02:54] 86 / 94 / 21 = 
+Answer: 0
+send: 0
+Question: [03:02] 28 * 12 - 80 = 
+Answer: 256
+send: 256
+Question: [03:13] 76 + 44 / 76 = 
+Answer: 76
+send: 76
+Question: [03:26] 29 / 88 * 63 = 
+Answer: 0
+send: 0
+Question: [03:34] 83 + 88 / 24 = 
+Answer: 86
+send: 86
+Question: [03:38] 9 / 13 / 97 = 
+Answer: 0
+send: 0
+Question: [03:44] 85 - 47 - 31 = 
+Answer: 7
+send: 7
+Question: [03:54] 59 - 82 / 51 = 
+Answer: 58
+send: 58
+Question: [04:02] 4 / 71 - 68 = 
+Answer: -68
+send: -68
+Question: [04:07] 16 - 81 + 52 = 
+Answer: -13
+send: -13
+Question: [04:14] 51 * 95 - 50 = 
+Answer: 4795
+send: 4795
+Question: [04:27] 59 - 98 * 77 = 
+Answer: -7487
+send: -7487
+Question: [04:34] 96 - 52 / 71 = 
+Answer: 96
+send: 96
+Question: [04:42] 64 + 90 - 65 = 
+Answer: 89
+send: 89
+Question: [04:48] 81 / 64 - 18 = 
+Answer: -17
+send: -17
+Question: [04:58] 65 - 56 + 67 = 
+Answer: 76
+send: 76
+Question: [05:11] 16 + 32 * 54 = 
+Answer: 1744
+send: 1744
+Question: [05:20] 61 - 2 / 1 = 
+Answer: 59
+send: 59
+Question: [05:28] 84 / 11 - 0 = 
+Answer: 7
+send: 7
+Question: [05:41] 88 - 51 - 25 = 
+Answer: 12
+send: 12
+Question: [05:54] 32 + 47 / 92 = 
+Answer: 32
+send: 32
+Question: [06:11] 79 + 8 / 71 = 
+Answer: 79
+send: 79
+Question: [06:15] 75 / 0 / 91 = 
+Answer: -1
+send: -1
+Question: [06:27] 65 / 53 * 61 = 
+Answer: 61
+send: 61
+Question: [06:31] 32 - 89 / 45 = 
+Answer: 31
+send: 31
+Question: [06:39] 10 - 87 - 39 = 
+Answer: -116
+send: -116
+Question: [06:44] 93 - 47 + 46 = 
+Answer: 92
+send: 92
+Question: [06:51] 58 * 89 + 80 = 
+Answer: 5242
+send: 5242
+Question: [06:58] 66 / 43 * 95 = 
+Answer: 95
+send: 95
+Question: [07:06] 38 - 84 / 83 = 
+Answer: 37
+send: 37
+Question: [07:19] 72 - 16 / 49 = 
+Answer: 72
+send: 72
+Question: [07:28] 40 / 97 + 87 = 
+Answer: 87
+send: 87
+Question: [07:41] 58 + 50 * 38 = 
+Answer: 1958
+send: 1958
+Question: [07:47] 68 * 98 / 10 = 
+Answer: 666
+send: 666
+Question: [07:57] 11 * 4 - 17 = 
+Answer: 27
+send: 27
+Question: [08:02] 16 * 89 - 42 = 
+Answer: 1382
+send: 1382
+Question: [08:09] 32 / 44 * 59 = 
+Answer: 0
+send: 0
+Question: [08:18] 78 - 32 / 84 = 
+Answer: 78
+send: 78
+Question: [08:28] 97 / 46 / 11 = 
+Answer: 0
+send: 0
+Question: [08:32] 47 + 35 - 52 = 
+Answer: 30
+send: 30
+Question: [08:36] 15 / 70 + 18 = 
+Answer: 18
+send: 18
+Question: [08:41] 70 / 34 * 0 = 
+Answer: 0
+send: 0
+Question: [08:45] 19 - 65 * 23 = 
+Answer: -1476
+send: -1476
+Question: [08:49] 6 / 87 * 0 = 
+Answer: 0
+send: 0
+Question: [09:06] 34 * 10 + 50 = 
+Answer: 390
+send: 390
+Question: [09:13] 36 - 70 - 15 = 
+Answer: -49
+send: -49
+Question: [09:27] 40 * 81 * 13 = 
+Answer: 42120
+send: 42120
+Question: [09:30] 81 + 49 - 7 = 
+Answer: 123
+send: 123
+Question: [09:42] 49 - 34 + 82 = 
+Answer: 97
+send: 97
+Question: [09:48] 97 - 12 / 70 = 
+Answer: 97
+send: 97
+Client3 terminated.
