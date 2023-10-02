@@ -1,218 +1,218 @@
-Client1 is connected.
-Question: [00:00] 64 / 58 / 54 = 
-Answer: 0
-send: 0
-Question: [00:06] 78 - 48 / 83 = 
-Answer: 78
-send: 78
-Question: [00:19] 98 / 68 + 85 = 
-Answer: 86
-send: 86
-Question: [00:26] 49 / 8 / 46 = 
-Answer: 0
-send: 0
-Question: [00:32] 56 / 18 * 18 = 
-Answer: 54
-send: 54
-Question: [00:42] 43 * 15 - 13 = 
-Answer: 632
-send: 632
-Question: [00:49] 43 * 56 * 44 = 
-Answer: 105952
-send: 105952
-Question: [00:57] 77 / 98 / 13 = 
-Answer: 0
-send: 0
-Question: [01:03] 71 * 25 * 94 = 
-Answer: 166850
-send: 166850
-Question: [01:07] 46 * 89 + 22 = 
-Answer: 4116
-send: 4116
-Question: [01:21] 13 + 9 + 37 = 
-Answer: 59
-send: 59
-Question: [01:38] 66 / 88 * 84 = 
-Answer: 0
-send: 0
-Question: [01:45] 91 * 49 * 8 = 
-Answer: 35672
-send: 35672
-Question: [01:53] 50 * 77 - 89 = 
-Answer: 3761
-send: 3761
-Question: [02:03] 87 / 21 / 90 = 
-Answer: 0
-send: 0
-Question: [02:09] 93 - 96 - 65 = 
-Answer: -68
-send: -68
-Question: [02:18] 0 * 39 * 71 = 
-Answer: 0
-send: 0
-Question: [02:23] 26 / 18 / 3 = 
-Answer: 0
-send: 0
-Question: [02:36] 94 * 8 * 26 = 
-Answer: 19552
-send: 19552
-Question: [02:46] 86 - 41 * 6 = 
-Answer: -160
-send: -160
-Question: [02:58] 22 * 1 + 49 = 
-Answer: 71
-send: 71
-Question: [03:12] 77 - 83 * 82 = 
-Answer: -6729
-send: -6729
-Question: [03:22] 50 / 35 - 87 = 
-Answer: -86
-send: -86
-Question: [03:36] 64 * 56 - 51 = 
-Answer: 3533
-send: 3533
-Question: [03:43] 81 * 82 + 48 = 
-Answer: 6690
-send: 6690
-Question: [03:52] 47 + 5 + 35 = 
-Answer: 87
-send: 87
-Question: [04:03] 29 - 35 / 35 = 
+Client1 connected.
+Question: [00:00] 84 / 54 - 64 = 
+Answer: -63
+send: -63
+Question: [00:03] 25 + 60 / 19 = 
 Answer: 28
 send: 28
-Question: [04:10] 91 + 43 / 68 = 
-Answer: 91
-send: 91
-Question: [04:22] 11 - 49 * 51 = 
-Answer: -2488
-send: -2488
-Question: [04:29] 36 * 81 * 42 = 
-Answer: 122472
-send: 122472
-Question: [04:39] 11 / 22 * 15 = 
-Answer: 0
-send: 0
-Question: [04:49] 23 / 77 / 74 = 
-Answer: 0
-send: 0
-Question: [05:03] 90 / 92 + 76 = 
-Answer: 76
-send: 76
-Question: [05:12] 95 * 83 - 80 = 
-Answer: 7805
-send: 7805
-Question: [05:24] 51 + 99 * 45 = 
-Answer: 4506
-send: 4506
-Question: [05:29] 41 / 8 + 1 = 
-Answer: 6
-send: 6
-Question: [05:39] 53 * 67 - 16 = 
-Answer: 3535
-send: 3535
-Question: [05:53] 37 - 55 * 19 = 
-Answer: -1008
-send: -1008
-Question: [06:02] 16 + 54 * 38 = 
-Answer: 2068
-send: 2068
-Question: [06:15] 7 + 80 - 27 = 
-Answer: 60
-send: 60
-Question: [06:27] 88 / 69 - 88 = 
-Answer: -87
-send: -87
-Question: [06:31] 18 / 87 * 93 = 
-Answer: 0
-send: 0
-Question: [06:36] 9 - 19 / 37 = 
-Answer: 9
-send: 9
-Question: [06:36] 33 + 36 * 92 = 
-Answer: 3345
-send: 3345
-Question: [06:39] 100 + 4 / 88 = 
-Answer: 100
-send: 100
-Question: [06:48] 61 - 31 - 41 = 
-Answer: -11
-send: -11
-Question: [06:53] 84 + 49 / 40 = 
-Answer: 85
-send: 85
-Question: [07:04] 30 * 79 - 37 = 
-Answer: 2333
-send: 2333
-Question: [07:11] 84 * 60 - 57 = 
-Answer: 4983
-send: 4983
-Question: [07:19] 89 * 8 / 20 = 
-Answer: 35
-send: 35
-Question: [07:28] 7 + 25 * 20 = 
-Answer: 507
-send: 507
-Question: [07:36] 63 + 49 * 23 = 
-Answer: 1190
-send: 1190
-Question: [07:51] 7 * 83 - 29 = 
-Answer: 552
-send: 552
-Question: [07:58] 96 * 20 + 41 = 
-Answer: 1961
-send: 1961
-Question: [08:02] 80 - 100 + 15 = 
-Answer: -5
-send: -5
-Question: [08:09] 31 + 35 / 73 = 
-Answer: 31
-send: 31
-Question: [08:18] 79 - 49 + 1 = 
-Answer: 31
-send: 31
-Question: [08:20] 40 - 42 + 91 = 
-Answer: 89
-send: 89
-Question: [08:28] 2 - 17 + 30 = 
-Answer: 15
-send: 15
-Question: [08:35] 81 * 47 - 32 = 
-Answer: 3775
-send: 3775
-Question: [08:41] 5 / 96 - 65 = 
-Answer: -65
-send: -65
-Question: [08:45] 48 / 12 + 11 = 
-Answer: 15
-send: 15
-Question: [08:49] 1 - 49 / 22 = 
-Answer: -1
-send: -1
-Question: [08:59] 2 / 60 * 57 = 
-Answer: 0
-send: 0
-Question: [09:11] 81 * 19 / 71 = 
-Answer: 21
-send: 21
-Question: [09:16] 47 / 49 / 72 = 
-Answer: 0
-send: 0
-Question: [09:25] 92 - 65 - 41 = 
+Question: [00:05] 8 - 37 / 68 = 
+Answer: 8
+send: 8
+Question: [00:08] 35 * 28 * 32 = 
+Answer: 31360
+send: 31360
+Question: [00:16] 65 + 21 / 44 = 
+Answer: 65
+send: 65
+Question: [00:28] 83 + 24 + 63 = 
+Answer: 170
+send: 170
+Question: [00:35] 15 + 72 * 36 = 
+Answer: 2607
+send: 2607
+Question: [00:42] 23 - 49 + 12 = 
 Answer: -14
 send: -14
-Question: [09:32] 77 / 25 - 95 = 
-Answer: -92
-send: -92
-Question: [09:38] 58 - 68 + 9 = 
-Answer: -1
-send: -1
-Question: [09:47] 61 * 30 * 23 = 
-Answer: 42090
-send: 42090
-Question: [09:56] 7 - 23 + 53 = 
+Question: [00:47] 38 / 16 - 33 = 
+Answer: -31
+send: -31
+Question: [00:54] 26 / 50 * 58 = 
+Answer: 0
+send: 0
+Question: [01:01] 44 * 14 - 65 = 
+Answer: 551
+send: 551
+Question: [01:10] 7 * 88 + 20 = 
+Answer: 636
+send: 636
+Question: [01:12] 7 + 62 + 56 = 
+Answer: 125
+send: 125
+Question: [01:27] 33 + 11 + 15 = 
+Answer: 59
+send: 59
+Question: [01:29] 65 - 4 - 24 = 
 Answer: 37
 send: 37
-Question: [10:01] 56 * 64 * 35 = 
-Answer: 125440
-send: 125440
+Question: [01:37] 14 / 64 * 97 = 
+Answer: 0
+send: 0
+Question: [01:39] 91 / 90 * 52 = 
+Answer: 52
+send: 52
+Question: [01:52] 54 / 95 - 51 = 
+Answer: -51
+send: -51
+Question: [01:57] 94 - 59 / 4 = 
+Answer: 80
+send: 80
+Question: [02:08] 56 / 33 * 7 = 
+Answer: 7
+send: 7
+Question: [02:15] 65 + 5 / 67 = 
+Answer: 65
+send: 65
+Question: [02:23] 20 - 29 * 32 = 
+Answer: -908
+send: -908
+Question: [02:33] 68 - 1 / 88 = 
+Answer: 68
+send: 68
+Question: [02:43] 25 / 22 + 22 = 
+Answer: 23
+send: 23
+Question: [02:50] 29 * 4 * 0 = 
+Answer: 0
+send: 0
+Question: [03:05] 71 - 54 * 31 = 
+Answer: -1603
+send: -1603
+Question: [03:12] 66 * 23 - 59 = 
+Answer: 1459
+send: 1459
+Question: [03:21] 92 - 91 - 47 = 
+Answer: -46
+send: -46
+Question: [03:27] 24 + 42 - 4 = 
+Answer: 62
+send: 62
+Question: [03:34] 100 - 53 + 65 = 
+Answer: 112
+send: 112
+Question: [03:46] 30 - 6 + 32 = 
+Answer: 56
+send: 56
+Question: [03:53] 33 + 73 / 55 = 
+Answer: 34
+send: 34
+Question: [04:05] 53 + 83 - 59 = 
+Answer: 77
+send: 77
+Question: [04:20] 12 / 83 / 20 = 
+Answer: 0
+send: 0
+Question: [04:27] 36 + 40 - 74 = 
+Answer: 2
+send: 2
+Question: [04:40] 54 * 90 + 58 = 
+Answer: 4918
+send: 4918
+Question: [04:49] 84 * 22 - 66 = 
+Answer: 1782
+send: 1782
+Question: [04:52] 80 * 50 - 42 = 
+Answer: 3958
+send: 3958
+Question: [05:01] 38 / 47 * 30 = 
+Answer: 0
+send: 0
+Question: [05:05] 45 + 8 - 70 = 
+Answer: -17
+send: -17
+Question: [05:11] 91 / 98 - 35 = 
+Answer: -35
+send: -35
+Question: [05:12] 56 * 83 - 0 = 
+Answer: 4648
+send: 4648
+Question: [05:26] 55 / 36 / 20 = 
+Answer: 0
+send: 0
+Question: [05:40] 24 + 54 - 15 = 
+Answer: 63
+send: 63
+Question: [05:55] 57 + 89 - 19 = 
+Answer: 127
+send: 127
+Question: [06:04] 8 + 33 - 40 = 
+Answer: 1
+send: 1
+Question: [06:19] 78 - 19 + 92 = 
+Answer: 151
+send: 151
+Question: [06:24] 69 - 75 - 73 = 
+Answer: -79
+send: -79
+Question: [06:31] 21 - 50 - 94 = 
+Answer: -123
+send: -123
+Question: [06:35] 19 / 63 - 45 = 
+Answer: -45
+send: -45
+Question: [06:47] 9 / 97 - 37 = 
+Answer: -37
+send: -37
+Question: [06:56] 75 * 46 - 49 = 
+Answer: 3401
+send: 3401
+Question: [06:59] 16 + 37 * 92 = 
+Answer: 3420
+send: 3420
+Question: [07:03] 40 - 84 - 85 = 
+Answer: -129
+send: -129
+Question: [07:21] 5 / 30 + 4 = 
+Answer: 4
+send: 4
+Question: [07:29] 26 / 75 + 86 = 
+Answer: 86
+send: 86
+Question: [07:37] 22 * 3 + 50 = 
+Answer: 116
+send: 116
+Question: [07:48] 60 / 22 + 16 = 
+Answer: 18
+send: 18
+Question: [07:57] 81 / 88 - 33 = 
+Answer: -33
+send: -33
+Question: [08:12] 16 - 32 - 53 = 
+Answer: -69
+send: -69
+Question: [08:17] 42 * 99 + 65 = 
+Answer: 4223
+send: 4223
+Question: [08:37] 60 * 92 / 63 = 
+Answer: 87
+send: 87
+Question: [08:46] 75 / 47 / 0 = 
+Answer: -1
+send: -1
+Question: [08:51] 8 * 64 + 43 = 
+Answer: 555
+send: 555
+Question: [08:56] 36 * 53 - 65 = 
+Answer: 1843
+send: 1843
+Question: [09:08] 30 / 14 * 62 = 
+Answer: 124
+send: 124
+Question: [09:14] 85 * 56 - 7 = 
+Answer: 4753
+send: 4753
+Question: [09:25] 68 - 60 + 61 = 
+Answer: 69
+send: 69
+Question: [09:38] 74 / 92 * 58 = 
+Answer: 0
+send: 0
+Question: [09:46] 60 / 24 / 41 = 
+Answer: 0
+send: 0
+Question: [09:49] 81 * 95 + 87 = 
+Answer: 7782
+send: 7782
+Question: [09:59] 4 / 75 * 78 = 
+Answer: 0
+send: 0
 Client1 terminated.

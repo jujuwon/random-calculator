@@ -7,6 +7,14 @@ void errorHandling(char* message);
 int computeAnswer(char *message);
 void writeToLog(FILE *fp, char *message);
 
+char* fileNaming(char* id);
+void informConnection(FILE *fp, char *id);
+void informTermination(FILE *fp, char *id);
+void informReceiving(FILE *fp, char *message);
+void informComputing(FILE *fp, char *res);
+char* makeMessage(char *res);
+void informSending(FILE *fp, char *res);
+
 int main(int argc, char *argv[]) {
 
 	WSADATA wsaData;
@@ -20,11 +28,8 @@ int main(int argc, char *argv[]) {
 	
 	FILE *fp;
 	char LOG_FILE[20];
-	char log[40];
 	int answer;
-	int next;
 	char res[10];
-    char sec[10];
 
 	if(WSAStartup(MAKEWORD(2,2), &wsaData) != 0)
 		errorHandling("WSAStartup() error!");
@@ -41,61 +46,39 @@ int main(int argc, char *argv[]) {
 	if(connect(clientSock, (SOCKADDR*)&servAddr, sizeof(servAddr)) == SOCKET_ERROR)
 		errorHandling("connect() error!");
 	
-    LOG_FILE[0] = log[0] = '\0';
-	strcat(log, "Client");
-	strcat(log, argv[1]);
-	strcat(LOG_FILE, log);
-	strcat(LOG_FILE, ".txt");
+    LOG_FILE[0] = '\0';
+	strcat(LOG_FILE, fileNaming(argv[1]));
 	fp = fopen(LOG_FILE, "w");
 
-	strcat(log, " is connected.");
-	writeToLog(fp, log);
+	informConnection(fp, argv[1]);
 	
 	srand(time(NULL));
 
 	while(1){
-        message[0] = '\0';
 		strLen = recv(clientSock, message, sizeof(message) - 1, 0);
 		if(strLen <= 0)
 			errorHandling("read() error!");
 
-		log[0] = '\0';
 		if(!strncmp(message, "TIMEOUT", 7)){
-			strcat(log, "Client");
-			strcat(log, argv[1]);
-			strcat(log, " terminated.");
-			writeToLog(fp, log);
+			informTermination(fp, argv[1]);
 			break;
 		}
 		
         message[strLen - 1] = '\0';
-		strcat(log, "Question: ");
-		strcat(log, message);
-		writeToLog(fp, log);
+		informReceiving(fp, message);
 
-		log[0] = '\0';
 		answer = computeAnswer(message);
-		itoa(answer, res, 10);
-		strcat(log, "Answer: ");
-		strcat(log, res);
-		writeToLog(fp, log);
+        itoa(answer, res, 10);
+        informComputing(fp, res);
 
-		next = rand() % 5;
 		message[0] = '\0';
-		itoa(next, sec, 10);
-		strcat(message, sec);
-		strcat(message, " ");
-		strcat(message, res);
-		strcat(message, "\n");
+		strcat(message, makeMessage(res));
 		
 		send(clientSock, message, strlen(message) + 1, 0);
-
-		log[0] = '\0';
-		strcat(log, "send: ");
-		strcat(log, res);
-		writeToLog(fp, log);
+		informSending(fp, res);
 	}
 	
+    fclose(fp);
 	closesocket(clientSock);
 	WSACleanup();
 	
@@ -198,4 +181,61 @@ int computeAnswer(char *message){
 void writeToLog(FILE *fp, char *message){
 	printf("%s\n", message);
 	fprintf(fp, "%s\n", message);
+}
+
+char* fileNaming(char *id){
+    static char NAME[20] = {};
+    strcat(NAME, "Client");
+    strcat(NAME, id);
+    strcat(NAME, ".txt");
+    return NAME;
+}
+
+void informConnection(FILE *fp, char *id){
+    char log[30] = {};
+    strcat(log, "Client");
+    strcat(log, id);
+    strcat(log, " connected.");
+    writeToLog(fp, log);
+}
+
+void informTermination(FILE *fp, char *id){
+    char log[30] = {};
+    strcat(log, "Client");
+    strcat(log, id);
+    strcat(log, " terminated.");
+    writeToLog(fp, log);
+}
+
+void informReceiving(FILE *fp, char *message){
+    char log[40] = {};
+    strcat(log, "Question: ");
+	strcat(log, message);
+	writeToLog(fp, log);
+}
+
+void informComputing(FILE *fp, char *res){
+    char log[20] = {};
+	strcat(log, "Answer: ");
+	strcat(log, res);
+	writeToLog(fp, log);
+}
+
+char* makeMessage(char *res){
+    static char MSG[30];
+    char sec[5];
+    itoa(rand() % 5, sec, 10);
+    MSG[0] = '\0';
+    strcat(MSG, sec);
+	strcat(MSG, " ");
+	strcat(MSG, res);
+	strcat(MSG, "\n");
+    return MSG;
+}
+
+void informSending(FILE *fp, char *res){
+    char log[20] = {};
+    strcat(log, "send: ");
+	strcat(log, res);
+	writeToLog(fp, log);
 }
