@@ -102,7 +102,7 @@ public class Server {
 						writeToLog("Client" + num + " 오답: " + answer);
 					}
 				}
-				out.println("TIMEOUT");
+				out.printf("TIMEOUT [%02d:%02d]\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60);
 				writeToLog("Client" + num + " 연결종료");
 			} catch (IOException e) {
 				e.printStackTrace();
