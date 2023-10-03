@@ -9,11 +9,10 @@ void writeToLog(FILE *fp, char *message);
 
 char* fileNaming(char* id);
 void informConnection(FILE *fp, char *id);
-void informTermination(FILE *fp, char *id);
-void informReceiving(FILE *fp, char *message);
-void informComputing(FILE *fp, char *res);
+void informTermination(FILE *fp, char *systemClock, char *id);
+void informReceiving(FILE *fp, char *systemClock, char *message);
 char* makeMessage(char *res);
-void informSending(FILE *fp, char *res);
+void informSending(FILE *fp, char *systemClock, char *res);
 
 int main(int argc, char *argv[]) {
 
@@ -28,6 +27,7 @@ int main(int argc, char *argv[]) {
 	
 	FILE *fp;
 	char LOG_FILE[20];
+    char systemClock[10];
 	int answer;
 	char res[10];
 
@@ -59,23 +59,27 @@ int main(int argc, char *argv[]) {
 		if(strLen <= 0)
 			errorHandling("read() error!");
 
+        systemClock[0] = message[strLen - 1] = '\0';
+        
+
 		if(!strncmp(message, "TIMEOUT", 7)){
-			informTermination(fp, argv[1]);
+            strcat(systemClock, message + 8);
+			informTermination(fp, systemClock, argv[1]);
 			break;
-		}
-		
-        message[strLen - 1] = '\0';
-		informReceiving(fp, message);
+		}        
+
+        strncat(systemClock, message, 7);
+
+		informReceiving(fp, systemClock, message + 8);
 
 		answer = computeAnswer(message);
         itoa(answer, res, 10);
-        informComputing(fp, res);
 
 		message[0] = '\0';
 		strcat(message, makeMessage(res));
 		
 		send(clientSock, message, strlen(message) + 1, 0);
-		informSending(fp, res);
+		informSending(fp, systemClock, res);
 	}
 	
     fclose(fp);
@@ -184,8 +188,8 @@ void writeToLog(FILE *fp, char *message){
 }
 
 char* fileNaming(char *id){
-    static char NAME[20] = {};
-    strcat(NAME, "Client");
+    static char NAME[25] = {};
+    strcat(NAME, "../log/Client");
     strcat(NAME, id);
     strcat(NAME, ".txt");
     return NAME;
@@ -193,31 +197,27 @@ char* fileNaming(char *id){
 
 void informConnection(FILE *fp, char *id){
     char log[30] = {};
-    strcat(log, "Client");
+    strcat(log, "[00:00] Client");
     strcat(log, id);
-    strcat(log, " connected.");
+    strcat(log, " Connected.");
     writeToLog(fp, log);
 }
 
-void informTermination(FILE *fp, char *id){
+void informTermination(FILE *fp, char *systemclock, char *id){
     char log[30] = {};
-    strcat(log, "Client");
+    strcat(log, systemclock);
+    strcat(log, " Client");
     strcat(log, id);
-    strcat(log, " terminated.");
+    strcat(log, " Terminated.");
     writeToLog(fp, log);
 }
 
-void informReceiving(FILE *fp, char *message){
+void informReceiving(FILE *fp, char *systemclock, char *message){
     char log[40] = {};
-    strcat(log, "Question: ");
+    strcat(log, systemclock);
+    strcat(log, " Question : \"");
 	strcat(log, message);
-	writeToLog(fp, log);
-}
-
-void informComputing(FILE *fp, char *res){
-    char log[20] = {};
-	strcat(log, "Answer: ");
-	strcat(log, res);
+    strcat(log, "\"");
 	writeToLog(fp, log);
 }
 
@@ -233,9 +233,10 @@ char* makeMessage(char *res){
     return MSG;
 }
 
-void informSending(FILE *fp, char *res){
-    char log[20] = {};
-    strcat(log, "send: ");
+void informSending(FILE *fp, char *systemclock, char *res){
+    char log[30] = {};
+    strcat(log, systemclock);
+    strcat(log, " Send Answer : ");
 	strcat(log, res);
 	writeToLog(fp, log);
 }

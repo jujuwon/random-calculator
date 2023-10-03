@@ -13,7 +13,7 @@ public class Server {
 	private static final int MAX_TIME = 600;
 	private static ServerSocket serverSocket;
 	private static final List<ClientHandler> handlers = new ArrayList<>();
-	private static final String LOG_FILE = "Server.txt";
+	private static final String LOG_FILE = "log/Server.txt";
 
 	public static void main(String[] args) throws IOException {
 		Server.start();
@@ -47,7 +47,7 @@ public class Server {
 
 	private static void closeServer() {
 		try {
-			writeToLog("Total Sum: " + TOTAL_SUM + ", Server 종료");
+			writeToLog("Total Sum : " + TOTAL_SUM + ", Server Shutdown.");
 			serverSocket.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -76,7 +76,7 @@ public class Server {
 		public ClientHandler(Socket socket) {
 			this.socket = socket;
 			this.num = CONNECTED_SOCKET_COUNT.get();
-			writeToLog("새 Socket 연결. 현재 연결 Socket 개수 : " + CONNECTED_SOCKET_COUNT.get());
+			writeToLog("New Socket Connected. Current Number of Connected Sockets : " + CONNECTED_SOCKET_COUNT.get());
 		}
 
 		@Override
@@ -86,7 +86,7 @@ public class Server {
 
 				while (SYSTEM_CLOCK.get() < MAX_TIME) {
 					String question = generateMathQuestion();
-					writeToLog("Client" + num + "에게 보낸 질문: \"" + question + "\"");
+					writeToLog("Question Sent to Client" + num + " : \"" + question + "\"");
 					out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
 
 					String answerStr = in.readLine();
@@ -96,14 +96,14 @@ public class Server {
 					int answer = Integer.parseInt(parts[1]);
 					if (checkAnswer(question, answer)) {
 						addToTotalSum(answer);
-						writeToLog("Client" + num + " 정답: " + answer);
+						writeToLog("Client" + num + " Correct Answer : " + answer);
 						SYSTEM_CLOCK.addAndGet(time);
 					} else {
-						writeToLog("Client" + num + " 오답: " + answer);
+						writeToLog("Client" + num + " Incorrect Answer : " + answer);
 					}
 				}
 				out.printf("TIMEOUT [%02d:%02d]\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60);
-				writeToLog("Client" + num + " 연결종료");
+				writeToLog("Client" + num + " Connection Terminated.");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -117,7 +117,7 @@ public class Server {
 			char operator1 = "+-*/".charAt(rand.nextInt(4));
 			char operator2 = "+-*/".charAt(rand.nextInt(4));
 
-			return num1 + " " + operator1 + " " + num2 + " " + operator2 + " " + num3 + " = ";
+			return num1 + " " + operator1 + " " + num2 + " " + operator2 + " " + num3 + " = ?";
 		}
 
 		private boolean checkAnswer(String question, int answer) {
