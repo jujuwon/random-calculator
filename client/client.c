@@ -61,7 +61,6 @@ int main(int argc, char *argv[]) {
 
         systemClock[0] = message[strLen - 1] = '\0';
         
-
 		if(!strncmp(message, "TIMEOUT", 7)){
             strcat(systemClock, message + 8);
 			informTermination(fp, systemClock, argv[1]);
@@ -73,9 +72,9 @@ int main(int argc, char *argv[]) {
 		informReceiving(fp, systemClock, message + 8);
 
 		answer = computeAnswer(message);
-        itoa(answer, res, 10);
-
+        
 		message[0] = '\0';
+        itoa(answer, res, 10);
 		strcat(message, makeMessage(res));
 		
 		send(clientSock, message, strlen(message) + 1, 0);

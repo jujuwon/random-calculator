@@ -13,7 +13,7 @@ public class Server {
 	private static final int MAX_TIME = 600;
 	private static ServerSocket serverSocket;
 	private static final List<ClientHandler> handlers = new ArrayList<>();
-	private static final String LOG_FILE = "log/Server.txt";
+	private static final String LOG_FILE = "../log/Server.txt";
 
 	public static void main(String[] args) throws IOException {
 		Server.start();
