@@ -2,622 +2,324 @@
 [00:00] New Socket Connected. Current Number of Connected Sockets : 2
 [00:00] New Socket Connected. Current Number of Connected Sockets : 3
 [00:00] New Socket Connected. Current Number of Connected Sockets : 4
-[00:00] Question Sent to Client3 : "0 - 95 - 3 = ?"
-[00:00] Question Sent to Client2 : "60 * 98 * 80 = ?"
-[00:00] Question Sent to Client4 : "87 * 36 + 26 = ?"
-[00:00] Question Sent to Client1 : "43 + 30 - 5 = ?"
-[00:00] Client4 Correct Answer : 3158
-[00:02] Client3 Correct Answer : -98
-[00:05] Client2 Correct Answer : 470400
-[00:08] Question Sent to Client3 : "25 + 43 - 19 = ?"
-[00:08] Question Sent to Client4 : "28 - 5 / 73 = ?"
-[00:08] Client1 Correct Answer : 68
-[00:08] Client4 Correct Answer : 28
-[00:10] Question Sent to Client2 : "98 / 29 - 23 = ?"
-[00:10] Question Sent to Client4 : "54 / 51 + 82 = ?"
-[00:10] Client3 Correct Answer : 49
-[00:14] Question Sent to Client1 : "94 + 75 - 60 = ?"
-[00:14] Client2 Correct Answer : -20
-[00:18] Question Sent to Client2 : "55 - 94 / 11 = ?"
-[00:18] Question Sent to Client3 : "73 * 64 + 30 = ?"
-[00:18] Client4 Correct Answer : 83
-[00:20] Client1 Correct Answer : 109
-[00:23] Question Sent to Client4 : "80 + 27 + 62 = ?"
-[00:23] Client3 Correct Answer : 4702
-[00:26] Question Sent to Client1 : "77 * 88 - 80 = ?"
-[00:26] Client2 Correct Answer : 47
-[00:29] Client4 Correct Answer : 169
-[00:33] Question Sent to Client3 : "21 * 83 + 67 = ?"
-[00:33] Question Sent to Client4 : "49 - 61 + 20 = ?"
-[00:33] Question Sent to Client2 : "68 * 88 + 80 = ?"
-[00:33] Client1 Correct Answer : 6696
-[00:35] Question Sent to Client1 : "61 / 55 / 52 = ?"
-[00:35] Client2 Correct Answer : 6064
-[00:36] Client4 Correct Answer : 8
-[00:36] Question Sent to Client2 : "6 * 47 + 41 = ?"
-[00:36] Client3 Correct Answer : 1810
-[00:37] Question Sent to Client4 : "17 - 7 / 54 = ?"
-[00:37] Question Sent to Client3 : "34 / 75 * 90 = ?"
-[00:37] Client4 Correct Answer : 17
-[00:38] Client1 Correct Answer : 0
-[00:39] Question Sent to Client1 : "56 + 25 * 100 = ?"
-[00:39] Client2 Correct Answer : 323
-[00:39] Question Sent to Client2 : "14 * 43 * 59 = ?"
-[00:39] Question Sent to Client4 : "60 + 48 / 47 = ?"
+[00:00] Question Sent to Client2 : "70 / 11 - 42 = ?"
+[00:00] Question Sent to Client4 : "89 + 6 / 26 = ?"
+[00:00] Question Sent to Client1 : "90 + 25 * 48 = ?"
+[00:00] Question Sent to Client3 : "3 / 68 + 32 = ?"
+[00:00] Client1 Correct Answer : 1290
+[00:02] Client4 Correct Answer : 89
+[00:06] Client2 Correct Answer : -36
+[00:13] Question Sent to Client4 : "97 - 19 - 72 = ?"
+[00:13] Question Sent to Client1 : "50 + 16 + 44 = ?"
+[00:13] Client3 Correct Answer : 32
+[00:14] Client1 Correct Answer : 110
+[00:19] Question Sent to Client2 : "94 + 56 - 67 = ?"
+[00:19] Question Sent to Client1 : "86 - 57 / 1 = ?"
+[00:19] Client4 Correct Answer : 6
+[00:22] Question Sent to Client3 : "46 - 1 + 92 = ?"
+[00:22] Question Sent to Client4 : "9 / 9 / 32 = ?"
+[00:22] Client1 Correct Answer : 29
+[00:25] Client3 Correct Answer : 137
+[00:29] Client2 Correct Answer : 83
+[00:34] Question Sent to Client3 : "2 / 88 * 85 = ?"
+[00:34] Question Sent to Client1 : "38 + 1 - 78 = ?"
+[00:34] Client4 Correct Answer : 0
+[00:37] Question Sent to Client2 : "54 * 11 + 60 = ?"
+[00:37] Question Sent to Client4 : "88 + 66 + 56 = ?"
+[00:37] Client4 Correct Answer : 210
 [00:39] Client3 Correct Answer : 0
-[00:39] Client1 Correct Answer : 2556
-[00:42] Question Sent to Client3 : "50 * 18 - 93 = ?"
-[00:42] Client4 Correct Answer : 61
-[00:46] Question Sent to Client1 : "79 * 38 - 21 = ?"
-[00:46] Question Sent to Client4 : "31 - 85 + 62 = ?"
-[00:46] Client2 Correct Answer : 35518
-[00:50] Client1 Correct Answer : 2981
-[00:52] Question Sent to Client2 : "25 * 54 * 84 = ?"
-[00:52] Question Sent to Client1 : "30 / 78 + 54 = ?"
-[00:52] Client3 Correct Answer : 807
-[00:56] Question Sent to Client3 : "4 / 66 * 84 = ?"
-[00:56] Client4 Correct Answer : 8
-[00:56] Client1 Correct Answer : 54
-[00:58] Question Sent to Client4 : "77 / 84 * 72 = ?"
-[00:58] Client3 Correct Answer : 0
-[01:00] Question Sent to Client1 : "43 + 46 / 67 = ?"
-[01:00] Question Sent to Client3 : "10 / 55 * 7 = ?"
-[01:00] Client4 Correct Answer : 0
-[01:00] Client2 Correct Answer : 113400
-[01:02] Question Sent to Client4 : "40 * 51 - 83 = ?"
-[01:02] Question Sent to Client2 : "83 - 60 / 27 = ?"
-[01:02] Client1 Correct Answer : 43
-[01:04] Client4 Correct Answer : 1957
-[01:04] Question Sent to Client4 : "83 / 1 * 46 = ?"
-[01:04] Question Sent to Client1 : "90 + 16 - 51 = ?"
-[01:04] Client2 Correct Answer : 81
-[01:07] Client3 Correct Answer : 0
-[01:10] Question Sent to Client2 : "27 - 78 / 32 = ?"
-[01:10] Question Sent to Client3 : "89 * 78 * 28 = ?"
-[01:10] Client4 Correct Answer : 3818
-[01:12] Question Sent to Client4 : "1 + 28 * 79 = ?"
-[01:12] Client1 Correct Answer : 55
-[01:13] Client2 Correct Answer : 25
-[01:14] Question Sent to Client1 : "83 - 44 * 81 = ?"
-[01:14] Client4 Correct Answer : 2213
-[01:15] Question Sent to Client4 : "25 - 33 - 34 = ?"
-[01:15] Question Sent to Client2 : "58 * 85 * 36 = ?"
-[01:15] Client3 Correct Answer : 194376
-[01:16] Question Sent to Client3 : "79 * 43 * 5 = ?"
-[01:16] Client1 Correct Answer : -3481
-[01:19] Question Sent to Client1 : "2 / 71 - 29 = ?"
-[01:19] Client2 Correct Answer : 177480
-[01:22] Client4 Correct Answer : -42
-[01:26] Client3 Correct Answer : 16985
-[01:29] Question Sent to Client4 : "26 / 88 - 23 = ?"
-[01:29] Question Sent to Client2 : "67 - 19 - 4 = ?"
-[01:29] Client1 Correct Answer : -29
-[01:30] Question Sent to Client3 : "66 + 70 / 10 = ?"
-[01:30] Question Sent to Client1 : "53 / 79 - 11 = ?"
-[01:30] Client4 Correct Answer : -23
-[01:34] Client2 Correct Answer : 44
-[01:34] Question Sent to Client2 : "73 + 35 - 75 = ?"
-[01:34] Question Sent to Client4 : "45 * 21 + 8 = ?"
-[01:34] Client3 Correct Answer : 73
-[01:34] Client1 Correct Answer : -11
-[01:35] Question Sent to Client3 : "67 * 11 - 100 = ?"
-[01:35] Client2 Correct Answer : 33
-[01:37] Client3 Correct Answer : 637
-[01:39] Question Sent to Client1 : "8 / 88 - 54 = ?"
-[01:39] Question Sent to Client3 : "85 / 20 + 97 = ?"
-[01:39] Question Sent to Client2 : "50 / 29 - 90 = ?"
-[01:39] Client4 Correct Answer : 953
-[01:39] Client2 Correct Answer : -89
-[01:39] Question Sent to Client4 : "3 - 97 + 34 = ?"
-[01:39] Client3 Correct Answer : 101
-[01:39] Client1 Correct Answer : -54
-[01:42] Question Sent to Client2 : "82 + 82 * 71 = ?"
-[01:42] Question Sent to Client1 : "20 - 98 * 32 = ?"
-[01:42] Client4 Correct Answer : -60
-[01:43] Question Sent to Client3 : "49 * 61 / 83 = ?"
-[01:43] Question Sent to Client4 : "10 + 40 * 53 = ?"
-[01:43] Client1 Correct Answer : -3116
-[01:45] Client3 Correct Answer : 36
-[01:46] Question Sent to Client1 : "88 - 11 + 26 = ?"
-[01:46] Question Sent to Client3 : "92 + 74 / 34 = ?"
-[01:46] Client1 Correct Answer : 103
-[01:47] Question Sent to Client1 : "48 / 19 + 93 = ?"
-[01:47] Client2 Correct Answer : 5904
-[01:48] Client4 Correct Answer : 2130
-[01:49] Question Sent to Client2 : "84 * 70 / 44 = ?"
-[01:49] Question Sent to Client4 : "59 - 87 * 12 = ?"
-[01:49] Client3 Correct Answer : 94
-[01:50] Question Sent to Client3 : "27 - 90 - 33 = ?"
-[01:50] Client4 Correct Answer : -985
-[01:52] Question Sent to Client4 : "83 + 65 + 53 = ?"
-[01:52] Client1 Correct Answer : 95
-[01:56] Question Sent to Client1 : "4 / 1 + 30 = ?"
-[01:56] Client3 Correct Answer : -96
-[01:57] Client4 Correct Answer : 201
-[02:00] Question Sent to Client3 : "92 / 56 / 18 = ?"
-[02:00] Client2 Correct Answer : 133
-[02:01] Question Sent to Client4 : "31 - 28 / 19 = ?"
-[02:01] Question Sent to Client2 : "15 / 23 * 34 = ?"
-[02:01] Client2 Correct Answer : 0
-[02:02] Client4 Correct Answer : 30
-[02:06] Client1 Correct Answer : 34
-[02:09] Question Sent to Client4 : "28 + 27 + 100 = ?"
-[02:09] Question Sent to Client2 : "47 * 67 / 48 = ?"
-[02:09] Client3 Correct Answer : 0
-[02:10] Question Sent to Client1 : "4 - 33 - 82 = ?"
-[02:10] Question Sent to Client3 : "83 + 54 + 38 = ?"
-[02:10] Client1 Correct Answer : -111
-[02:11] Client3 Correct Answer : 175
-[02:12] Question Sent to Client1 : "23 + 38 * 32 = ?"
-[02:12] Client2 Correct Answer : 65
-[02:13] Question Sent to Client3 : "1 / 26 + 45 = ?"
-[02:13] Client4 Correct Answer : 155
-[02:13] Question Sent to Client2 : "99 - 8 / 51 = ?"
-[02:13] Question Sent to Client4 : "83 * 25 + 52 = ?"
-[02:13] Client4 Correct Answer : 2127
-[02:17] Client2 Correct Answer : 99
-[02:18] Question Sent to Client4 : "82 - 22 / 39 = ?"
-[02:18] Client1 Correct Answer : 1239
-[02:18] Question Sent to Client2 : "68 + 80 - 6 = ?"
-[02:18] Question Sent to Client1 : "75 / 22 - 24 = ?"
-[02:18] Client3 Correct Answer : 45
-[02:21] Client4 Correct Answer : 82
-[02:24] Question Sent to Client3 : "59 * 73 - 84 = ?"
-[02:24] Question Sent to Client4 : "47 / 95 + 47 = ?"
-[02:24] Client4 Correct Answer : 47
-[02:25] Question Sent to Client4 : "35 / 63 - 48 = ?"
-[02:25] Client1 Correct Answer : -21
-[02:27] Client2 Correct Answer : 142
-[02:30] Question Sent to Client1 : "58 * 25 + 97 = ?"
-[02:30] Question Sent to Client2 : "0 + 53 * 21 = ?"
-[02:30] Client4 Correct Answer : -48
-[02:31] Question Sent to Client4 : "30 - 34 * 77 = ?"
-[02:31] Client4 Correct Answer : -2588
-[02:33] Client3 Correct Answer : 4223
-[02:35] Question Sent to Client4 : "67 * 89 + 76 = ?"
-[02:35] Question Sent to Client3 : "38 + 36 / 90 = ?"
-[02:35] Client1 Correct Answer : 1547
-[02:38] Question Sent to Client1 : "87 / 40 / 84 = ?"
-[02:38] Client2 Correct Answer : 1113
-[02:40] Question Sent to Client2 : "64 + 50 / 15 = ?"
-[02:40] Client4 Correct Answer : 6039
-[02:44] Question Sent to Client4 : "12 / 53 + 46 = ?"
-[02:44] Client3 Correct Answer : 38
-[02:48] Question Sent to Client3 : "62 / 55 - 11 = ?"
-[02:48] Client1 Correct Answer : 0
-[02:52] Question Sent to Client1 : "1 * 32 * 74 = ?"
-[02:52] Client2 Correct Answer : 67
-[02:56] Client4 Correct Answer : 46
-[02:59] Question Sent to Client2 : "12 * 29 + 52 = ?"
-[02:59] Question Sent to Client4 : "1 / 6 - 32 = ?"
-[02:59] Client2 Correct Answer : 400
-[03:00] Question Sent to Client2 : "7 / 87 - 16 = ?"
-[03:00] Client3 Correct Answer : -10
-[03:01] Question Sent to Client3 : "37 - 60 - 67 = ?"
-[03:01] Client1 Correct Answer : 2368
-[03:01] Client4 Correct Answer : -32
-[03:03] Question Sent to Client1 : "19 * 55 - 47 = ?"
-[03:03] Client3 Correct Answer : -90
-[03:06] Question Sent to Client4 : "46 / 58 * 75 = ?"
-[03:06] Question Sent to Client3 : "63 - 58 * 8 = ?"
-[03:06] Client2 Correct Answer : -16
-[03:09] Client1 Correct Answer : 998
-[03:10] Question Sent to Client2 : "9 - 92 + 20 = ?"
-[03:10] Question Sent to Client1 : "3 * 24 + 48 = ?"
-[03:10] Client2 Correct Answer : -63
-[03:11] Client4 Correct Answer : 0
-[03:14] Question Sent to Client2 : "56 / 67 - 1 = ?"
-[03:14] Question Sent to Client4 : "82 - 40 + 28 = ?"
-[03:14] Client3 Correct Answer : -401
-[03:15] Client4 Correct Answer : 70
-[03:18] Question Sent to Client3 : "39 / 18 - 85 = ?"
-[03:18] Question Sent to Client4 : "77 / 46 / 42 = ?"
-[03:18] Client1 Correct Answer : 120
-[03:21] Question Sent to Client1 : "26 - 1 + 98 = ?"
-[03:21] Client2 Correct Answer : -1
-[03:24] Question Sent to Client2 : "86 * 19 * 64 = ?"
-[03:24] Client1 Correct Answer : 123
-[03:28] Client4 Correct Answer : 0
-[03:30] Question Sent to Client1 : "80 / 97 - 64 = ?"
-[03:30] Client3 Correct Answer : -83
-[03:33] Question Sent to Client4 : "75 + 71 - 22 = ?"
-[03:33] Question Sent to Client3 : "94 * 80 + 8 = ?"
-[03:33] Client2 Correct Answer : 104576
-[03:36] Client4 Correct Answer : 124
-[03:37] Question Sent to Client2 : "84 - 80 * 55 = ?"
-[03:37] Question Sent to Client4 : "48 - 6 - 40 = ?"
-[03:37] Client1 Correct Answer : -64
-[03:37] Client4 Correct Answer : 2
-[03:40] Question Sent to Client1 : "87 + 92 + 95 = ?"
-[03:40] Question Sent to Client4 : "85 + 100 - 55 = ?"
-[03:40] Client3 Correct Answer : 7528
-[03:43] Question Sent to Client3 : "38 + 40 - 38 = ?"
-[03:43] Client2 Correct Answer : -4316
-[03:47] Question Sent to Client2 : "18 / 5 - 69 = ?"
-[03:47] Client4 Correct Answer : 130
-[03:49] Question Sent to Client4 : "50 - 79 * 26 = ?"
-[03:49] Client3 Correct Answer : 40
-[03:53] Client1 Correct Answer : 274
-[03:57] Question Sent to Client3 : "92 - 80 * 35 = ?"
-[03:57] Question Sent to Client1 : "11 + 75 - 40 = ?"
-[03:57] Client4 Correct Answer : -2004
-[03:59] Client3 Correct Answer : -2708
-[03:59] Question Sent to Client4 : "62 * 51 - 23 = ?"
-[03:59] Question Sent to Client3 : "15 - 2 - 27 = ?"
-[03:59] Client3 Correct Answer : -14
-[04:03] Question Sent to Client3 : "74 + 68 / 12 = ?"
-[04:03] Client4 Correct Answer : 3139
-[04:04] Question Sent to Client4 : "91 * 91 - 27 = ?"
-[04:04] Client2 Correct Answer : -66
-[04:04] Client1 Correct Answer : 46
-[04:04] Question Sent to Client1 : "92 / 3 / 39 = ?"
-[04:04] Question Sent to Client2 : "39 * 38 / 28 = ?"
-[04:04] Client4 Correct Answer : 8254
-[04:05] Question Sent to Client4 : "52 + 81 - 76 = ?"
-[04:05] Client3 Correct Answer : 79
-[04:06] Question Sent to Client3 : "14 + 54 + 20 = ?"
-[04:06] Client4 Correct Answer : 57
-[04:06] Client2 Correct Answer : 52
-[04:10] Question Sent to Client4 : "44 - 72 + 4 = ?"
-[04:10] Client1 Correct Answer : 0
-[04:12] Question Sent to Client2 : "7 * 48 * 43 = ?"
-[04:12] Question Sent to Client1 : "71 + 63 - 18 = ?"
-[04:12] Client4 Correct Answer : -24
-[04:13] Client2 Correct Answer : 14448
-[04:14] Question Sent to Client4 : "65 / 18 * 87 = ?"
-[04:14] Question Sent to Client2 : "34 + 71 + 62 = ?"
-[04:14] Client3 Correct Answer : 88
-[04:16] Client1 Correct Answer : 116
-[04:17] Question Sent to Client3 : "85 * 38 * 94 = ?"
-[04:17] Question Sent to Client1 : "33 * 36 * 22 = ?"
-[04:17] Client4 Correct Answer : 261
-[04:18] Client3 Correct Answer : 303620
-[04:21] Question Sent to Client4 : "45 + 37 * 16 = ?"
-[04:21] Question Sent to Client3 : "50 + 4 * 56 = ?"
-[04:21] Client2 Correct Answer : 167
-[04:23] Question Sent to Client2 : "56 + 64 - 32 = ?"
-[04:23] Client1 Correct Answer : 26136
-[04:25] Question Sent to Client1 : "14 - 66 - 29 = ?"
-[04:25] Client3 Correct Answer : 274
-[04:28] Question Sent to Client3 : "95 + 52 * 93 = ?"
-[04:28] Client4 Correct Answer : 637
-[04:30] Question Sent to Client4 : "57 - 17 / 75 = ?"
-[04:30] Client3 Correct Answer : 4931
-[04:34] Client1 Correct Answer : -81
-[04:34] Question Sent to Client3 : "85 / 31 + 81 = ?"
-[04:34] Question Sent to Client1 : "69 + 88 * 65 = ?"
-[04:34] Client4 Correct Answer : 57
-[04:34] Question Sent to Client4 : "53 / 45 + 50 = ?"
-[04:34] Client2 Correct Answer : 88
-[04:37] Question Sent to Client2 : "77 * 18 + 24 = ?"
-[04:37] Client3 Correct Answer : 83
-[04:37] Question Sent to Client3 : "36 * 58 * 2 = ?"
-[04:37] Client2 Correct Answer : 1410
-[04:40] Client1 Correct Answer : 5789
-[04:41] Client4 Correct Answer : 51
-[04:43] Question Sent to Client4 : "78 - 62 - 48 = ?"
-[04:43] Question Sent to Client2 : "16 / 73 / 97 = ?"
-[04:43] Question Sent to Client1 : "68 + 47 * 49 = ?"
-[04:43] Client3 Correct Answer : 4176
-[04:45] Question Sent to Client3 : "99 * 1 - 19 = ?"
-[04:45] Client4 Correct Answer : -32
-[04:47] Question Sent to Client4 : "63 + 35 / 62 = ?"
-[04:47] Client3 Correct Answer : 80
-[04:47] Question Sent to Client3 : "16 / 64 * 58 = ?"
-[04:47] Client2 Correct Answer : 0
-[04:51] Client1 Correct Answer : 2371
-[04:51] Question Sent to Client2 : "35 * 48 - 45 = ?"
-[04:51] Client4 Correct Answer : 63
-[04:55] Question Sent to Client1 : "52 * 22 / 41 = ?"
-[04:55] Client3 Correct Answer : 0
-[04:58] Question Sent to Client4 : "23 + 8 * 53 = ?"
-[04:58] Question Sent to Client3 : "3 / 80 + 70 = ?"
-[04:58] Client2 Correct Answer : 1635
-[04:58] Client4 Correct Answer : 447
-[04:58] Question Sent to Client2 : "54 + 24 - 50 = ?"
-[04:58] Client3 Correct Answer : 70
-[04:59] Question Sent to Client4 : "48 / 42 / 83 = ?"
-[04:59] Question Sent to Client3 : "25 * 56 + 28 = ?"
-[04:59] Client1 Correct Answer : 27
-[05:03] Client4 Correct Answer : 0
-[05:07] Question Sent to Client1 : "96 / 19 / 44 = ?"
-[05:07] Question Sent to Client4 : "83 - 72 * 73 = ?"
-[05:07] Client3 Correct Answer : 1428
-[05:11] Client4 Correct Answer : -5173
-[05:13] Question Sent to Client3 : "93 * 68 - 12 = ?"
-[05:13] Question Sent to Client4 : "32 - 94 / 39 = ?"
-[05:13] Client1 Correct Answer : 0
-[05:15] Client2 Correct Answer : 28
-[05:17] Question Sent to Client1 : "12 + 16 + 17 = ?"
-[05:17] Question Sent to Client2 : "34 / 7 * 98 = ?"
-[05:17] Client4 Correct Answer : 30
-[05:18] Question Sent to Client4 : "85 - 60 * 0 = ?"
-[05:18] Client3 Correct Answer : 6312
-[05:18] Client2 Correct Answer : 392
-[05:18] Question Sent to Client3 : "85 / 9 / 35 = ?"
-[05:18] Question Sent to Client2 : "61 - 87 + 22 = ?"
-[05:18] Client4 Correct Answer : 85
-[05:21] Question Sent to Client4 : "61 + 70 / 4 = ?"
-[05:21] Client1 Correct Answer : 45
-[05:22] Question Sent to Client1 : "95 * 65 - 14 = ?"
-[05:22] Client3 Correct Answer : 0
-[05:24] Question Sent to Client3 : "82 + 99 + 59 = ?"
-[05:24] Client4 Correct Answer : 78
-[05:24] Question Sent to Client4 : "50 / 89 + 90 = ?"
-[05:24] Client2 Correct Answer : -4
-[05:27] Question Sent to Client2 : "99 + 80 - 97 = ?"
-[05:27] Client1 Correct Answer : 6161
-[05:30] Question Sent to Client1 : "53 * 53 - 25 = ?"
-[05:30] Client2 Correct Answer : 82
-[05:31] Client4 Correct Answer : 90
-[05:34] Question Sent to Client2 : "76 - 73 / 92 = ?"
-[05:34] Question Sent to Client4 : "26 * 81 * 15 = ?"
-[05:34] Client3 Correct Answer : 240
-[05:35] Client1 Correct Answer : 2784
-[05:38] Question Sent to Client3 : "100 + 81 * 38 = ?"
-[05:38] Question Sent to Client1 : "47 / 68 + 18 = ?"
-[05:38] Client1 Correct Answer : 18
-[05:40] Client3 Correct Answer : 3178
-[05:40] Client2 Correct Answer : 76
-[05:44] Question Sent to Client1 : "1 + 30 + 34 = ?"
-[05:44] Question Sent to Client2 : "78 + 23 - 77 = ?"
-[05:44] Client4 Correct Answer : 31590
-[05:46] Question Sent to Client3 : "87 + 21 + 46 = ?"
-[05:46] Question Sent to Client4 : "84 * 52 * 87 = ?"
-[05:46] Client4 Correct Answer : 380016
-[05:47] Question Sent to Client4 : "0 / 33 - 91 = ?"
-[05:47] Client1 Correct Answer : 65
-[05:50] Client2 Correct Answer : 24
-[05:50] Question Sent to Client1 : "98 + 13 * 60 = ?"
-[05:50] Question Sent to Client2 : "78 / 2 + 76 = ?"
-[05:50] Client3 Correct Answer : 154
-[05:51] Client4 Correct Answer : -91
-[05:54] Question Sent to Client3 : "51 * 6 / 5 = ?"
-[05:54] Question Sent to Client4 : "54 - 83 - 0 = ?"
-[05:54] Client1 Correct Answer : 878
-[05:58] Question Sent to Client1 : "20 + 13 - 23 = ?"
-[05:58] Client2 Correct Answer : 115
-[06:00] Client4 Correct Answer : -29
-[06:03] Question Sent to Client2 : "11 + 1 - 41 = ?"
-[06:03] Client1 Correct Answer : 10
-[06:07] Question Sent to Client4 : "64 / 72 - 41 = ?"
-[06:07] Question Sent to Client1 : "8 + 86 / 49 = ?"
-[06:07] Client3 Correct Answer : 61
-[06:08] Question Sent to Client3 : "22 - 32 * 90 = ?"
-[06:08] Client4 Correct Answer : -41
-[06:12] Client1 Correct Answer : 9
-[06:12] Question Sent to Client1 : "95 + 67 * 90 = ?"
-[06:12] Question Sent to Client4 : "86 + 41 / 54 = ?"
-[06:12] Client3 Correct Answer : -2858
-[06:12] Client2 Correct Answer : -29
-[06:13] Question Sent to Client3 : "43 * 77 / 10 = ?"
-[06:13] Question Sent to Client2 : "79 - 33 / 24 = ?"
-[06:13] Client4 Correct Answer : 86
-[06:16] Client2 Correct Answer : 78
-[06:16] Question Sent to Client4 : "35 + 32 + 38 = ?"
-[06:16] Question Sent to Client2 : "72 * 38 * 14 = ?"
-[06:16] Client4 Correct Answer : 105
-[06:20] Question Sent to Client4 : "1 * 96 - 75 = ?"
-[06:20] Client3 Correct Answer : 331
-[06:24] Question Sent to Client3 : "92 + 59 * 73 = ?"
-[06:24] Client4 Correct Answer : 21
-[06:28] Client2 Correct Answer : 38304
-[06:29] Question Sent to Client4 : "58 * 85 / 19 = ?"
-[06:29] Question Sent to Client2 : "43 / 29 * 77 = ?"
-[06:29] Client1 Correct Answer : 6125
-[06:29] Client4 Correct Answer : 259
-[06:33] Question Sent to Client1 : "67 - 36 * 91 = ?"
-[06:33] Question Sent to Client4 : "63 - 84 + 70 = ?"
-[06:33] Client1 Correct Answer : -3209
-[06:35] Question Sent to Client1 : "58 + 89 * 93 = ?"
-[06:35] Client2 Correct Answer : 77
-[06:36] Client4 Correct Answer : 49
-[06:39] Question Sent to Client2 : "12 + 38 * 54 = ?"
-[06:39] Question Sent to Client4 : "50 - 1 - 27 = ?"
-[06:39] Client3 Correct Answer : 4399
-[06:40] Question Sent to Client3 : "68 + 18 - 10 = ?"
-[06:40] Client4 Correct Answer : 22
-[06:43] Client1 Correct Answer : 8335
-[06:43] Question Sent to Client4 : "65 - 23 * 81 = ?"
-[06:43] Question Sent to Client1 : "48 * 54 / 81 = ?"
-[06:43] Client2 Correct Answer : 2064
-[06:43] Question Sent to Client2 : "21 + 48 + 23 = ?"
-[06:43] Client3 Correct Answer : 76
-[06:47] Question Sent to Client3 : "23 * 47 - 89 = ?"
-[06:47] Client4 Correct Answer : -1798
-[06:47] Question Sent to Client4 : "29 - 24 - 47 = ?"
-[06:47] Client1 Correct Answer : 32
-[06:51] Question Sent to Client1 : "90 * 25 * 55 = ?"
-[06:51] Client2 Correct Answer : 92
-[06:55] Question Sent to Client2 : "89 - 36 - 77 = ?"
-[06:55] Client4 Correct Answer : -42
-[06:57] Question Sent to Client4 : "84 + 59 - 14 = ?"
-[06:57] Client3 Correct Answer : 992
-[07:01] Question Sent to Client3 : "19 * 78 - 95 = ?"
-[07:01] Client1 Correct Answer : 123750
-[07:01] Client2 Correct Answer : -24
-[07:02] Question Sent to Client1 : "29 * 3 - 46 = ?"
-[07:02] Question Sent to Client2 : "6 + 18 / 55 = ?"
-[07:02] Client3 Correct Answer : 1387
-[07:02] Question Sent to Client3 : "36 * 50 * 84 = ?"
-[07:02] Client4 Correct Answer : 129
-[07:02] Question Sent to Client4 : "36 * 39 - 30 = ?"
-[07:02] Client1 Correct Answer : 41
-[07:04] Question Sent to Client1 : "95 / 96 + 55 = ?"
-[07:04] Client2 Correct Answer : 6
-[07:08] Question Sent to Client2 : "64 + 70 + 38 = ?"
-[07:08] Client4 Correct Answer : 1374
-[07:08] Question Sent to Client4 : "49 / 67 - 49 = ?"
-[07:08] Client2 Correct Answer : 172
-[07:12] Client3 Correct Answer : 151200
-[07:14] Question Sent to Client2 : "81 * 52 - 76 = ?"
-[07:14] Question Sent to Client3 : "51 * 86 + 80 = ?"
-[07:14] Client1 Correct Answer : 55
-[07:14] Client4 Correct Answer : -49
-[07:15] Question Sent to Client1 : "12 + 27 / 55 = ?"
-[07:15] Client3 Correct Answer : 4466
-[07:16] Question Sent to Client4 : "78 - 59 * 75 = ?"
-[07:16] Question Sent to Client3 : "7 / 81 - 25 = ?"
-[07:16] Client2 Correct Answer : 4136
-[07:16] Client1 Correct Answer : 12
-[07:16] Question Sent to Client2 : "95 + 37 / 35 = ?"
-[07:16] Client4 Correct Answer : -4347
-[07:20] Question Sent to Client1 : "31 / 34 / 72 = ?"
-[07:20] Client3 Correct Answer : -25
-[07:22] Question Sent to Client3 : "66 * 5 - 49 = ?"
-[07:22] Question Sent to Client4 : "46 * 40 + 73 = ?"
-[07:22] Client2 Correct Answer : 96
-[07:24] Client4 Correct Answer : 1913
-[07:27] Question Sent to Client2 : "83 + 53 + 38 = ?"
-[07:27] Question Sent to Client4 : "72 + 14 * 52 = ?"
-[07:27] Client1 Correct Answer : 0
-[07:31] Client3 Correct Answer : 281
-[07:34] Question Sent to Client1 : "57 / 74 + 37 = ?"
-[07:34] Question Sent to Client3 : "96 / 11 / 49 = ?"
-[07:34] Client4 Correct Answer : 800
-[07:38] Client2 Correct Answer : 174
-[07:39] Question Sent to Client4 : "22 * 59 + 97 = ?"
-[07:39] Client1 Correct Answer : 37
-[07:42] Question Sent to Client2 : "36 / 41 / 44 = ?"
-[07:42] Question Sent to Client1 : "90 + 38 / 39 = ?"
-[07:42] Client4 Correct Answer : 1395
-[07:44] Client3 Correct Answer : 0
-[07:48] Question Sent to Client4 : "100 - 74 - 74 = ?"
-[07:48] Question Sent to Client3 : "43 - 79 - 60 = ?"
-[07:48] Client2 Correct Answer : 0
-[07:50] Question Sent to Client2 : "96 / 79 - 6 = ?"
-[07:50] Client1 Correct Answer : 90
-[07:53] Question Sent to Client1 : "10 + 19 + 30 = ?"
-[07:53] Client4 Correct Answer : -48
-[07:54] Question Sent to Client4 : "50 - 8 * 76 = ?"
-[07:54] Client3 Correct Answer : -96
-[07:57] Client2 Correct Answer : -5
-[08:00] Question Sent to Client3 : "1 + 73 + 51 = ?"
-[08:00] Question Sent to Client2 : "56 * 39 - 19 = ?"
-[08:00] Client4 Correct Answer : -558
-[08:00] Question Sent to Client4 : "37 * 3 * 68 = ?"
-[08:00] Client1 Correct Answer : 59
-[08:02] Question Sent to Client1 : "31 - 4 * 54 = ?"
-[08:02] Client3 Correct Answer : 125
-[08:05] Question Sent to Client3 : "40 - 84 * 84 = ?"
-[08:05] Client4 Correct Answer : 7548
-[08:08] Question Sent to Client4 : "11 + 100 / 56 = ?"
-[08:08] Client1 Correct Answer : -185
-[08:12] Client2 Correct Answer : 2165
-[08:16] Question Sent to Client1 : "41 + 20 * 31 = ?"
-[08:16] Question Sent to Client2 : "19 - 21 + 61 = ?"
-[08:16] Client4 Correct Answer : 12
-[08:19] Question Sent to Client4 : "70 * 22 / 50 = ?"
-[08:19] Client3 Correct Answer : -7016
-[08:22] Question Sent to Client3 : "46 + 7 * 45 = ?"
-[08:22] Client1 Correct Answer : 661
-[08:23] Question Sent to Client1 : "55 * 17 - 76 = ?"
-[08:23] Client2 Correct Answer : 59
-[08:26] Client4 Correct Answer : 30
-[08:27] Question Sent to Client2 : "89 + 26 + 5 = ?"
-[08:27] Question Sent to Client4 : "8 / 32 + 29 = ?"
-[08:27] Client1 Correct Answer : 859
-[08:29] Question Sent to Client1 : "19 * 55 / 37 = ?"
-[08:29] Client2 Correct Answer : 120
-[08:32] Question Sent to Client2 : "4 - 10 + 86 = ?"
-[08:32] Client4 Correct Answer : 29
-[08:35] Client3 Correct Answer : 361
-[08:38] Question Sent to Client4 : "1 + 23 / 39 = ?"
-[08:38] Client1 Correct Answer : 28
-[08:38] Question Sent to Client3 : "91 * 35 - 54 = ?"
-[08:38] Question Sent to Client1 : "14 * 44 / 97 = ?"
-[08:38] Client2 Correct Answer : 80
-[08:41] Client3 Correct Answer : 3131
-[08:41] Question Sent to Client2 : "36 * 53 - 91 = ?"
-[08:41] Question Sent to Client3 : "68 + 30 * 35 = ?"
-[08:41] Client4 Correct Answer : 1
-[08:44] Question Sent to Client4 : "17 / 17 / 23 = ?"
-[08:44] Client1 Correct Answer : 6
-[08:48] Client2 Correct Answer : 1817
-[08:51] Question Sent to Client1 : "82 - 56 * 86 = ?"
-[08:51] Question Sent to Client2 : "19 - 0 * 71 = ?"
-[08:51] Client3 Correct Answer : 1118
-[08:52] Question Sent to Client3 : "19 + 79 - 73 = ?"
-[08:52] Client1 Correct Answer : -4734
-[08:52] Client4 Correct Answer : 0
-[08:56] Question Sent to Client1 : "39 - 75 / 17 = ?"
-[08:56] Question Sent to Client4 : "66 / 94 + 84 = ?"
-[08:56] Client2 Correct Answer : 19
-[08:56] Question Sent to Client2 : "17 / 76 * 83 = ?"
-[08:56] Client1 Correct Answer : 35
-[09:00] Client2 Correct Answer : 0
-[09:01] Question Sent to Client1 : "69 + 77 / 34 = ?"
-[09:01] Question Sent to Client2 : "65 * 19 - 35 = ?"
-[09:01] Client4 Correct Answer : 84
-[09:04] Question Sent to Client4 : "73 * 0 - 56 = ?"
-[09:04] Client3 Correct Answer : 25
-[09:07] Question Sent to Client3 : "94 / 57 * 31 = ?"
-[09:07] Client1 Correct Answer : 71
-[09:10] Question Sent to Client1 : "33 + 98 + 7 = ?"
-[09:10] Client4 Correct Answer : -56
-[09:12] Question Sent to Client4 : "64 * 62 * 7 = ?"
-[09:12] Client2 Correct Answer : 1200
-[09:15] Client4 Correct Answer : 27776
-[09:15] Client3 Correct Answer : 31
-[09:16] Question Sent to Client4 : "93 / 7 + 5 = ?"
-[09:16] Question Sent to Client2 : "87 - 90 - 19 = ?"
-[09:16] Question Sent to Client3 : "36 * 79 * 24 = ?"
-[09:16] Client1 Correct Answer : 138
-[09:20] Question Sent to Client1 : "73 + 88 - 78 = ?"
-[09:20] Client4 Correct Answer : 18
-[09:20] Client3 Correct Answer : 68256
-[09:23] Question Sent to Client3 : "29 + 93 * 86 = ?"
-[09:23] Question Sent to Client4 : "3 * 43 - 79 = ?"
-[09:23] Client2 Correct Answer : -22
-[09:24] Question Sent to Client2 : "56 + 71 / 78 = ?"
-[09:24] Client1 Correct Answer : 83
-[09:27] Question Sent to Client1 : "35 + 13 + 1 = ?"
-[09:27] Client4 Correct Answer : 50
-[09:30] Client3 Correct Answer : 8027
-[09:32] Client2 Correct Answer : 56
-[09:35] Question Sent to Client4 : "69 - 53 + 49 = ?"
-[09:35] Question Sent to Client2 : "17 - 26 + 22 = ?"
-[09:35] Question Sent to Client3 : "0 - 97 + 32 = ?"
-[09:35] Client4 Correct Answer : 65
-[09:38] Question Sent to Client4 : "24 * 43 * 61 = ?"
-[09:38] Client1 Correct Answer : 49
-[09:39] Question Sent to Client1 : "74 * 4 - 97 = ?"
-[09:39] Client3 Correct Answer : -65
-[09:40] Client4 Correct Answer : 62952
-[09:41] Question Sent to Client3 : "29 - 95 * 38 = ?"
-[09:41] Question Sent to Client4 : "60 + 78 * 42 = ?"
-[09:41] Client2 Correct Answer : 13
-[09:43] Question Sent to Client2 : "32 * 35 - 21 = ?"
-[09:43] Client3 Correct Answer : -3581
-[09:43] Client1 Correct Answer : 199
-[09:45] Question Sent to Client1 : "17 * 3 * 79 = ?"
-[09:45] Client4 Correct Answer : 3336
-[09:47] Question Sent to Client3 : "24 * 68 + 12 = ?"
-[09:47] Question Sent to Client4 : "76 - 90 + 33 = ?"
-[09:47] Client4 Correct Answer : 19
-[09:50] Question Sent to Client4 : "53 / 75 / 77 = ?"
-[09:50] Client2 Correct Answer : 1099
-[09:51] Question Sent to Client2 : "55 + 62 / 17 = ?"
-[09:51] Client3 Correct Answer : 1644
-[09:54] Question Sent to Client3 : "37 - 66 + 9 = ?"
-[09:54] Client1 Correct Answer : 4029
-[09:55] Client4 Correct Answer : 0
-[09:55] Question Sent to Client1 : "49 - 64 - 69 = ?"
-[09:55] Question Sent to Client4 : "69 + 72 + 92 = ?"
-[09:55] Client2 Correct Answer : 58
-[09:55] Question Sent to Client2 : "36 - 4 - 18 = ?"
-[09:55] Client2 Correct Answer : 14
-[09:58] Client4 Correct Answer : 233
-[09:58] Question Sent to Client2 : "22 / 54 / 23 = ?"
-[09:58] Question Sent to Client4 : "40 * 51 + 66 = ?"
-[09:58] Client1 Correct Answer : -84
-[09:58] Question Sent to Client1 : "70 - 98 / 43 = ?"
-[09:58] Client3 Correct Answer : -20
-[10:01] Client3 Connection Terminated.
-[10:01] Total Sum : 2499036, Server Shutdown.
-[10:01] Client4 Correct Answer : 2106
-[10:04] Client4 Connection Terminated.
-[10:04] Client2 Correct Answer : 0
-[10:07] Client2 Connection Terminated.
-[10:07] Client1 Correct Answer : 68
-[10:09] Client1 Connection Terminated.
+[00:43] Question Sent to Client4 : "34 - 59 / 78 = ?"
+[00:43] Client2 Correct Answer : 654
+[00:47] Question Sent to Client3 : "78 + 43 + 8 = ?"
+[00:47] Question Sent to Client2 : "54 + 53 + 59 = ?"
+[00:47] Client1 Correct Answer : -39
+[00:52] Client3 Correct Answer : 129
+[01:00] Client4 Correct Answer : 34
+[01:02] Question Sent to Client1 : "69 * 45 / 87 = ?"
+[01:02] Question Sent to Client4 : "32 - 38 + 40 = ?"
+[01:02] Question Sent to Client3 : "34 * 60 - 14 = ?"
+[01:02] Client2 Correct Answer : 166
+[01:06] Client1 Correct Answer : 35
+[01:13] Question Sent to Client2 : "94 / 86 * 44 = ?"
+[01:13] Client4 Correct Answer : 34
+[01:15] Question Sent to Client1 : "58 - 61 * 18 = ?"
+[01:15] Question Sent to Client4 : "55 / 94 - 38 = ?"
+[01:15] Client3 Correct Answer : 2026
+[01:18] Client2 Correct Answer : 44
+[01:21] Client1 Correct Answer : -1040
+[01:25] Question Sent to Client3 : "59 * 85 * 5 = ?"
+[01:25] Question Sent to Client1 : "26 + 76 + 57 = ?"
+[01:25] Question Sent to Client2 : "31 / 58 * 91 = ?"
+[01:25] Client4 Correct Answer : -38
+[01:26] Client2 Correct Answer : 0
+[01:29] Question Sent to Client4 : "71 + 61 / 60 = ?"
+[01:29] Client3 Correct Answer : 25075
+[01:37] Client4 Correct Answer : 72
+[01:43] Client1 Correct Answer : 159
+[01:48] Question Sent to Client2 : "71 / 46 + 98 = ?"
+[01:48] Question Sent to Client1 : "76 + 22 / 98 = ?"
+[01:48] Question Sent to Client4 : "26 + 94 + 53 = ?"
+[01:48] Question Sent to Client3 : "33 / 1 - 85 = ?"
+[01:48] Client1 Correct Answer : 76
+[01:50] Client2 Correct Answer : 99
+[01:56] Client4 Correct Answer : 173
+[02:03] Question Sent to Client2 : "74 + 13 / 77 = ?"
+[02:03] Client3 Correct Answer : -52
+[02:07] Question Sent to Client1 : "77 - 13 * 0 = ?"
+[02:07] Question Sent to Client3 : "98 - 54 - 6 = ?"
+[02:07] Question Sent to Client4 : "28 / 81 * 45 = ?"
+[02:07] Client3 Correct Answer : 38
+[02:11] Client2 Correct Answer : 74
+[02:13] Question Sent to Client3 : "8 * 18 * 47 = ?"
+[02:13] Client1 Correct Answer : 77
+[02:13] Client4 Correct Answer : 0
+[02:18] Question Sent to Client2 : "69 - 68 / 21 = ?"
+[02:18] Client3 Correct Answer : 6768
+[02:19] Question Sent to Client3 : "84 + 65 + 14 = ?"
+[02:19] Question Sent to Client4 : "28 - 32 - 73 = ?"
+[02:19] Question Sent to Client1 : "98 / 24 * 0 = ?"
+[02:19] Client4 Correct Answer : -77
+[02:22] Client1 Correct Answer : 0
+[02:27] Question Sent to Client4 : "98 + 9 - 55 = ?"
+[02:27] Client2 Correct Answer : 66
+[02:29] Question Sent to Client1 : "12 / 96 + 33 = ?"
+[02:29] Client4 Correct Answer : 52
+[02:29] Question Sent to Client2 : "94 - 31 / 75 = ?"
+[02:29] Question Sent to Client4 : "20 / 7 / 48 = ?"
+[02:29] Client3 Correct Answer : 163
+[02:33] Client2 Correct Answer : 94
+[02:37] Client4 Correct Answer : 0
+[02:41] Question Sent to Client3 : "15 - 41 + 26 = ?"
+[02:41] Question Sent to Client4 : "30 * 87 - 91 = ?"
+[02:41] Client1 Correct Answer : 33
+[02:47] Question Sent to Client2 : "43 - 59 / 4 = ?"
+[02:47] Question Sent to Client1 : "71 + 11 + 50 = ?"
+[02:47] Client4 Correct Answer : 2519
+[02:52] Client2 Correct Answer : 29
+[02:58] Client3 Correct Answer : 0
+[02:59] Question Sent to Client2 : "100 * 86 + 27 = ?"
+[02:59] Client1 Correct Answer : 132
+[03:02] Question Sent to Client4 : "3 + 90 * 85 = ?"
+[03:02] Question Sent to Client1 : "84 + 85 * 82 = ?"
+[03:02] Question Sent to Client3 : "23 - 76 + 64 = ?"
+[03:02] Client2 Correct Answer : 8627
+[03:05] Client4 Correct Answer : 7653
+[03:06] Question Sent to Client4 : "58 + 98 * 60 = ?"
+[03:06] Client1 Correct Answer : 7054
+[03:08] Question Sent to Client1 : "36 / 7 - 64 = ?"
+[03:08] Client3 Correct Answer : 11
+[03:12] Question Sent to Client2 : "23 - 95 - 91 = ?"
+[03:12] Question Sent to Client3 : "1 / 98 - 88 = ?"
+[03:12] Client4 Correct Answer : 5938
+[03:13] Client1 Correct Answer : -59
+[03:17] Client2 Correct Answer : -163
+[03:18] Client3 Correct Answer : -88
+[03:20] Question Sent to Client4 : "33 + 40 + 82 = ?"
+[03:20] Question Sent to Client3 : "74 / 90 * 97 = ?"
+[03:20] Question Sent to Client2 : "33 / 97 + 43 = ?"
+[03:20] Question Sent to Client1 : "89 / 70 * 100 = ?"
+[03:20] Client4 Correct Answer : 155
+[03:25] Client3 Correct Answer : 0
+[03:26] Client1 Correct Answer : 100
+[03:31] Question Sent to Client4 : "23 / 69 - 4 = ?"
+[03:31] Question Sent to Client1 : "93 + 80 * 36 = ?"
+[03:31] Question Sent to Client3 : "15 * 13 / 45 = ?"
+[03:31] Client2 Correct Answer : 43
+[03:37] Client4 Correct Answer : -4
+[03:43] Question Sent to Client2 : "20 / 38 * 95 = ?"
+[03:43] Question Sent to Client4 : "45 + 27 / 19 = ?"
+[03:43] Client1 Correct Answer : 2973
+[03:46] Client4 Correct Answer : 46
+[03:47] Client3 Correct Answer : 4
+[03:50] Question Sent to Client1 : "35 / 40 * 94 = ?"
+[03:50] Question Sent to Client3 : "69 * 70 - 53 = ?"
+[03:50] Question Sent to Client4 : "52 + 55 + 45 = ?"
+[03:50] Client2 Correct Answer : 0
+[03:54] Client1 Correct Answer : 0
+[04:00] Client3 Correct Answer : 4777
+[04:04] Client4 Correct Answer : 152
+[04:12] Question Sent to Client2 : "31 - 52 * 43 = ?"
+[04:12] Question Sent to Client4 : "78 + 56 * 2 = ?"
+[04:12] Question Sent to Client3 : "29 * 98 / 10 = ?"
+[04:12] Question Sent to Client1 : "43 + 59 / 34 = ?"
+[04:12] Client4 Correct Answer : 190
+[04:14] Client2 Correct Answer : -2205
+[04:17] Question Sent to Client4 : "9 - 74 + 56 = ?"
+[04:17] Client1 Correct Answer : 44
+[04:21] Client4 Correct Answer : -9
+[04:22] Question Sent to Client2 : "91 - 72 * 4 = ?"
+[04:22] Question Sent to Client4 : "94 / 22 + 59 = ?"
+[04:22] Client3 Correct Answer : 284
+[04:28] Question Sent to Client1 : "10 + 56 - 99 = ?"
+[04:28] Question Sent to Client3 : "18 + 9 + 65 = ?"
+[04:28] Client1 Correct Answer : -33
+[04:29] Client3 Correct Answer : 92
+[04:36] Client2 Correct Answer : -197
+[04:37] Question Sent to Client3 : "12 / 17 * 42 = ?"
+[04:37] Client4 Correct Answer : 63
+[04:43] Question Sent to Client1 : "63 + 56 - 31 = ?"
+[04:43] Question Sent to Client4 : "6 / 93 * 39 = ?"
+[04:43] Question Sent to Client2 : "36 * 37 - 53 = ?"
+[04:43] Client2 Correct Answer : 1279
+[04:47] Question Sent to Client2 : "80 - 51 - 49 = ?"
+[04:47] Client3 Correct Answer : 0
+[04:49] Client4 Correct Answer : 0
+[04:55] Question Sent to Client3 : "2 / 15 / 9 = ?"
+[04:55] Client2 Correct Answer : -20
+[05:03] Question Sent to Client4 : "41 - 78 / 8 = ?"
+[05:03] Client1 Correct Answer : 88
+[05:04] Question Sent to Client2 : "8 * 13 - 71 = ?"
+[05:04] Question Sent to Client1 : "17 + 17 / 18 = ?"
+[05:04] Client4 Correct Answer : 32
+[05:08] Question Sent to Client4 : "15 * 82 - 96 = ?"
+[05:08] Client2 Correct Answer : 33
+[05:10] Client1 Correct Answer : 17
+[05:14] Client3 Correct Answer : 0
+[05:17] Question Sent to Client2 : "88 * 77 + 61 = ?"
+[05:17] Question Sent to Client3 : "91 / 96 * 33 = ?"
+[05:17] Question Sent to Client1 : "98 * 29 * 93 = ?"
+[05:17] Client4 Correct Answer : 1134
+[05:19] Client3 Correct Answer : 0
+[05:22] Question Sent to Client4 : "90 + 8 / 5 = ?"
+[05:22] Client1 Correct Answer : 264306
+[05:27] Client2 Correct Answer : 6837
+[05:33] Question Sent to Client2 : "76 / 96 / 41 = ?"
+[05:33] Question Sent to Client1 : "87 - 4 * 16 = ?"
+[05:33] Question Sent to Client3 : "42 * 11 - 56 = ?"
+[05:33] Client1 Correct Answer : 23
+[05:38] Client4 Correct Answer : 91
+[05:42] Question Sent to Client1 : "63 / 7 + 8 = ?"
+[05:42] Client2 Correct Answer : 0
+[05:44] Client1 Correct Answer : 17
+[05:47] Client3 Correct Answer : 406
+[05:55] Question Sent to Client4 : "44 - 70 / 13 = ?"
+[05:55] Question Sent to Client3 : "50 - 78 * 78 = ?"
+[05:55] Question Sent to Client1 : "11 / 50 - 77 = ?"
+[05:55] Question Sent to Client2 : "27 + 62 * 82 = ?"
+[05:55] Client1 Correct Answer : -77
+[06:00] Client3 Correct Answer : -6034
+[06:04] Question Sent to Client1 : "78 * 78 - 95 = ?"
+[06:04] Client4 Correct Answer : 39
+[06:11] Client2 Correct Answer : 5111
+[06:17] Question Sent to Client3 : "23 * 73 - 29 = ?"
+[06:17] Question Sent to Client2 : "20 / 92 * 11 = ?"
+[06:17] Question Sent to Client4 : "99 * 60 + 48 = ?"
+[06:17] Client1 Correct Answer : 5989
+[06:20] Client4 Correct Answer : 5988
+[06:21] Client2 Correct Answer : 0
+[06:26] Question Sent to Client1 : "39 + 24 + 16 = ?"
+[06:26] Question Sent to Client2 : "31 * 55 - 62 = ?"
+[06:26] Question Sent to Client4 : "0 - 64 + 14 = ?"
+[06:26] Client3 Correct Answer : 1650
+[06:29] Client1 Correct Answer : 79
+[06:33] Question Sent to Client3 : "48 - 0 - 13 = ?"
+[06:33] Question Sent to Client1 : "13 - 2 - 54 = ?"
+[06:33] Client2 Correct Answer : 1643
+[06:39] Client3 Correct Answer : 35
+[06:45] Question Sent to Client2 : "3 + 99 * 99 = ?"
+[06:45] Question Sent to Client3 : "87 + 53 - 77 = ?"
+[06:45] Client4 Correct Answer : -50
+[06:49] Question Sent to Client4 : "73 / 31 - 26 = ?"
+[06:49] Client1 Correct Answer : -43
+[06:52] Question Sent to Client1 : "55 + 48 / 18 = ?"
+[06:52] Client2 Correct Answer : 9804
+[06:57] Client3 Correct Answer : 63
+[07:02] Client4 Correct Answer : -24
+[07:06] Question Sent to Client2 : "80 * 99 * 60 = ?"
+[07:06] Question Sent to Client4 : "28 - 38 - 87 = ?"
+[07:06] Question Sent to Client3 : "36 * 95 - 97 = ?"
+[07:06] Client1 Correct Answer : 57
+[07:08] Client4 Correct Answer : -97
+[07:11] Question Sent to Client1 : "6 + 74 / 91 = ?"
+[07:11] Question Sent to Client4 : "12 * 52 - 33 = ?"
+[07:11] Client2 Correct Answer : 475200
+[07:14] Client4 Correct Answer : 591
+[07:15] Question Sent to Client2 : "51 / 85 + 90 = ?"
+[07:15] Question Sent to Client4 : "78 * 4 * 69 = ?"
+[07:15] Client1 Correct Answer : 6
+[07:22] Client3 Correct Answer : 3323
+[07:22] Question Sent to Client1 : "89 - 94 - 75 = ?"
+[07:22] Question Sent to Client3 : "19 + 5 / 50 = ?"
+[07:22] Client2 Correct Answer : 90
+[07:26] Client4 Correct Answer : 21528
+[07:31] Client1 Correct Answer : -80
+[07:32] Question Sent to Client2 : "76 / 22 - 98 = ?"
+[07:32] Question Sent to Client1 : "87 * 78 / 0 = ?"
+[07:32] Question Sent to Client4 : "34 * 68 - 19 = ?"
+[07:32] Client2 Correct Answer : -95
+[07:32] Client4 Correct Answer : 2293
+[07:37] Question Sent to Client2 : "85 / 1 / 17 = ?"
+[07:37] Client1 Incorrect Answer : -1
+[07:38] Question Sent to Client4 : "13 / 69 / 100 = ?"
+[07:38] Client3 Correct Answer : 19
+[07:42] Question Sent to Client1 : "86 / 90 - 25 = ?"
+[07:42] Client4 Correct Answer : 0
+[07:50] Question Sent to Client3 : "78 - 52 * 90 = ?"
+[07:50] Question Sent to Client4 : "65 + 48 * 5 = ?"
+[07:50] Client2 Correct Answer : 5
+[07:52] Client1 Correct Answer : -25
+[07:55] Question Sent to Client2 : "81 - 10 * 37 = ?"
+[07:55] Client4 Correct Answer : 305
+[08:00] Question Sent to Client1 : "89 + 57 / 44 = ?"
+[08:00] Client3 Correct Answer : -4602
+[08:06] Question Sent to Client4 : "56 + 4 - 63 = ?"
+[08:06] Question Sent to Client3 : "2 + 8 - 63 = ?"
+[08:06] Client1 Correct Answer : 90
+[08:09] Client2 Correct Answer : -289
+[08:15] Question Sent to Client1 : "57 + 48 / 77 = ?"
+[08:15] Client3 Correct Answer : -53
+[08:20] Client4 Correct Answer : -3
+[08:27] Question Sent to Client3 : "19 / 50 * 92 = ?"
+[08:27] Question Sent to Client2 : "41 / 85 * 60 = ?"
+[08:27] Question Sent to Client4 : "6 / 7 + 29 = ?"
+[08:27] Client1 Correct Answer : 57
+[08:30] Client3 Correct Answer : 0
+[08:37] Client2 Correct Answer : 0
+[08:39] Question Sent to Client3 : "28 - 64 * 4 = ?"
+[08:39] Question Sent to Client1 : "45 / 71 * 61 = ?"
+[08:39] Client4 Correct Answer : 29
+[08:45] Question Sent to Client2 : "97 + 87 * 27 = ?"
+[08:45] Question Sent to Client4 : "95 / 62 + 68 = ?"
+[08:45] Client1 Correct Answer : 0
+[08:51] Question Sent to Client1 : "22 - 11 * 42 = ?"
+[08:51] Client4 Correct Answer : 69
+[08:55] Client3 Correct Answer : -228
+[09:00] Question Sent to Client4 : "48 * 87 * 39 = ?"
+[09:00] Client2 Correct Answer : 2446
+[09:02] Client1 Correct Answer : -440
+[09:04] Question Sent to Client3 : "84 * 75 + 32 = ?"
+[09:04] Question Sent to Client1 : "20 + 46 - 89 = ?"
+[09:04] Client4 Correct Answer : 162864
+[09:10] Question Sent to Client2 : "96 * 72 * 68 = ?"
+[09:10] Question Sent to Client4 : "24 - 47 - 33 = ?"
+[09:10] Client3 Correct Answer : 6332
+[09:15] Client2 Correct Answer : 470016
+[09:19] Client1 Correct Answer : -23
+[09:26] Question Sent to Client3 : "18 + 19 - 54 = ?"
+[09:26] Question Sent to Client1 : "50 / 18 + 36 = ?"
+[09:26] Client4 Correct Answer : -56
+[09:28] Question Sent to Client2 : "21 + 39 / 32 = ?"
+[09:28] Question Sent to Client4 : "38 - 52 - 59 = ?"
+[09:28] Client2 Correct Answer : 22
+[09:32] Question Sent to Client2 : "74 / 99 - 59 = ?"
+[09:32] Client3 Correct Answer : -17
+[09:37] Client4 Correct Answer : -73
+[09:37] Question Sent to Client4 : "95 / 93 / 3 = ?"
+[09:37] Question Sent to Client3 : "83 + 75 / 20 = ?"
+[09:37] Client2 Correct Answer : -59
+[09:44] Client3 Correct Answer : 86
+[09:48] Question Sent to Client3 : "73 * 73 / 60 = ?"
+[09:48] Client1 Correct Answer : 38
+[09:53] Client4 Correct Answer : 0
+[09:54] Question Sent to Client2 : "37 + 32 - 68 = ?"
+[09:54] Client3 Correct Answer : 88
+[10:02] Client3 Connection Terminated.
+[10:02] Question Sent to Client4 : "96 / 96 + 48 = ?"
+[10:02] Question Sent to Client1 : "2 + 42 * 50 = ?"
+[10:02] Client4 Correct Answer : 49
+[10:06] Total Sum : 1512803, Server Shutdown.
+[10:06] Client4 Connection Terminated.
+[10:06] Client2 Correct Answer : 1
+[10:11] Client1 Correct Answer : 2102
+[10:15] Client2 Connection Terminated.
+[10:15] Client1 Connection Terminated.

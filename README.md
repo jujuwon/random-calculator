@@ -5,6 +5,7 @@
 - `Source code`
   - `server` : 서버 소스코드
   - `client` : 클라이언트 소스코드
+  - `log`    : 작성된 로그 파일
 - `AllDefinedLogs.txt`
   - 프로그램에서 정의한 모든 Log message format 명세 및 설명
 - `download.txt`
@@ -22,9 +23,10 @@
 - client
 
 ```shell
-./client/build.sh
-./client/run.sh ${client_id}
-# 예시 ./client/run.sh 1
+gcc -o client.exe client.c -lws2_32
+./client.exe ${client_id}
+# 컴파일은 1번만 실행하면 됩니다.
+# 예시 ./client.exe 1
 ```
 
 - server

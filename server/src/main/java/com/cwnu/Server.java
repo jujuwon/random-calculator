@@ -91,7 +91,7 @@ public class Server {
 
 					String answerStr = in.readLine();
 					String[] parts = answerStr.split(" ");
-					// trim() 삽입
+
 					int time = Integer.parseInt(parts[0].trim());
 					int answer = Integer.parseInt(parts[1]);
 					if (checkAnswer(question, answer)) {
@@ -100,7 +100,13 @@ public class Server {
 						SYSTEM_CLOCK.addAndGet(time);
 					} else {
 						writeToLog("Client" + num + " Incorrect Answer : " + answer);
+						// 오답일 때도 시스템 클락 증가
+						SYSTEM_CLOCK.addAndGet(time);
 					}
+					// 새로운 문제 출제 전 점프
+					Random rand = new Random();
+					time = rand.nextInt(5);
+					SYSTEM_CLOCK.addAndGet(time);
 				}
 				out.printf("TIMEOUT [%02d:%02d]\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60);
 				writeToLog("Client" + num + " Connection Terminated.");

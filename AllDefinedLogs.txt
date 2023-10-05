@@ -15,8 +15,8 @@ Server Log
 - 10분 3초에 서버가 종료될 때
  -> [10:03] Total Sum : 182000, Server Shutdown.
 
-- 클라이언트 1의 연결이 종료될 때
- -> Client1 Connection Terminated.
+- 10분 5초에 클라이언트 1의 연결이 종료될 때
+ -> [10:05] Client1 Connection Terminated.
 
 
 
@@ -30,8 +30,8 @@ Client Log
 - 1분 23초에 서버로부터 "1 * 2 * 3" 이라는 문제를 받았을 때
  -> [01:23] Question : "1 * 2 * 3 = ?"
 
-- 1분 23초에 서버로 '6' 이라는 답을 보낼 때
- -> [01:23] Send Answer : 6
+- 1분 23초에 받은 문제를 2초에 걸쳐 연산한 후 서버로 '6' 이라는 답을 보낼 때
+ -> [01:25] Send Answer : 6
 
 - 10분 5초에 클라이언트 1이 종료될 때
  -> [10:05] Client1 Terminated.
