@@ -96,17 +96,18 @@ public class Server {
 					int answer = Integer.parseInt(parts[1]);
 					if (checkAnswer(question, answer)) {
 						addToTotalSum(answer);
+						SYSTEM_CLOCK.addAndGet(time);
 						writeToLog("Client" + num + " Correct Answer : " + answer);
-						SYSTEM_CLOCK.addAndGet(time);
 					} else {
-						writeToLog("Client" + num + " Incorrect Answer : " + answer);
-						// 오답일 때도 시스템 클락 증가
 						SYSTEM_CLOCK.addAndGet(time);
+						writeToLog("Client" + num + " Incorrect Answer : " + answer);
+						writeToLog("Question \"" +  question + "\" is Sent Back to Client" + num);
+						out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
 					}
-					// 새로운 문제 출제 전 점프
+					// Jump before a new problem
 					Random rand = new Random();
-					time = rand.nextInt(5);
-					SYSTEM_CLOCK.addAndGet(time);
+					int term = rand.nextInt(5);
+					SYSTEM_CLOCK.addAndGet(term);
 				}
 				out.printf("TIMEOUT [%02d:%02d]\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60);
 				writeToLog("Client" + num + " Connection Terminated.");
@@ -144,13 +145,18 @@ public class Server {
 					case '*':
 						return num1 * num3 == answer;
 					case '/':
+						if (num3 == 0 && answer == -1)
+							return true;
 						return num3 != 0 && num1 / num3 == answer;
 					default:
 						return false;
 				}
 			} else if (operator1 == '/') {
-				if (num2 == 0)
+				if (num2 == 0){
+					if(answer == -1)
+						return true;
 					return false;
+				}
 				num1 /= num2;
 				switch (operator2) {
 					case '+':
@@ -160,6 +166,8 @@ public class Server {
 					case '*':
 						return num1 * num3 == answer;
 					case '/':
+						if (num3 == 0 && answer == -1)
+							return true;
 						return num3 != 0 && num1 / num3 == answer;
 					default:
 						return false;
@@ -173,6 +181,8 @@ public class Server {
 					case '*':
 						return num1 + num2 * num3 == answer;
 					case '/':
+						if (num3 == 0 && answer == -1)
+							return true;
 						return num3 != 0 && num1 + num2 / num3 == answer;
 					default:
 						return false;
@@ -186,6 +196,8 @@ public class Server {
 					case '*':
 						return num1 - num2 * num3 == answer;
 					case '/':
+						if (num3 == 0 && answer == -1)
+							return true;
 						return num3 != 0 && num1 - num2 / num3 == answer;
 					default:
 						return false;

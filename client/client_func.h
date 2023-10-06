@@ -167,7 +167,7 @@ char* addGetSystemClock(char *systemclock, int next){
     sec = (int)(systemclock[4] - 48) * 10 + (int)(systemclock[5] - 48);
     sc = min + sec + next;
     
-    if(sc > 600){
+    if(sc >= 600){
         time[1] = '1';
         time[2] = '0';
     }

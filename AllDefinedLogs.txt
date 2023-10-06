@@ -12,6 +12,9 @@ Server Log
 - 1분 23초에 클라이언트 1에게 '5' 라는 오답이 왔을 때
  -> [01:23] Client1 Incorrect Answer : 5
 
+ - 1분 23초에 "1 * 2 * 3" 이라는 문제의 오답으로 클라이언트 1에게 재전송을 할 때
+  -> [01:23] Question "1 * 2 * 3 = ?" is Sent Back to Client1
+
 - 10분 3초에 서버가 종료될 때
  -> [10:03] Total Sum : 182000, Server Shutdown.
 
