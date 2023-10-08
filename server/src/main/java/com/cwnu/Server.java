@@ -65,18 +65,14 @@ public class Server {
 	}
 
 	private static synchronized void sendOriginQuestion(PrintWriter out, String question, int clientNum) {
-		addTimeAndLogging(0,
-			"Question Sent to Client" + clientNum + " : \"" + question + "\"",
-			"Question \"" + question + "\" is Sent Back to Client" + clientNum);
+		addTimeAndLogging(0, "Question \"" + question + "\" is Sent Back to Client" + clientNum);
 		out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
 	}
 
-	private static synchronized void addTimeAndLogging(int time, String... messages) {
+	private static synchronized void addTimeAndLogging(int time, String message) {
 		SYSTEM_CLOCK.addAndGet(time);
-		if (messages != null) {
-			for (String message : messages) {
-				writeToLog(message);
-			}
+		if (message != null) {
+			writeToLog(message);
 		}
 	}
 
