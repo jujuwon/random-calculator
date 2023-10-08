@@ -60,7 +60,7 @@ public class Server {
 	}
 
 	private static synchronized void sendNewQuestion(PrintWriter out, String question, int clientNum) {
-		addTimeAndLogging(rand.nextInt(5), "Question Sent to Client" + clientNum + " : \"" + question + "\"");
+		addTimeAndLogging(rand.nextInt(5) + 1, "Question Sent to Client" + clientNum + " : \"" + question + "\"");
 		out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
 	}
 
@@ -118,10 +118,10 @@ public class Server {
 
 					if (checkAnswer(question, answer)) {
 						addToTotalSum(answer);
-						addTimeAndLogging(time, "Client" + num + " Correct Answer : " + answer);
+						addTimeAndLogging(time, "Client" + num + " Correct Answer : " + answer + ", calculation time : " + time);
 						sendNewQuestion(out, question, num);
 					} else {
-						addTimeAndLogging(time, "Client" + num + " Incorrect Answer : " + answer);
+						addTimeAndLogging(time, "Client" + num + " Incorrect Answer : " + answer + ", calculation time : " + time);
 						sendOriginQuestion(out, question, num);
 					}
 				}
