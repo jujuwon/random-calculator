@@ -7,13 +7,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Server {
 	private static final AtomicInteger SYSTEM_CLOCK = new AtomicInteger(0);
-	private static final AtomicInteger CONNECTED_SOCKET_COUNT = new AtomicInteger(1);
+	private static final AtomicInteger CONNECTED_SOCKET_COUNT = new AtomicInteger(0);
 	private static int TOTAL_SUM = 0;
 	private static final int MAX_CONNECT_COUNT = 4;
 	private static final int MAX_TIME = 600;
 	private static ServerSocket serverSocket;
 	private static final List<ClientHandler> handlers = new ArrayList<>();
 	private static final String LOG_FILE = "../log/Server.txt";
+	private static final Random rand = new Random();
 
 	public static void main(String[] args) throws IOException {
 		Server.start();
@@ -22,10 +23,10 @@ public class Server {
 	public static void start() throws IOException {
 		serverSocket = new ServerSocket(8080);
 
-		while (CONNECTED_SOCKET_COUNT.intValue() <= MAX_CONNECT_COUNT) {
+		while (CONNECTED_SOCKET_COUNT.intValue() < MAX_CONNECT_COUNT) {
 			Socket clientSocket = serverSocket.accept();
-			handlers.add(new ClientHandler(clientSocket));
 			CONNECTED_SOCKET_COUNT.incrementAndGet();
+			handlers.add(new ClientHandler(clientSocket));
 		}
 
 		// Start system clock thread
@@ -58,12 +59,34 @@ public class Server {
 		TOTAL_SUM += value;
 	}
 
+	private static synchronized void sendNewQuestion(PrintWriter out, String question, int clientNum) {
+		addTimeAndLogging(rand.nextInt(5), "Question Sent to Client" + clientNum + " : \"" + question + "\"");
+		out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
+	}
+
+	private static synchronized void sendOriginQuestion(PrintWriter out, String question, int clientNum) {
+		addTimeAndLogging(0,
+			"Question Sent to Client" + clientNum + " : \"" + question + "\"",
+			"Question \"" + question + "\" is Sent Back to Client" + clientNum);
+		out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
+	}
+
+	private static synchronized void addTimeAndLogging(int time, String... messages) {
+		SYSTEM_CLOCK.addAndGet(time);
+		if (messages != null) {
+			for (String message : messages) {
+				writeToLog(message);
+			}
+		}
+	}
+
 	private static synchronized void writeToLog(String message) {
 		try (FileWriter fw = new FileWriter(LOG_FILE, true);
 			 BufferedWriter bw = new BufferedWriter(fw);
 			 PrintWriter out = new PrintWriter(bw)) {
-			System.out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, message);
-			out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, message);
+			int min = SYSTEM_CLOCK.get() / 60, sec = SYSTEM_CLOCK.get() % 60;
+			out.printf("[%02d:%02d] %s\n", min, sec, message);
+			System.out.printf("[%02d:%02d] %s\n", min, sec, message);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -83,31 +106,24 @@ public class Server {
 		public void run() {
 			try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 				 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
+				String question = generateMathQuestion();
+				out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
+				writeToLog("Question Sent to Client" + num + " : \"" + question + "\"");
 
 				while (SYSTEM_CLOCK.get() < MAX_TIME) {
-					String question = generateMathQuestion();
-					writeToLog("Question Sent to Client" + num + " : \"" + question + "\"");
-					out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
-
-					String answerStr = in.readLine();
-					String[] parts = answerStr.split(" ");
+					String[] parts = in.readLine().split(" ");
 
 					int time = Integer.parseInt(parts[0].trim());
 					int answer = Integer.parseInt(parts[1]);
+
 					if (checkAnswer(question, answer)) {
 						addToTotalSum(answer);
-						SYSTEM_CLOCK.addAndGet(time);
-						writeToLog("Client" + num + " Correct Answer : " + answer);
+						addTimeAndLogging(time, "Client" + num + " Correct Answer : " + answer);
+						sendNewQuestion(out, question, num);
 					} else {
-						SYSTEM_CLOCK.addAndGet(time);
-						writeToLog("Client" + num + " Incorrect Answer : " + answer);
-						writeToLog("Question \"" +  question + "\" is Sent Back to Client" + num);
-						out.printf("[%02d:%02d] %s\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60, question);
+						addTimeAndLogging(time, "Client" + num + " Incorrect Answer : " + answer);
+						sendOriginQuestion(out, question, num);
 					}
-					// Jump before a new problem
-					Random rand = new Random();
-					int term = rand.nextInt(5);
-					SYSTEM_CLOCK.addAndGet(term);
 				}
 				out.printf("TIMEOUT [%02d:%02d]\n", SYSTEM_CLOCK.get() / 60, SYSTEM_CLOCK.get() % 60);
 				writeToLog("Client" + num + " Connection Terminated.");
@@ -152,8 +168,8 @@ public class Server {
 						return false;
 				}
 			} else if (operator1 == '/') {
-				if (num2 == 0){
-					if(answer == -1)
+				if (num2 == 0) {
+					if (answer == -1)
 						return true;
 					return false;
 				}
