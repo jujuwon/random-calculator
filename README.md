@@ -5,7 +5,9 @@
 - `Source code`
   - `server` : 서버 소스코드
   - `client` : 클라이언트 소스코드
-  - `log`    : 작성된 로그 파일
+- `log`
+  - 프로그램 동작 중 작성된 로그가 기록된 파일
+  - 서버 1개와 클라이언트 4개의 텍스트 파일로 구성
 - `AllDefinedLogs.txt`
   - 프로그램에서 정의한 모든 Log message format 명세 및 설명
 - `download.txt`

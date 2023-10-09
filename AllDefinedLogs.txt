@@ -3,14 +3,14 @@ Server Log
 - 클라이언트가 새로 연결될 때 (1 <= N <= 4)
  -> New Socket Connected. Current Number of Connected Sockets : N
 
-- 1분 23초에 클라이언트 1에 "1 * 2 * 3" 이라는 문제를 낼 때
+- 1분 23초에 클라이언트 1에 "1 * 2 * 3" 이라는 문제를 낼 때 (새로운 문제를 낼 때만, 오답에 대한 재전송에는 기록하지 않음)
  -> [01:23] Question Sent to Client1 : "1 * 2 * 3 = ?"
 
-- 1분 23초에 보낸 문제에 대해 클라이언트 1에게서 '6' 이라는 정답이 왔을 때 (random 시간은 2초로 가정)
- -> [01:25] Client1 Correct Answer : 6
+- 1분 23초에 보낸 문제에 대해 클라이언트 1에게서 '6' 이라는 정답이 왔을 때 (client 연산 시간은 2초로 가정)
+ -> [01:25] Client1 Correct Answer : 6, calculation time : 2
 
-- 1분 23초에 보낸 문제에 대해 클라이언트 1에게서 '5' 라는 오답이 왔을 때 (random 시간은 2초로 가정)
- -> [01:25] Client1 Incorrect Answer : 5
+- 1분 23초에 보낸 문제에 대해 클라이언트 1에게서 '5' 라는 오답이 왔을 때 (client 연산 시간은 2초로 가정)
+ -> [01:25] Client1 Incorrect Answer : 5, calculation time : 2
 
 - 1분 25초에 "1 * 2 * 3" 이라는 문제의 오답으로 인해 클라이언트 1에게 재전송을 할 때
  -> [01:25] Question "1 * 2 * 3 = ?" is Sent Back to Client1

@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
 		// Calculation
 		answer = computeAnswer(message);
         itoa(answer, res, 10);
-        next = rand() % 5;
+        next = rand() % 5 + 1;
         itoa(next, sec, 10);
 
 		message[0] = '\0';
