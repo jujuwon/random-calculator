@@ -20,13 +20,14 @@
 
 3. 소스코드 컴파일 방법 명시
  - server : 프로그램 실행 방법에 명시되어 있는대로 실행시키면 됩니다.
+  - Linux 환경에서 run.sh 파일 실행 시 바로 실행됩니다.
+  - gradle 을 이용해 jar 파일로 빌드 후, 빌드된 jar 파일을 실행합니다.
  - client : gcc -o client.exe client.c -lws2_32
 
 4. 프로그램 실행환경 및 실행 방법
  - 프로그램 실행 환경
-   - OS : 윈도우
-   - 서버 : PuTTY
-   - 클라이언트 : cmd OR powershell
+   - 서버 : Ubuntu22.04, Java 11
+   - 클라이언트 : Windows
 
  - 프로그램 실행 방법
   - server : ./server/run.sh
@@ -34,8 +35,11 @@
    ex) ./client.exe 1
 
 5. Error or Additional Message Handling
- - 서버에서는 프로그램 동작 중 발생할 에러에 대해서는 예외처리를 해두었습니다.
-  클라이언트에서는 소켓 연결 과정에서 발생하는 에러는 에러 원인을 출력하고 프로그램을 강제 종료 시키도록 했습니다.
+ - 서버
+  - 멀티쓰레딩 환경에서 전역 시계에 접근할 때, 동시성 문제를 해결하기 위해 AtomicInteger 와 synchronized 를 활용하였습니다.
+  - Logging 을 위한 File IO 시, IOException 이 발생하면 stackTrace 를 출력하도록 예외처리를 하였습니다.
+ - 클라이언트
+  - 소켓 연결 과정에서 에러 발생 시, 에러 원인을 출력하고 프로그램을 강제 종료 시키도록 했습니다.
 
 6. Additional Comments
  - 서버 로그 파일은 기존에 작성되어 있는 내용에 이어서 작성되기 때문에,
