@@ -2,214 +2,206 @@
 [00:00] New Socket Connected. Current Number of Connected Sockets : 2
 [00:00] New Socket Connected. Current Number of Connected Sockets : 3
 [00:00] New Socket Connected. Current Number of Connected Sockets : 4
-[00:00] Question Sent to Client3 : "36 - 61 - 48 = ?"
-[00:00] Question Sent to Client1 : "20 - 0 - 95 = ?"
-[00:00] Question Sent to Client2 : "42 * 59 + 58 = ?"
-[00:00] Question Sent to Client4 : "44 * 93 / 3 = ?"
-[00:01] Client2 Correct Answer : 2536, calculation time : 1
-[00:02] Client3 Correct Answer : -73, calculation time : 1
-[00:03] Question Sent to Client3 : "83 - 80 / 30 = ?"
-[00:04] Client1 Correct Answer : -75, calculation time : 1
-[00:08] Client3 Correct Answer : 81, calculation time : 4
-[00:12] Question Sent to Client3 : "28 + 61 - 82 = ?"
-[00:14] Question Sent to Client2 : "19 / 0 * 80 = ?"
-[00:18] Client4 Correct Answer : 1364, calculation time : 4
-[00:20] Client3 Correct Answer : 7, calculation time : 2
-[00:24] Question Sent to Client3 : "31 - 27 + 100 = ?"
-[00:25] Question Sent to Client1 : "27 * 36 + 17 = ?"
-[00:30] Client3 Correct Answer : 104, calculation time : 5
-[00:35] Question Sent to Client3 : "33 / 36 * 99 = ?"
-[00:38] Question Sent to Client4 : "83 * 88 * 97 = ?"
-[00:40] Client2 Correct Answer : -1, calculation time : 2
-[00:41] Question Sent to Client2 : "38 * 13 - 75 = ?"
-[00:45] Client4 Correct Answer : 708488, calculation time : 4
-[00:47] Client1 Correct Answer : 989, calculation time : 2
-[00:48] Client3 Correct Answer : 0, calculation time : 1
-[00:49] Question Sent to Client1 : "68 / 77 - 96 = ?"
-[00:51] Question Sent to Client4 : "28 - 11 - 50 = ?"
-[00:56] Client2 Correct Answer : 419, calculation time : 5
-[00:59] Client4 Correct Answer : -33, calculation time : 3
-[01:03] Question Sent to Client3 : "98 - 87 + 46 = ?"
-[01:06] Question Sent to Client4 : "94 * 17 - 49 = ?"
-[01:11] Client1 Correct Answer : -96, calculation time : 5
-[01:16] Question Sent to Client2 : "14 / 89 + 90 = ?"
-[01:19] Question Sent to Client1 : "63 / 45 * 68 = ?"
-[01:20] Client3 Correct Answer : 57, calculation time : 1
-[01:21] Client2 Correct Answer : 90, calculation time : 1
-[01:26] Client4 Correct Answer : 1549, calculation time : 5
-[01:30] Question Sent to Client2 : "99 - 17 - 70 = ?"
-[01:31] Client1 Correct Answer : 68, calculation time : 1
-[01:33] Question Sent to Client3 : "70 + 30 - 72 = ?"
-[01:35] Question Sent to Client1 : "55 - 79 / 41 = ?"
-[01:40] Client2 Correct Answer : 12, calculation time : 5
-[01:44] Question Sent to Client4 : "67 / 53 / 41 = ?"
-[01:45] Question Sent to Client2 : "93 - 89 * 90 = ?"
-[01:50] Client1 Correct Answer : 54, calculation time : 5
-[01:52] Question Sent to Client1 : "83 - 80 - 86 = ?"
-[01:57] Client4 Correct Answer : 0, calculation time : 5
-[02:01] Client2 Correct Answer : -7917, calculation time : 4
-[02:06] Client3 Correct Answer : 28, calculation time : 5
-[02:09] Question Sent to Client3 : "45 + 99 + 75 = ?"
-[02:11] Question Sent to Client2 : "54 * 82 - 31 = ?"
-[02:15] Question Sent to Client4 : "54 + 69 - 11 = ?"
-[02:18] Client2 Correct Answer : 4397, calculation time : 3
-[02:21] Client4 Correct Answer : 112, calculation time : 3
-[02:22] Question Sent to Client4 : "24 * 100 / 4 = ?"
-[02:26] Client1 Correct Answer : -83, calculation time : 4
-[02:29] Client3 Correct Answer : 219, calculation time : 3
-[02:31] Question Sent to Client1 : "0 / 2 - 74 = ?"
-[02:33] Client4 Correct Answer : 600, calculation time : 2
-[02:35] Question Sent to Client4 : "63 + 92 - 77 = ?"
-[02:40] Question Sent to Client2 : "43 / 42 / 72 = ?"
-[02:41] Client4 Correct Answer : 78, calculation time : 1
-[02:43] Question Sent to Client4 : "32 + 58 - 86 = ?"
-[02:48] Client4 Correct Answer : 4, calculation time : 5
-[02:53] Question Sent to Client4 : "41 - 59 + 26 = ?"
-[02:56] Client1 Correct Answer : -74, calculation time : 3
-[02:58] Question Sent to Client3 : "44 / 2 / 57 = ?"
-[03:01] Question Sent to Client1 : "13 * 2 + 20 = ?"
-[03:04] Client4 Correct Answer : 8, calculation time : 3
-[03:06] Question Sent to Client4 : "85 / 2 - 73 = ?"
-[03:11] Client2 Correct Answer : 0, calculation time : 5
-[03:13] Question Sent to Client2 : "41 + 5 * 39 = ?"
-[03:15] Client3 Correct Answer : 0, calculation time : 2
-[03:20] Client1 Correct Answer : 46, calculation time : 5
-[03:23] Question Sent to Client1 : "75 * 5 * 14 = ?"
-[03:27] Question Sent to Client3 : "83 + 53 * 73 = ?"
-[03:32] Client2 Correct Answer : 236, calculation time : 5
-[03:34] Client4 Correct Answer : -31, calculation time : 2
-[03:37] Question Sent to Client4 : "41 - 97 + 65 = ?"
-[03:38] Question Sent to Client2 : "75 / 81 / 40 = ?"
-[03:43] Client1 Correct Answer : 5250, calculation time : 5
-[03:45] Client2 Correct Answer : 0, calculation time : 2
-[03:46] Question Sent to Client2 : "68 - 73 * 92 = ?"
-[03:47] Client3 Correct Answer : 3952, calculation time : 1
-[03:51] Client2 Correct Answer : -6648, calculation time : 4
-[03:54] Question Sent to Client2 : "48 / 92 * 61 = ?"
-[03:58] Question Sent to Client1 : "93 * 94 + 96 = ?"
-[03:59] Client2 Correct Answer : 0, calculation time : 1
-[04:03] Question Sent to Client2 : "93 * 99 - 42 = ?"
-[04:06] Client4 Correct Answer : 9, calculation time : 3
-[04:09] Client2 Correct Answer : 9165, calculation time : 3
-[04:10] Question Sent to Client2 : "89 / 49 * 32 = ?"
-[04:12] Question Sent to Client3 : "19 * 61 + 68 = ?"
-[04:17] Client2 Correct Answer : 32, calculation time : 5
-[04:20] Question Sent to Client2 : "68 - 72 - 72 = ?"
-[04:23] Question Sent to Client4 : "96 * 71 * 67 = ?"
-[04:27] Client2 Correct Answer : -76, calculation time : 4
-[04:32] Client4 Correct Answer : 456672, calculation time : 5
-[04:33] Question Sent to Client4 : "9 + 100 + 86 = ?"
-[04:35] Client1 Correct Answer : 8838, calculation time : 2
-[04:40] Question Sent to Client1 : "66 - 42 - 25 = ?"
-[04:45] Client3 Correct Answer : 1227, calculation time : 5
-[04:49] Client1 Correct Answer : -1, calculation time : 4
-[04:53] Question Sent to Client1 : "26 - 45 - 47 = ?"
-[04:56] Question Sent to Client2 : "72 * 55 * 71 = ?"
-[04:57] Client1 Correct Answer : -66, calculation time : 1
-[05:02] Question Sent to Client1 : "44 / 21 + 87 = ?"
-[05:04] Question Sent to Client3 : "89 - 27 * 10 = ?"
-[05:08] Client4 Correct Answer : 195, calculation time : 4
-[05:10] Question Sent to Client4 : "87 / 92 - 59 = ?"
-[05:14] Client4 Correct Answer : -59, calculation time : 4
-[05:18] Client3 Correct Answer : -181, calculation time : 4
-[05:23] Question Sent to Client3 : "20 - 76 + 4 = ?"
-[05:26] Client1 Correct Answer : 89, calculation time : 3
-[05:28] Question Sent to Client1 : "87 + 3 * 48 = ?"
-[05:29] Question Sent to Client4 : "36 * 74 / 40 = ?"
-[05:34] Client1 Correct Answer : 231, calculation time : 5
-[05:38] Client2 Correct Answer : 281160, calculation time : 4
-[05:42] Client3 Correct Answer : -52, calculation time : 4
-[05:43] Question Sent to Client3 : "54 / 6 - 51 = ?"
-[05:45] Question Sent to Client2 : "72 - 28 / 35 = ?"
-[05:50] Question Sent to Client1 : "7 - 35 - 16 = ?"
-[05:53] Client2 Correct Answer : 72, calculation time : 3
-[05:56] Question Sent to Client2 : "86 * 6 * 47 = ?"
-[05:57] Client4 Correct Answer : 66, calculation time : 1
-[05:58] Client3 Correct Answer : -42, calculation time : 1
-[06:03] Question Sent to Client3 : "30 * 89 - 98 = ?"
-[06:06] Question Sent to Client4 : "71 / 4 * 64 = ?"
-[06:09] Client2 Correct Answer : 24252, calculation time : 3
-[06:14] Question Sent to Client2 : "26 - 60 * 10 = ?"
-[06:18] Client1 Correct Answer : -44, calculation time : 4
-[06:23] Client2 Correct Answer : -574, calculation time : 5
-[06:26] Question Sent to Client2 : "89 + 38 * 59 = ?"
-[06:31] Client3 Correct Answer : 2572, calculation time : 5
-[06:33] Question Sent to Client3 : "43 / 33 - 41 = ?"
-[06:38] Question Sent to Client1 : "24 / 45 + 19 = ?"
-[06:39] Client4 Correct Answer : 1088, calculation time : 1
-[06:43] Client1 Correct Answer : 19, calculation time : 4
-[06:46] Question Sent to Client1 : "25 + 62 - 61 = ?"
-[06:48] Client3 Correct Answer : -40, calculation time : 2
-[06:51] Question Sent to Client3 : "91 - 66 * 58 = ?"
-[06:52] Question Sent to Client4 : "84 - 94 + 58 = ?"
-[06:55] Client3 Correct Answer : -3737, calculation time : 3
-[07:00] Question Sent to Client3 : "62 + 66 - 74 = ?"
-[07:03] Client1 Correct Answer : 26, calculation time : 3
-[07:05] Question Sent to Client1 : "26 * 88 * 84 = ?"
-[07:08] Client2 Correct Answer : 2331, calculation time : 3
-[07:11] Client1 Correct Answer : 192192, calculation time : 3
-[07:12] Question Sent to Client1 : "97 - 23 + 17 = ?"
-[07:15] Client3 Correct Answer : 54, calculation time : 3
-[07:20] Question Sent to Client3 : "34 * 47 * 77 = ?"
-[07:25] Client1 Correct Answer : 91, calculation time : 5
-[07:26] Question Sent to Client1 : "95 * 61 * 97 = ?"
-[07:31] Question Sent to Client2 : "68 * 50 - 87 = ?"
-[07:34] Client1 Correct Answer : 562115, calculation time : 3
-[07:39] Question Sent to Client1 : "19 - 12 + 71 = ?"
-[07:42] Client4 Correct Answer : 48, calculation time : 3
-[07:45] Question Sent to Client4 : "83 + 30 * 91 = ?"
-[07:47] Client2 Correct Answer : 3313, calculation time : 2
-[07:50] Question Sent to Client2 : "73 - 13 / 2 = ?"
-[07:52] Client3 Correct Answer : 123046, calculation time : 2
-[07:55] Client2 Correct Answer : 67, calculation time : 3
-[07:58] Client4 Correct Answer : 2813, calculation time : 3
-[08:00] Client1 Correct Answer : 78, calculation time : 2
-[08:01] Question Sent to Client4 : "38 - 99 + 94 = ?"
-[08:02] Question Sent to Client2 : "48 + 38 - 48 = ?"
-[08:04] Question Sent to Client3 : "1 / 49 + 31 = ?"
-[08:09] Client2 Correct Answer : 38, calculation time : 5
-[08:12] Client4 Correct Answer : 33, calculation time : 3
-[08:13] Question Sent to Client1 : "81 / 99 + 72 = ?"
-[08:16] Question Sent to Client4 : "27 + 68 - 83 = ?"
-[08:19] Question Sent to Client2 : "22 - 40 + 8 = ?"
-[08:22] Client1 Correct Answer : 72, calculation time : 3
-[08:26] Client2 Correct Answer : -10, calculation time : 4
-[08:27] Client3 Correct Answer : 31, calculation time : 1
-[08:32] Question Sent to Client3 : "41 + 35 * 32 = ?"
-[08:33] Client4 Correct Answer : 12, calculation time : 1
-[08:38] Client3 Correct Answer : 1161, calculation time : 5
-[08:43] Question Sent to Client2 : "75 - 16 - 52 = ?"
-[08:44] Question Sent to Client1 : "61 - 10 + 100 = ?"
-[08:48] Question Sent to Client3 : "45 * 23 + 51 = ?"
-[08:50] Question Sent to Client4 : "84 + 71 * 40 = ?"
-[08:52] Client3 Correct Answer : 1086, calculation time : 2
-[08:53] Question Sent to Client3 : "30 + 54 + 85 = ?"
-[08:58] Client1 Correct Answer : 151, calculation time : 5
-[09:01] Question Sent to Client1 : "10 + 25 / 52 = ?"
-[09:06] Client2 Correct Answer : 7, calculation time : 5
-[09:10] Client1 Correct Answer : 10, calculation time : 4
-[09:13] Question Sent to Client1 : "23 / 35 / 44 = ?"
-[09:16] Client4 Correct Answer : 2924, calculation time : 3
-[09:19] Client3 Correct Answer : 169, calculation time : 3
-[09:21] Question Sent to Client2 : "57 * 8 * 78 = ?"
-[09:25] Question Sent to Client3 : "2 * 91 / 100 = ?"
-[09:30] Question Sent to Client4 : "14 * 15 * 0 = ?"
-[09:32] Client3 Correct Answer : 1, calculation time : 2
-[09:34] Question Sent to Client3 : "98 - 80 + 80 = ?"
-[09:36] Client2 Correct Answer : 35568, calculation time : 2
-[09:40] Question Sent to Client2 : "58 - 83 + 95 = ?"
-[09:45] Client1 Correct Answer : 0, calculation time : 5
-[09:48] Client2 Correct Answer : 70, calculation time : 3
-[09:53] Question Sent to Client2 : "2 - 83 + 23 = ?"
-[09:56] Client4 Correct Answer : 0, calculation time : 3
-[10:01] Question Sent to Client4 : "38 - 89 / 25 = ?"
-[10:03] Question Sent to Client1 : "63 / 4 - 84 = ?"
-[10:03] Client1 Connection Terminated.
-[10:03] Client4 Connection Terminated.
-[10:03] Total Sum : 2424069, Server Shutdown.
-[10:08] Client3 Correct Answer : 98, calculation time : 5
-[10:12] Question Sent to Client3 : "78 + 61 + 5 = ?"
-[10:14] Client2 Correct Answer : -58, calculation time : 2
-[10:14] Client3 Connection Terminated.
-[10:18] Question Sent to Client2 : "0 + 4 / 62 = ?"
-[10:18] Client2 Connection Terminated.
+[00:00] Question Sent to Client2 : "98 * 87 + 75 = ?"
+[00:00] Question Sent to Client3 : "65 * 22 + 17 = ?"
+[00:00] Question Sent to Client1 : "53 / 58 * 59 = ?"
+[00:00] Question Sent to Client4 : "12 * 36 * 33 = ?"
+[00:05] Client4 Correct Answer : 14256, calculation time : 5
+[00:10] Client3 Correct Answer : 1447, calculation time : 5
+[00:13] Question Sent to Client3 : "37 - 57 - 8 = ?"
+[00:15] Client2 Correct Answer : 8601, calculation time : 2
+[00:20] Question Sent to Client2 : "81 - 22 * 5 = ?"
+[00:24] Client1 Correct Answer : 0, calculation time : 4
+[00:26] Question Sent to Client1 : "10 + 3 - 11 = ?"
+[00:30] Question Sent to Client4 : "59 + 65 / 58 = ?"
+[00:33] Client3 Correct Answer : -28, calculation time : 3
+[00:34] Question Sent to Client3 : "26 / 85 + 49 = ?"
+[00:38] Client2 Correct Answer : -29, calculation time : 4
+[00:42] Question Sent to Client2 : "47 + 2 * 26 = ?"
+[00:46] Client1 Correct Answer : 2, calculation time : 4
+[00:48] Question Sent to Client1 : "38 * 26 * 13 = ?"
+[00:51] Client4 Correct Answer : 60, calculation time : 3
+[00:55] Question Sent to Client4 : "97 - 37 - 46 = ?"
+[00:56] Client4 Correct Answer : 14, calculation time : 1
+[00:57] Question Sent to Client4 : "51 - 21 + 94 = ?"
+[00:58] Client3 Correct Answer : 49, calculation time : 1
+[01:03] Question Sent to Client3 : "24 * 70 * 0 = ?"
+[01:04] Client1 Correct Answer : 12844, calculation time : 1
+[01:06] Question Sent to Client1 : "15 - 58 * 60 = ?"
+[01:09] Client4 Correct Answer : 124, calculation time : 3
+[01:11] Question Sent to Client4 : "59 + 36 + 8 = ?"
+[01:16] Client2 Correct Answer : 99, calculation time : 5
+[01:20] Question Sent to Client2 : "39 + 79 * 82 = ?"
+[01:25] Client4 Correct Answer : 103, calculation time : 5
+[01:29] Question Sent to Client4 : "23 * 12 * 67 = ?"
+[01:32] Client3 Correct Answer : 0, calculation time : 3
+[01:33] Question Sent to Client3 : "95 / 47 / 87 = ?"
+[01:37] Client1 Correct Answer : -3465, calculation time : 4
+[01:40] Question Sent to Client1 : "68 - 94 / 49 = ?"
+[01:44] Client2 Correct Answer : 6517, calculation time : 4
+[01:49] Question Sent to Client2 : "17 - 88 / 91 = ?"
+[01:52] Client4 Correct Answer : 18492, calculation time : 3
+[01:55] Question Sent to Client4 : "65 + 34 - 31 = ?"
+[01:56] Client1 Correct Answer : 67, calculation time : 1
+[01:59] Question Sent to Client1 : "3 + 73 * 18 = ?"
+[02:04] Client3 Correct Answer : 0, calculation time : 5
+[02:08] Question Sent to Client3 : "74 * 22 - 70 = ?"
+[02:13] Client2 Correct Answer : 17, calculation time : 5
+[02:16] Question Sent to Client2 : "30 / 81 * 17 = ?"
+[02:19] Client4 Correct Answer : 68, calculation time : 3
+[02:22] Question Sent to Client4 : "94 + 53 * 45 = ?"
+[02:26] Client1 Correct Answer : 1317, calculation time : 4
+[02:31] Question Sent to Client1 : "15 + 39 - 57 = ?"
+[02:34] Client3 Correct Answer : 1558, calculation time : 3
+[02:35] Question Sent to Client3 : "14 - 59 * 79 = ?"
+[02:36] Client2 Correct Answer : 0, calculation time : 1
+[02:39] Question Sent to Client2 : "71 + 25 + 75 = ?"
+[02:43] Client4 Correct Answer : 2479, calculation time : 4
+[02:44] Question Sent to Client4 : "16 * 73 * 66 = ?"
+[02:47] Client1 Correct Answer : -3, calculation time : 3
+[02:50] Question Sent to Client1 : "99 - 36 * 27 = ?"
+[02:53] Client3 Correct Answer : -4647, calculation time : 3
+[02:58] Question Sent to Client3 : "46 + 28 - 1 = ?"
+[03:03] Client2 Correct Answer : 171, calculation time : 5
+[03:06] Question Sent to Client2 : "3 - 46 + 14 = ?"
+[03:09] Client4 Correct Answer : 77088, calculation time : 3
+[03:11] Question Sent to Client4 : "15 - 24 * 84 = ?"
+[03:14] Client1 Correct Answer : -873, calculation time : 3
+[03:17] Question Sent to Client1 : "79 + 89 + 79 = ?"
+[03:21] Client3 Correct Answer : 73, calculation time : 4
+[03:25] Question Sent to Client3 : "50 / 7 / 50 = ?"
+[03:26] Client2 Correct Answer : -29, calculation time : 1
+[03:28] Question Sent to Client2 : "38 * 99 - 29 = ?"
+[03:33] Client4 Correct Answer : -2001, calculation time : 5
+[03:34] Question Sent to Client4 : "60 - 36 + 90 = ?"
+[03:37] Client1 Correct Answer : 247, calculation time : 3
+[03:40] Question Sent to Client1 : "41 - 42 * 27 = ?"
+[03:42] Client2 Correct Answer : 3733, calculation time : 2
+[03:47] Question Sent to Client2 : "25 * 23 + 8 = ?"
+[03:51] Client4 Correct Answer : 114, calculation time : 4
+[03:52] Question Sent to Client4 : "77 - 4 - 10 = ?"
+[03:55] Client1 Correct Answer : -1093, calculation time : 3
+[04:00] Question Sent to Client1 : "2 / 78 + 41 = ?"
+[04:03] Client3 Correct Answer : 0, calculation time : 3
+[04:08] Question Sent to Client3 : "65 * 1 + 54 = ?"
+[04:13] Client2 Correct Answer : 583, calculation time : 5
+[04:18] Question Sent to Client2 : "30 * 75 * 97 = ?"
+[04:23] Client4 Correct Answer : 63, calculation time : 5
+[04:26] Question Sent to Client4 : "97 + 89 - 54 = ?"
+[04:31] Client1 Correct Answer : 41, calculation time : 5
+[04:33] Question Sent to Client1 : "43 / 19 / 12 = ?"
+[04:38] Client3 Correct Answer : 119, calculation time : 5
+[04:43] Question Sent to Client3 : "16 + 76 / 15 = ?"
+[04:45] Client2 Correct Answer : 218250, calculation time : 2
+[04:46] Question Sent to Client2 : "48 * 74 - 16 = ?"
+[04:48] Client4 Correct Answer : 132, calculation time : 2
+[04:51] Question Sent to Client4 : "57 / 16 / 69 = ?"
+[04:53] Client1 Correct Answer : 0, calculation time : 2
+[04:54] Question Sent to Client1 : "66 / 41 / 40 = ?"
+[04:58] Client3 Correct Answer : 21, calculation time : 4
+[05:02] Question Sent to Client3 : "4 + 11 * 47 = ?"
+[05:03] Client2 Correct Answer : 3536, calculation time : 1
+[05:08] Question Sent to Client2 : "24 * 32 - 92 = ?"
+[05:11] Client1 Correct Answer : 0, calculation time : 3
+[05:13] Question Sent to Client1 : "7 * 51 + 73 = ?"
+[05:18] Client3 Correct Answer : 521, calculation time : 5
+[05:21] Question Sent to Client3 : "57 / 8 * 0 = ?"
+[05:23] Client4 Correct Answer : 0, calculation time : 2
+[05:24] Question Sent to Client4 : "45 / 48 / 60 = ?"
+[05:25] Client2 Correct Answer : 676, calculation time : 1
+[05:26] Question Sent to Client2 : "93 * 76 / 38 = ?"
+[05:29] Client1 Correct Answer : 430, calculation time : 3
+[05:31] Question Sent to Client1 : "69 + 24 * 17 = ?"
+[05:33] Client4 Correct Answer : 0, calculation time : 2
+[05:36] Question Sent to Client4 : "65 - 52 * 79 = ?"
+[05:38] Client3 Correct Answer : 0, calculation time : 2
+[05:42] Question Sent to Client3 : "47 / 29 - 41 = ?"
+[05:43] Client1 Correct Answer : 477, calculation time : 1
+[05:48] Question Sent to Client1 : "61 / 84 * 73 = ?"
+[05:52] Client2 Correct Answer : 186, calculation time : 4
+[05:57] Question Sent to Client2 : "96 + 85 + 3 = ?"
+[06:00] Client4 Correct Answer : -4043, calculation time : 3
+[06:01] Question Sent to Client4 : "65 / 33 - 12 = ?"
+[06:03] Client3 Correct Answer : -40, calculation time : 2
+[06:07] Question Sent to Client3 : "59 * 3 / 92 = ?"
+[06:10] Client4 Correct Answer : -11, calculation time : 3
+[06:15] Question Sent to Client4 : "74 * 100 * 15 = ?"
+[06:17] Client3 Correct Answer : 1, calculation time : 2
+[06:21] Question Sent to Client3 : "43 - 83 + 75 = ?"
+[06:24] Client2 Correct Answer : 184, calculation time : 3
+[06:26] Question Sent to Client2 : "41 * 62 * 24 = ?"
+[06:31] Client1 Correct Answer : 0, calculation time : 5
+[06:36] Question Sent to Client1 : "41 * 50 / 5 = ?"
+[06:38] Client4 Correct Answer : 111000, calculation time : 2
+[06:43] Question Sent to Client4 : "57 - 98 - 75 = ?"
+[06:44] Client4 Correct Answer : -116, calculation time : 1
+[06:45] Question Sent to Client4 : "29 * 83 / 44 = ?"
+[06:48] Client1 Correct Answer : 410, calculation time : 3
+[06:52] Question Sent to Client1 : "15 - 40 * 33 = ?"
+[06:57] Client2 Correct Answer : 61008, calculation time : 5
+[07:01] Question Sent to Client2 : "56 * 95 + 9 = ?"
+[07:04] Client3 Correct Answer : 35, calculation time : 3
+[07:09] Question Sent to Client3 : "43 / 39 + 0 = ?"
+[07:13] Client4 Correct Answer : 54, calculation time : 4
+[07:14] Question Sent to Client4 : "77 / 18 / 5 = ?"
+[07:19] Client1 Correct Answer : -1305, calculation time : 5
+[07:22] Question Sent to Client1 : "12 - 8 + 30 = ?"
+[07:25] Client2 Correct Answer : 5329, calculation time : 3
+[07:28] Question Sent to Client2 : "72 / 26 / 72 = ?"
+[07:31] Client3 Correct Answer : 1, calculation time : 3
+[07:33] Question Sent to Client3 : "62 * 84 / 68 = ?"
+[07:38] Client1 Correct Answer : 34, calculation time : 5
+[07:40] Question Sent to Client1 : "2 * 48 / 22 = ?"
+[07:42] Client3 Correct Answer : 76, calculation time : 2
+[07:44] Question Sent to Client3 : "62 - 52 + 72 = ?"
+[07:46] Client2 Correct Answer : 0, calculation time : 2
+[07:50] Question Sent to Client2 : "74 * 90 / 9 = ?"
+[07:55] Client4 Correct Answer : 0, calculation time : 5
+[07:59] Question Sent to Client4 : "12 + 25 / 95 = ?"
+[08:02] Client1 Correct Answer : 4, calculation time : 3
+[08:03] Question Sent to Client1 : "48 + 4 - 67 = ?"
+[08:04] Client3 Correct Answer : 82, calculation time : 1
+[08:08] Question Sent to Client3 : "13 * 0 * 48 = ?"
+[08:12] Client4 Correct Answer : 12, calculation time : 4
+[08:13] Question Sent to Client4 : "43 + 97 - 70 = ?"
+[08:14] Client2 Correct Answer : 740, calculation time : 1
+[08:16] Question Sent to Client2 : "52 / 23 / 80 = ?"
+[08:20] Client4 Correct Answer : 70, calculation time : 4
+[08:23] Question Sent to Client4 : "53 * 51 / 91 = ?"
+[08:25] Client2 Correct Answer : 0, calculation time : 2
+[08:27] Question Sent to Client2 : "52 * 94 + 66 = ?"
+[08:29] Client1 Correct Answer : -15, calculation time : 2
+[08:30] Question Sent to Client1 : "69 / 19 - 87 = ?"
+[08:34] Client3 Correct Answer : 0, calculation time : 4
+[08:38] Question Sent to Client3 : "55 - 67 * 38 = ?"
+[08:39] Client4 Correct Answer : 29, calculation time : 1
+[08:44] Question Sent to Client4 : "96 * 45 - 34 = ?"
+[08:47] Client2 Correct Answer : 4954, calculation time : 3
+[08:52] Question Sent to Client2 : "78 - 24 + 39 = ?"
+[08:57] Client3 Correct Answer : -2491, calculation time : 5
+[08:58] Question Sent to Client3 : "10 + 47 - 96 = ?"
+[09:03] Client1 Correct Answer : -84, calculation time : 5
+[09:08] Question Sent to Client1 : "7 * 61 / 59 = ?"
+[09:09] Client4 Correct Answer : 4286, calculation time : 1
+[09:11] Question Sent to Client4 : "41 - 13 / 15 = ?"
+[09:14] Client1 Correct Answer : 7, calculation time : 3
+[09:16] Question Sent to Client1 : "41 * 41 - 75 = ?"
+[09:19] Client2 Correct Answer : 93, calculation time : 3
+[09:23] Question Sent to Client2 : "2 + 47 + 36 = ?"
+[09:27] Client3 Correct Answer : -39, calculation time : 4
+[09:31] Question Sent to Client3 : "45 / 92 - 62 = ?"
+[09:34] Client4 Correct Answer : 41, calculation time : 3
+[09:39] Question Sent to Client4 : "82 - 6 + 40 = ?"
+[09:41] Client1 Correct Answer : 1606, calculation time : 2
+[09:45] Question Sent to Client1 : "3 - 95 - 40 = ?"
+[09:47] Client2 Correct Answer : 85, calculation time : 2
+[09:48] Question Sent to Client2 : "69 * 6 * 30 = ?"
+[09:50] Client4 Correct Answer : 116, calculation time : 2
+[09:53] Question Sent to Client4 : "2 * 51 - 52 = ?"
+[09:57] Client3 Correct Answer : -62, calculation time : 4
+[10:02] Question Sent to Client3 : "21 / 48 * 47 = ?"
+[10:02] Total Sum : 544458, Server Shutdown.
+[10:02] Client3 Connection Terminated.
+[10:02] Client1 Connection Terminated.
+[10:02] Client4 Connection Terminated.
+[10:02] Client2 Connection Terminated.

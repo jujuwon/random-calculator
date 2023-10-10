@@ -1,50 +1,58 @@
 [00:00] Client4 Connected.
-[00:00] Question : "44 * 93 / 3 = ?"
-[00:04] Send Answer : 1364
-[00:38] Question : "83 * 88 * 97 = ?"
-[00:42] Send Answer : 708488
-[00:51] Question : "28 - 11 - 50 = ?"
-[00:54] Send Answer : -33
-[01:06] Question : "94 * 17 - 49 = ?"
-[01:11] Send Answer : 1549
-[01:44] Question : "67 / 53 / 41 = ?"
-[01:49] Send Answer : 0
-[02:15] Question : "54 + 69 - 11 = ?"
-[02:18] Send Answer : 112
-[02:22] Question : "24 * 100 / 4 = ?"
-[02:24] Send Answer : 600
-[02:35] Question : "63 + 92 - 77 = ?"
-[02:36] Send Answer : 78
-[02:43] Question : "32 + 58 - 86 = ?"
-[02:48] Send Answer : 4
-[02:53] Question : "41 - 59 + 26 = ?"
-[02:56] Send Answer : 8
-[03:06] Question : "85 / 2 - 73 = ?"
-[03:08] Send Answer : -31
-[03:37] Question : "41 - 97 + 65 = ?"
-[03:40] Send Answer : 9
-[04:23] Question : "96 * 71 * 67 = ?"
-[04:28] Send Answer : 456672
-[04:33] Question : "9 + 100 + 86 = ?"
-[04:37] Send Answer : 195
-[05:10] Question : "87 / 92 - 59 = ?"
-[05:14] Send Answer : -59
-[05:29] Question : "36 * 74 / 40 = ?"
-[05:30] Send Answer : 66
-[06:06] Question : "71 / 4 * 64 = ?"
-[06:07] Send Answer : 1088
-[06:52] Question : "84 - 94 + 58 = ?"
-[06:55] Send Answer : 48
-[07:45] Question : "83 + 30 * 91 = ?"
-[07:48] Send Answer : 2813
-[08:01] Question : "38 - 99 + 94 = ?"
-[08:04] Send Answer : 33
-[08:16] Question : "27 + 68 - 83 = ?"
-[08:17] Send Answer : 12
-[08:50] Question : "84 + 71 * 40 = ?"
-[08:53] Send Answer : 2924
-[09:30] Question : "14 * 15 * 0 = ?"
-[09:33] Send Answer : 0
-[10:01] Question : "38 - 89 / 25 = ?"
-[10:05] Send Answer : 35
-[10:01] Client4 Terminated.
+[00:00] Question : "12 * 36 * 33 = ?"
+[00:05] Send Answer : 14256
+[00:30] Question : "59 + 65 / 58 = ?"
+[00:33] Send Answer : 60
+[00:55] Question : "97 - 37 - 46 = ?"
+[00:56] Send Answer : 14
+[00:57] Question : "51 - 21 + 94 = ?"
+[01:00] Send Answer : 124
+[01:11] Question : "59 + 36 + 8 = ?"
+[01:16] Send Answer : 103
+[01:29] Question : "23 * 12 * 67 = ?"
+[01:32] Send Answer : 18492
+[01:55] Question : "65 + 34 - 31 = ?"
+[01:58] Send Answer : 68
+[02:22] Question : "94 + 53 * 45 = ?"
+[02:26] Send Answer : 2479
+[02:44] Question : "16 * 73 * 66 = ?"
+[02:47] Send Answer : 77088
+[03:11] Question : "15 - 24 * 84 = ?"
+[03:16] Send Answer : -2001
+[03:34] Question : "60 - 36 + 90 = ?"
+[03:38] Send Answer : 114
+[03:52] Question : "77 - 4 - 10 = ?"
+[03:57] Send Answer : 63
+[04:26] Question : "97 + 89 - 54 = ?"
+[04:28] Send Answer : 132
+[04:51] Question : "57 / 16 / 69 = ?"
+[04:53] Send Answer : 0
+[05:24] Question : "45 / 48 / 60 = ?"
+[05:26] Send Answer : 0
+[05:36] Question : "65 - 52 * 79 = ?"
+[05:39] Send Answer : -4043
+[06:01] Question : "65 / 33 - 12 = ?"
+[06:04] Send Answer : -11
+[06:15] Question : "74 * 100 * 15 = ?"
+[06:17] Send Answer : 111000
+[06:43] Question : "57 - 98 - 75 = ?"
+[06:44] Send Answer : -116
+[06:45] Question : "29 * 83 / 44 = ?"
+[06:49] Send Answer : 54
+[07:14] Question : "77 / 18 / 5 = ?"
+[07:19] Send Answer : 0
+[07:59] Question : "12 + 25 / 95 = ?"
+[08:03] Send Answer : 12
+[08:13] Question : "43 + 97 - 70 = ?"
+[08:17] Send Answer : 70
+[08:23] Question : "53 * 51 / 91 = ?"
+[08:24] Send Answer : 29
+[08:44] Question : "96 * 45 - 34 = ?"
+[08:45] Send Answer : 4286
+[09:11] Question : "41 - 13 / 15 = ?"
+[09:14] Send Answer : 41
+[09:39] Question : "82 - 6 + 40 = ?"
+[09:41] Send Answer : 116
+[09:53] Question : "2 * 51 - 52 = ?"
+[09:57] Send Answer : 50
+[10:02] Client4 Terminated.
