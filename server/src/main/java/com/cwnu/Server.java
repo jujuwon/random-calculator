@@ -112,6 +112,10 @@ public class Server {
 					int time = Integer.parseInt(parts[0].trim());
 					int answer = Integer.parseInt(parts[1]);
 
+					if (SYSTEM_CLOCK.get() >= MAX_TIME) {
+						break;
+					}
+
 					if (checkAnswer(question, answer)) {
 						addToTotalSum(answer);
 						addTimeAndLogging(time, "Client" + num + " Correct Answer : " + answer + ", calculation time : " + time);
