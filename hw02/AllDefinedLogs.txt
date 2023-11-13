@@ -1,6 +1,18 @@
 1. Server
+ - 0초에 클라이언트 1이 연결되었을 때
+  -> [0] Client 1 connected.
+ 
+ - 0초에 Round 1이 시작될 때
+  -> [0] Round 1 started.
 
+  - 
 
 
 
 2. Client
+ - 서버와 연결되었을 때
+  ->
+
+ - 클라이언트 간 연결되었을 때까지
+  ->
+

@@ -1,48 +1,61 @@
 import java.net.*;
 import java.io.*;
 
-public class Client3 {
-    private static final int PORT = 8000, PORT13 = 8013, PORT23 = 8023, PORT34 = 8034;
-    private static ServerSocket serverSocket34;
-    //private static final String LOG_FILE = "../log/client3.txt";
-    private static Socket clientSocket, socket13, socket23, socket34;
-    private static PrintWriter out, out13, out23, out34;
-    private static BufferedReader in, in13, in23, in34;
+public class Client2 {
+    private static final int PORT = 8000, PORT12 = 8012, PORT23 = 8023, PORT24 = 8024;
+    private static ServerSocket serverSocket23, serverSocket24;
+    private static final String LOG_FILE = "../log/client2.txt";
+    private static Socket clientSocket, socket12, socket23, socket24;
+    private static PrintWriter out;
+    private static BufferedReader in;
     private static int[][] matrix = new int[10][10];
     private static int round = 1;
-    private static int cnt13, cnt23, cnt34;
     private static String[] message1, message2;
 
     public static void main(String[] args) throws IOException {
         socketConnection();
+        
+        while(round <= 100) {
+            if(in.readLine().equals("[ALERT] ROUND START"))
+                setMatrix();
+            
+            ClientThread client1 = new ClientThread(socket12, 1, socket23, 3);
+            ClientThread client2 = new ClientThread(socket12, 1, socket24, 4);
+            ClientThread client3 = new ClientThread(socket23, 3, socket24, 4);
+            
+            Thread thread1 = new Thread(client1);
+            Thread thread2 = new Thread(client2);
+            Thread thread3 = new Thread(client3);
 
-        init();
-        while(cnt34 < 50) {
-            String[] msg1 = in13.readLine().split(" ");
-            String[] msg2 = in23.readLine().split(" ");
-            cnt34++;
-            out.println(msg1[0] + " " + msg2[0] + " " + calculate(msg1, msg2));
-            System.out.println(msg1[0] + " " + msg2[0] + " " + calculate(msg1, msg2));
+            thread1.start();
+            thread2.start();
+            thread3.start();
+
+            try{
+                thread1.join();
+                thread2.join();
+                thread3.join();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                e.printStackTrace();
+            }
+            out.println("[END]");
+            round++;
+            in.readLine();
         }
-        out.println("[END]");
         closeSocket();
     }
 
     private static void socketConnection() throws IOException {
         clientSocket = new Socket("127.0.0.1", PORT);
-        serverSocket34 = new ServerSocket(PORT34);
-        socket34 = serverSocket34.accept();
-        socket13 = new Socket("127.0.0.1", PORT13);
-        socket23 = new Socket("127.0.0.1", PORT23);
+        serverSocket23 = new ServerSocket(PORT23);
+        serverSocket24 = new ServerSocket(PORT24);
+        socket23 = serverSocket23.accept();
+        socket24 = serverSocket24.accept();
+        socket12 = new Socket("127.0.0.1", PORT12);
 
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        out13 = new PrintWriter(socket13.getOutputStream(), true);
-        in13 = new BufferedReader(new InputStreamReader(socket13.getInputStream()));
-        out23 = new PrintWriter(socket23.getOutputStream(), true);
-        in23 = new BufferedReader(new InputStreamReader(socket23.getInputStream()));
-        out34 = new PrintWriter(socket34.getOutputStream(), true);
-        in34 = new BufferedReader(new InputStreamReader(socket34.getInputStream()));
     }
 
     private static void setMatrix() {
@@ -50,11 +63,6 @@ public class Client3 {
             for(int j = 0; j < 10; j++)
                 matrix[i][j] = (int)(Math.random() * 100);
         }
-    }
-
-    private static void init(){
-        setMatrix();
-        cnt13 = cnt23 = cnt34 = 0;
     }
 
     private static String getClientMessage(int cnt, int mode) {
@@ -92,7 +100,8 @@ public class Client3 {
     */
     private static void closeSocket() {
         try {
-            serverSocket34.close();
+            serverSocket23.close();
+            serverSocket24.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -127,16 +136,21 @@ public class Client3 {
                     count++;
 
                     // synchronized
-                    message1 = in1.readLine().split(" ");
-                    message2 = in2.readLine().split(" ");
-                    int result = calculate(message1, message2);
-                
-                    out.println("[CALC] keys:(" + clientId1 + "," + clientId2 + ") index:(" + message1[0] + "," + message2[0] + ") result:" + result);
+                    getMessageAndCalAndSending(in1, in2, clientId1, clientId2);    
                 }
 
             } catch (IOException e) {
                 e.printStackTrace();;
             }
         }
+    }
+
+    private static synchronized void getMessageAndCalAndSending(BufferedReader in1, BufferedReader in2, int id1, int id2) throws IOException {
+        message1 = in1.readLine().split(" ");
+        message2 = in2.readLine().split(" ");
+        int result = calculate(message1, message2);
+                
+        out.println("[CALC] keys:(" + id1 + "," + id2 + ") index:(" + message1[0] + "," + message2[0] + ") result:" + result);
+        System.out.println("[CALC] keys:(" + id1 + "," + id2 + ") index:(" + message1[0] + "," + message2[0] + ") result:" + result);
     }
 }
