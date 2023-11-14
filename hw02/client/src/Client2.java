@@ -4,7 +4,7 @@ import java.io.*;
 public class Client2 {
     private static final int PORT = 8000, PORT12 = 8012, PORT23 = 8023, PORT24 = 8024;
     private static ServerSocket serverSocket23, serverSocket24;
-    private static final String LOG_FILE = "../log/client2.txt";
+    private static final String LOG_FILE = "../../log/client2.txt";
     private static Socket clientSocket, socket12, socket23, socket24;
     private static PrintWriter out;
     private static BufferedReader in;
@@ -16,9 +16,11 @@ public class Client2 {
         socketConnection();
         
         while(round <= 100) {
-            if(in.readLine().equals("[ALERT] ROUND START"))
+            if(in.readLine().equals("[ALERT] ROUND START")){
+                log("ROUND " + round + " start.");
                 setMatrix();
-            
+            }
+
             ClientThread client1 = new ClientThread(socket12, 1, socket23, 3);
             ClientThread client2 = new ClientThread(socket12, 1, socket24, 4);
             ClientThread client3 = new ClientThread(socket23, 3, socket24, 4);
@@ -40,6 +42,7 @@ public class Client2 {
                 e.printStackTrace();
             }
             out.println("[END]");
+            log("ROUND " + round + " end.");
             round++;
             in.readLine();
         }
@@ -48,11 +51,17 @@ public class Client2 {
 
     private static void socketConnection() throws IOException {
         clientSocket = new Socket("127.0.0.1", PORT);
+        log("Client 2 connected.");
+        
+        socket12 = new Socket("127.0.0.1", PORT12);
+        log("Client 1 - 2 connected.");
+
         serverSocket23 = new ServerSocket(PORT23);
         serverSocket24 = new ServerSocket(PORT24);
         socket23 = serverSocket23.accept();
+        log("Client 2 - 3 connected.");
         socket24 = serverSocket24.accept();
-        socket12 = new Socket("127.0.0.1", PORT12);
+        log("Client 2 - 4 connected.");
 
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
@@ -65,7 +74,7 @@ public class Client2 {
         }
     }
 
-    private static String getClientMessage(int cnt, int mode) {
+    private static synchronized String getClientMessage(int cnt, int mode) {
         String message = "";
         if(mode == 1){
             for(int i = 0; i < 10; i++){
@@ -77,6 +86,7 @@ public class Client2 {
                 message += matrix[i][cnt] + " ";
             }
         }
+        System.out.println(cnt + " " + message);
         return cnt + " " + message;
     }
 
@@ -88,7 +98,6 @@ public class Client2 {
         return result;
     }
 
-    /*
     private static void log(String message) {
 		try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)))) {
 			out.println(message);
@@ -97,7 +106,7 @@ public class Client2 {
 			e.printStackTrace();
 		}
 	}
-    */
+
     private static void closeSocket() {
         try {
             serverSocket23.close();
@@ -127,16 +136,16 @@ public class Client2 {
                 
                 int count = 0;
                 while(count < 100) {
-                    
+
                     // message send function synchronized
                     if(count % 2 == 0)
                         out1.println(getClientMessage(count % 10, 1));
                     else
                         out2.println(getClientMessage(count % 10, 2));
                     count++;
-
+                    
                     // synchronized
-                    getMessageAndCalAndSending(in1, in2, clientId1, clientId2);    
+                    getMessageAndCalAndSending(in1, in2, clientId1, clientId2);
                 }
 
             } catch (IOException e) {

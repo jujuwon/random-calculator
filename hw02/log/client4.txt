@@ -1,0 +1,7 @@
+Round 1 end.
+Client 4 connected.
+Client 1 - 4 connected.
+Client 2 - 4 connected.
+Client 3 - 4 connected.
+ROUND 1 start.
+Round 1 end.

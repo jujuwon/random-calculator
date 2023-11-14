@@ -63,5 +63,9 @@
 
 
 7. Additional Comments
- - 조원 1명 불참 (추가 정리)
- - 행과 열을 임의로 뽑지 않고 순서대로
+
+ - 행이나 열은 임의로 추출한 것이 아닌 0부터 10번씩 순차적으로 뽑도록 하였습니다.
+
+ - 과제를 완성하지는 못하여 구현된 부분까지만 제출하였습니다.
+
+ - GitHub URL : https://github.com/jujuwon/random-calculator/tree/main/hw02

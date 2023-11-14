@@ -4,7 +4,7 @@ import java.io.*;
 public class Client3 {
     private static final int PORT = 8000, PORT13 = 8013, PORT23 = 8023, PORT34 = 8034;
     private static ServerSocket serverSocket34;
-    private static final String LOG_FILE = "../log/client3.txt";
+    private static final String LOG_FILE = "../../log/client3.txt";
     private static Socket clientSocket, socket13, socket23, socket34;
     private static PrintWriter out;
     private static BufferedReader in;
@@ -16,8 +16,10 @@ public class Client3 {
         socketConnection();
         
         while(round <= 100) {
-            if(in.readLine().equals("[ALERT] ROUND START"))
+            if(in.readLine().equals("[ALERT] ROUND START")){
+                log("ROUND " + round + " start.");
                 setMatrix();
+            }
             
             ClientThread client1 = new ClientThread(socket13, 1, socket23, 3);
             ClientThread client2 = new ClientThread(socket13, 1, socket34, 4);
@@ -40,6 +42,7 @@ public class Client3 {
                 e.printStackTrace();
             }
             out.println("[END]");
+            log("ROUND " + round + " end.");
             round++;
             in.readLine();
         }
@@ -48,10 +51,16 @@ public class Client3 {
 
     private static void socketConnection() throws IOException {
         clientSocket = new Socket("127.0.0.1", PORT);
+        log("Client 3 connected.");
+        
+        socket13 = new Socket("127.0.0.1", PORT13);
+        log("Client 1 - 3 connected.");
+        socket23 = new Socket("127.0.0.1", PORT23);
+        log("Client 2 - 3 connected.");
+
         serverSocket34 = new ServerSocket(PORT34);
         socket34 = serverSocket34.accept();
-        socket13 = new Socket("127.0.0.1", PORT13);
-        socket23 = new Socket("127.0.0.1", PORT23);
+        log("Client 3 - 4 connected.");
 
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
@@ -64,7 +73,7 @@ public class Client3 {
         }
     }
 
-    private static String getClientMessage(int cnt, int mode) {
+    private static synchronized String getClientMessage(int cnt, int mode) {
         String message = "";
         if(mode == 1){
             for(int i = 0; i < 10; i++){
@@ -76,6 +85,7 @@ public class Client3 {
                 message += matrix[i][cnt] + " ";
             }
         }
+        System.out.println(cnt + " " + message);
         return cnt + " " + message;
     }
 
@@ -87,7 +97,6 @@ public class Client3 {
         return result;
     }
 
-    /*
     private static void log(String message) {
 		try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)))) {
 			out.println(message);
@@ -96,7 +105,7 @@ public class Client3 {
 			e.printStackTrace();
 		}
 	}
-    */
+
     private static void closeSocket() {
         try {
             serverSocket34.close();
@@ -132,9 +141,6 @@ public class Client3 {
                     else
                         out2.println(getClientMessage(count % 10, 2));
                     count++;
-
-                    // synchronized
-                    getMessageAndCalAndSending(in1, in2, clientId1, clientId2);    
                 }
 
             } catch (IOException e) {

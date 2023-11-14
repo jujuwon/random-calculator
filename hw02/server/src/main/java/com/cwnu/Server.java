@@ -30,20 +30,21 @@ public class Server {
 	private static final String LOG_FILE = "../log/Server.txt";
 	private static ServerSocket serverSocket;
 	private final ExecutorService pool = Executors.newFixedThreadPool(MAX_CONNECT_COUNT);
-	private static final List<Map<Set<String>, int[][]>> results = new ArrayList<>(ROUND_COUNT);
+	private static final List<Map<Set<String>, int[][]>> results = new ArrayList<>();
 	private final List<Socket> clientSockets = new ArrayList<>(MAX_CONNECT_COUNT);
 	private static List<ClientHandler> handlers = new ArrayList<>(MAX_CONNECT_COUNT);
 
 	public Server() throws IOException {
 		serverSocket = new ServerSocket(PORT);
-		for (Map<Set<String>, int[][]> result : results) {
-			result = new HashMap<>();
+		for (int i = 0; i < ROUND_COUNT; i++) {
+			Map<Set<String>, int[][]>result = new HashMap<>();
 			result.put(new HashSet<>(Set.of("1", "2")), new int[MATRIX_SIZE][MATRIX_SIZE]);
 			result.put(new HashSet<>(Set.of("1", "3")), new int[MATRIX_SIZE][MATRIX_SIZE]);
 			result.put(new HashSet<>(Set.of("1", "4")), new int[MATRIX_SIZE][MATRIX_SIZE]);
 			result.put(new HashSet<>(Set.of("2", "3")), new int[MATRIX_SIZE][MATRIX_SIZE]);
 			result.put(new HashSet<>(Set.of("2", "4")), new int[MATRIX_SIZE][MATRIX_SIZE]);
 			result.put(new HashSet<>(Set.of("3", "4")), new int[MATRIX_SIZE][MATRIX_SIZE]);
+			results.add(result);
 		}
 	}
 
@@ -53,7 +54,6 @@ public class Server {
 			CONNECTED_SOCKET_COUNT.getAndIncrement();
 			log("Client " + CONNECTED_SOCKET_COUNT.get() + " connected.");
 		}
-
 		while (CURRENT_ROUND.get() < ROUND_COUNT) {
 			int round = CURRENT_ROUND.incrementAndGet();
 			log("Round " + (round) + " started.");
@@ -163,7 +163,6 @@ public class Server {
 
 	private static void parseAndSave(String[] inputs) {
 		SYSTEM_CLOCK.incrementAndGet();
-
 		// inputs : [CALC] keys:(1,3) index:(1,2) result:15
 		String[] keys = inputs[1].substring(6, inputs[1].length() - 1).split(",");
 		String[] indexes = inputs[2].substring(7, inputs[2].length() - 1).split(",");
@@ -177,5 +176,6 @@ public class Server {
 		results.get(CURRENT_ROUND.get()) // Map
 			.get(new HashSet<String>(Set.of(keys))) // Set
 			[Integer.parseInt(indexes[0])][Integer.parseInt(indexes[1])] = result; // int[][]
+
 	}
 }
