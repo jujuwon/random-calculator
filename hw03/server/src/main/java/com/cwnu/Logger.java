@@ -1,0 +1,27 @@
+package com.cwnu;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+
+public class Logger {
+	private static final String LOG_FILE = "../log/Server.txt";
+
+	public static synchronized void log(String message) {
+		try (FileWriter fw = new FileWriter(LOG_FILE, true);
+			 BufferedWriter bw = new BufferedWriter(fw);
+			 PrintWriter out = new PrintWriter(bw)) {
+			String now = getCurrentTime();
+			out.printf("[%s] %s\n", now, message);
+			System.out.printf("[%s] %s\n", now, message);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static String getCurrentTime() {
+		return new SimpleDateFormat("HH:mm:ss:SSS").format(System.currentTimeMillis());
+	}
+}
