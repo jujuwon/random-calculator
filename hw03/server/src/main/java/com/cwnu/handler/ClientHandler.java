@@ -45,7 +45,7 @@ public class ClientHandler extends Thread {
 		// 현재 id 에 해당하는 파일을 가지고 있다고 가정.
 		this.chunks = new HashMap<>();
 		for (int i = 0; i < Server.FILE_COUNT; i++) {
-			Boolean[] chunk = new Boolean[2001];
+			Boolean[] chunk = new Boolean[1954];
 			if (clientId == i + 1) {
 				Arrays.fill(chunk, true);
 			} else {
@@ -71,6 +71,17 @@ public class ClientHandler extends Thread {
 
 	public boolean search(int fileId, int chunkId) {
 		return chunks.get(fileId)[chunkId];
+	}
+
+	public boolean isAllFilesReceived() {
+		for (Boolean[] chunk : chunks.values()) {
+			for (Boolean b : chunk) {
+				if (!b) {
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 
 	private void log() {
