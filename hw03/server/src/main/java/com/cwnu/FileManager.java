@@ -53,4 +53,14 @@ public class FileManager {
 		System.out.println("보유 파일 검색 에러");
 		throw new RuntimeException();
 	}
+
+	public boolean checkIfAllFilesAreReceived() {
+		for (ClientHandler handler : clientHandlers) {
+			if (!handler.isAllFilesReceived()) {
+				return false;
+			}
+		}
+		Logger.log("All files received");
+		return true;
+	}
 }

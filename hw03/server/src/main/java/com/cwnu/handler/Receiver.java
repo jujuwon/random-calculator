@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import com.cwnu.FileManager;
-import com.cwnu.Logger;
 import com.cwnu.vo.ReqFileChunk;
 import com.cwnu.vo.ResClientFileInfo;
 import com.cwnu.vo.ResClientInfo;

@@ -22,6 +22,7 @@ public class Server {
 	private static final ExecutorService receiverPool = Executors.newFixedThreadPool(MAX_CONNECT_COUNT);
 	public static final int FILE_COUNT = 4;
 	private FileManager fileManager;
+	private ShutdownServerTask shutdownServerTask;
 
 	public Server() throws IOException {
 		serverSocket = new ServerSocket(PORT);
@@ -38,6 +39,9 @@ public class Server {
 		// 3) 클라이언트로부터 특정 파일, 청크의 요청을 받으면
 		// Map 에서 해당 파일, 청크를 보여하고 있는 클라이언트 정보 리턴
 		receive();
+
+		// 4) 서버 종료
+		shutdown();
 	}
 
 	/**
@@ -51,6 +55,7 @@ public class Server {
 			clientHandlers[clientId] = new ClientHandler(clientId, socket);
 		}
 		fileManager = new FileManager(clientHandlers);
+		shutdownServerTask = new ShutdownServerTask(fileManager, requesters, receivers, requesterPool, receiverPool);
 	}
 
 	/**
@@ -74,5 +79,13 @@ public class Server {
 			receivers[clientId] = new Receiver(clientHandlers[clientId], fileManager);
 			receiverPool.execute(receivers[clientId]);
 		}
+	}
+
+	/**
+	 * 4)
+	 * 서버 종료
+	 */
+	private void shutdown() {
+		new Thread(shutdownServerTask).start();
 	}
 }
