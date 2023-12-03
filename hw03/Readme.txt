@@ -28,7 +28,7 @@
 4. 프로그램 실행 환경 및 실행 방법
  - 프로그램 실행 환경
    - 서버 : Ubuntu22.04, Java 11
-   - 클라이언트 : Windows, Java 17(Java 11)
+   - 클라이언트 : Windows 10, Java 17(Java 11)
   
  - 프로그램 실행 방법
   - server : ./server/run.sh
@@ -51,6 +51,6 @@
 
 
 7. Additional Comments
-
+ - 파일 이름은 A, B, C, D 대신 1, 2, 3, 4로 수정하였습니다.
 
  - GitHub URL : https://github.com/jujuwon/random-calculator/tree/main/hw03
