@@ -13,9 +13,11 @@ import java.net.InetAddress;
 public class ResClientInfo {
 	private int client_id;
 	private InetAddress ip;
+	private ReqFileChunk req;
 
-	public ResClientInfo(int id, InetAddress ip) {
+	public ResClientInfo(int id, InetAddress ip, ReqFileChunk req) {
 		this.client_id = id;
 		this.ip = ip;
+		this.req = req;
 	}
 }

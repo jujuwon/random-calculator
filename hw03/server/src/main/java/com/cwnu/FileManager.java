@@ -22,14 +22,14 @@ public class FileManager {
 				if (i == clientId)
 					continue;
 				if (clientHandlers[i].search(fileId, chunkId)) {
-					return new ResClientInfo(i, clientHandlers[i].getAddress());
+					return new ResClientInfo(i, clientHandlers[i].getAddress(), req);
 				}
 			}
 			for (int i = 3; i <= 4; i++) {
 				if (i == clientId)
 					continue;
 				if (clientHandlers[i].search(fileId, chunkId)) {
-					return new ResClientInfo(i, clientHandlers[i].getAddress());
+					return new ResClientInfo(i, clientHandlers[i].getAddress(), req);
 				}
 			}
 		} else {
@@ -38,14 +38,14 @@ public class FileManager {
 				if (i == clientId)
 					continue;
 				if (clientHandlers[i].search(fileId, chunkId)) {
-					return new ResClientInfo(i, clientHandlers[i].getAddress());
+					return new ResClientInfo(i, clientHandlers[i].getAddress(), req);
 				}
 			}
 			for (int i = 1; i <= 2; i++) {
 				if (i == clientId)
 					continue;
 				if (clientHandlers[i].search(fileId, chunkId)) {
-					return new ResClientInfo(i, clientHandlers[i].getAddress());
+					return new ResClientInfo(i, clientHandlers[i].getAddress(), req);
 				}
 			}
 		}

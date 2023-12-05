@@ -6,8 +6,13 @@ import java.net.InetAddress;
 public class ResClientInfo {
     private int clientId;
     private InetAddress ip;
+    private ReqFileChunk reqFileChunk;
 
     public int getClientId() {
         return clientId;
+    }
+
+    public ReqFileChunk getReqFileChunk() {
+        return reqFileChunk;
     }
 }

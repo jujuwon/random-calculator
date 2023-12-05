@@ -12,8 +12,11 @@ repositories {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'org.example.client'
+                'Main-Class': 'org.example.Main'
         )
+    }
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
     }
 }
 
