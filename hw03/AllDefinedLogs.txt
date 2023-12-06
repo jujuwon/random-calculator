@@ -1,9 +1,38 @@
 1. Server
- -
-  ->
+ - 클라이언트가 연결되었을 때
+  -> 
+
+ - 
 
 
 
 2. Client
- -
-  ->
+ - 서버에 연결되었을 때
+  -> Socket connected to Server
+
+ - 클라이언트간 연결되었을 때
+  -> Client 1 - 2 have socket connections
+
+ - 서버로부터 파일 정보 요청이 왔을 때
+  -> [REC] Request file infomation from Server
+
+ - 서버에게 1번 파일의 0번 청크를 가진 클라이언트 정보를 요청할 때
+  -> [REQ] Request client information with chunk 0 of file 1
+
+ - 서버로부터 클라이언트 1이 파일 청크를 가지고 있다는 응답이 왔을 때
+  -> [REC] File chunk is held by client 1
+
+ - 클라이언트에게 1번 파일의 0번 청크의 내용을 요청할 때
+  -> [CHUNKREQ] Chunk 0 of file 1
+
+ - 클라이언트에게서 1번 파일의 0번 청크의 내용을 요청받았을 때
+  -> [CHUNKREC] Chunk 0 of file 1
+
+ - 클라이언트에게 1번 파일의 0번 청크의 내용을 보낼 때
+  -> [CHUNKSEND] Chunk 0 of file 1
+
+ - 클라이언트에게서 1번 파일의 0번 청크의 내용을 받았을 때
+  -> [CHUNKREC] Chunk 0 of file 1
+
+ - 클라이언트가 종료될 때
+  -> Client shutdown

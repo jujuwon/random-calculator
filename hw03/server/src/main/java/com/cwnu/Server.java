@@ -13,7 +13,7 @@ import com.cwnu.handler.Requester;
 public class Server {
 
 	private static ServerSocket serverSocket;
-	private static final int PORT = 8000;
+	private static final int PORT = 8080;
 	public static final int MAX_CONNECT_COUNT = 4;
 	private static final ClientHandler[] clientHandlers = new ClientHandler[MAX_CONNECT_COUNT + 1];
 	private static final Requester[] requesters = new Requester[MAX_CONNECT_COUNT + 1];

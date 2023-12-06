@@ -1,35 +1,39 @@
 package org.example;
 
-import java.net.*;
-import java.util.*;
-import java.io.*;
 import com.google.gson.Gson;
-import org.example.vo.*;
+import org.example.handler.ClientReceiver;
+import org.example.handler.ServerReceiver;
+import org.example.handler.ServerSender;
+
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Client {
-    private static final int PORT = 8000;
-    private static final String SERVERHOST = "127.0.0.1";
+    private static final int PORT = 8080;
+    private static final String SERVERHOST = "3.34.104.196";
     private static final String CLIENTHOST = "127.0.0.1";
-    private static List<ServerSocket> serverSockets = new ArrayList<>();
-    private static Socket[] sockets = new Socket[5];
-    private static String LOG_FILE = "../log/client";
-    private static String FILEDIR = "../file/client";
-    private static final int MAX_CLIENT_COUNT = 4;
-    private static final int MAX_FILE_COUNT = 4;
-    private static final int CHUNK_SIZE = 1024 * 256;
-    private static final int MAX_CHUNK_COUNT = 1954;
-    private static byte[] buffer = new byte[CHUNK_SIZE];
+    public static String LOG_FILE = "../log/client";
+    public static String FILEDIR = "../file/client";
+    public static final int MAX_CLIENT_COUNT = 4;
+    public static final int MAX_FILE_COUNT = 4;
+    public static final int CHUNK_SIZE = 1024 * 256;
+    public static final int MAX_CHUNK_COUNT = 1954;
+    public static List<ServerSocket> serverSockets = new ArrayList<>();
+    private static Socket[] sockets = new Socket[MAX_CLIENT_COUNT + 1];
     // private static String chunk;
     // CHUNK_COUNT = 1954 (0 ~ 1953);
-    private static List<Integer>[] chunks = new ArrayList[5];
-    private static final Gson gson = new Gson();
+    public static List<Integer>[] chunks = new ArrayList[MAX_FILE_COUNT + 1];
+    public static final Gson gson = new Gson();
 
     public void start(String clientId) throws IOException {
         init(clientId);
 
-        sending(clientId);
-
         receiving(clientId);
+
+        sending(clientId);
     }
 
     public void fileDirectoring(String clientId) {
@@ -45,6 +49,8 @@ public class Client {
 
     public void socketConnection(String clientId) throws IOException {
         sockets[0] = new Socket(SERVERHOST, PORT);
+        System.out.println("test");
+
         if(clientId.equals("1")) {
             sockets[2] = socketBinding(8012);
             sockets[3] = socketBinding(8013);
@@ -93,41 +99,12 @@ public class Client {
         for(int i = 1; i <= MAX_CLIENT_COUNT; i++) {
             if(Integer.parseInt(clientId) == i)
                 continue;
+            // 밑에 쓰레드 2개 while문 걸어서 클라sender로 [END]전송?
             new Thread(new ServerReceiver(sockets, clientId)).start();
             new Thread(new ClientReceiver(sockets[i])).start();
         }
     }
 
-    public void closeSocket() {
-        try{
-            for(ServerSocket serverSocket : serverSockets)
-                serverSocket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public synchronized String fileReading(int filename, int index) throws IOException {
-        try (RandomAccessFile raf = new RandomAccessFile(FILEDIR + filename + ".file", "r")) {
-            raf.seek(index * CHUNK_SIZE);
-            raf.read(buffer);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-        return new String(buffer);
-    }
-
-    public synchronized void fileWriting(int filename, String str, int index) throws IOException {
-        try (RandomAccessFile raf = new RandomAccessFile(FILEDIR + filename + ".file", "rw")) {
-            raf.seek(index);
-            byte[] buf = str.getBytes();
-            raf.write(buf);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public synchronized void log(String message) {
         try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)))) {
@@ -137,147 +114,4 @@ public class Client {
             e.printStackTrace();
         }
     }
-
-    public class ServerSender implements Runnable {
-        private final Socket socket;
-        private final int fileId;
-
-        public ServerSender(Socket socket, int fileId) {
-            this.socket = socket;
-            this.fileId = fileId;
-        }
-
-        @Override
-        public void run() {
-            for(int i = 0; i < MAX_CHUNK_COUNT; i++){
-                ReqFileChunk req = new ReqFileChunk(fileId, i);
-                request("[REQ] " + gson.toJson(req));
-            }
-        }
-
-        public synchronized void request(String message) {
-            try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
-                out.println(message);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public class ServerReceiver implements Runnable {
-        private final Socket[] sockets;
-        private final String clientId;
-
-        public ServerReceiver(Socket[] sockets, String clientId) {
-            this.sockets = sockets;
-            this.clientId = clientId;
-        }
-
-        @Override
-        public void run() {
-            try (BufferedReader in = new BufferedReader(new InputStreamReader(sockets[0].getInputStream()))) {
-                String message = in.readLine();
-                String[] split = message.split(" ");
-                String type = split[0];
-
-                if("[REQ]".equals(type)) {
-                    List<FileChunk> fileInfo = new ArrayList<>();
-                    for(int i = 1; i <= MAX_FILE_COUNT; i++) {
-                        fileInfo.add(new FileChunk(i, chunks[i]));
-                        ClientFileInfo clientFileInfo = new ClientFileInfo(fileInfo);
-                        ServerSender responser = new ServerSender(sockets[0], Integer.parseInt(clientId));
-                        responser.request("[RES] " + gson.toJson(clientFileInfo));
-                    }
-                }
-                else if("[END]".equals(type)) {
-                    closeSocket();
-                }
-                else {
-                    ResClientInfo res = gson.fromJson(parse(split), ResClientInfo.class);
-                    int clientId = res.getClientId();
-                    ReqFileChunk req = res.getReqFileChunk();
-                    for(int i = 1; i <= MAX_CLIENT_COUNT; i++) {
-                        if(clientId == i) {
-                            ClientSender requester = new ClientSender(sockets[i]);
-                            requester.request("[CHUNKREQ] " + gson.toJson(req));
-                        }
-                    }
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        private String parse(String[] split) {
-            StringBuilder jsonData = new StringBuilder();
-            for(int i = 1; i < split.length; i++) {
-                jsonData.append(split[i]);
-            }
-            return jsonData.toString();
-        }
-    }
-
-    public class ClientSender implements Runnable {
-        private final Socket socket;
-
-        public ClientSender(Socket socket) {
-            this.socket = socket;
-        }
-
-        @Override
-        public void run() {
-
-        }
-
-        public synchronized void request(String message) {
-            try (PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
-                out.println(message);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public class ClientReceiver implements Runnable {
-        private final Socket socket;
-
-        public ClientReceiver(Socket socket) {
-            this.socket = socket;
-        }
-
-        @Override
-        public void run() {
-            try (BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
-                String message = in.readLine();
-                String[] split = message.split(" ");
-                String type = split[0];
-
-                if("[CHUNKREQ]".equals(type)) {
-                    ReqFileChunk req = gson.fromJson(parse(split), ReqFileChunk.class);
-                    String chunk = fileReading(req.getFileId(), req.getChunkIndex());
-                    ResFileChunk res = new ResFileChunk(req, chunk);
-                    ClientSender sender = new ClientSender(socket);
-                    sender.request("[CHUNKRES] " + gson.toJson(res));
-                }
-                else {
-                    ResFileChunk res = gson.fromJson(parse(split), ResFileChunk.class);
-                    ReqFileChunk req = res.getReqFileChunk();
-                    int fileId = req.getFileId();
-                    int index = req.getChunkIndex();
-                    fileWriting(fileId, res.getChunk(), index);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        private String parse(String[] split) {
-            StringBuilder jsonData = new StringBuilder();
-            for(int i = 1; i < split.length; i++) {
-                jsonData.append(split[i]);
-            }
-            return jsonData.toString();
-        }
-    }
-
 }
