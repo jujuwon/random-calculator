@@ -13,6 +13,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.System.exit;
 import static org.example.Client.*;
 
 public class ServerReceiver implements Runnable {
@@ -27,6 +28,10 @@ public class ServerReceiver implements Runnable {
     @Override
     public void run() {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(sockets[0].getInputStream()))) {
+
+            System.out.println("test");
+            exit(1);
+
             String message = in.readLine();
             String[] split = message.split(" ");
             String type = split[0];

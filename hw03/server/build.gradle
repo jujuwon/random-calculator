@@ -15,6 +15,9 @@ jar {
             'Main-Class': 'com.cwnu.Main'
         )
     }
+    from {
+        configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+    }
 }
 
 dependencies {

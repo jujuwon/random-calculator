@@ -10,6 +10,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import static java.lang.System.exit;
 
 public class Client {
     private static final int PORT = 8080;
@@ -26,6 +30,9 @@ public class Client {
     // private static String chunk;
     // CHUNK_COUNT = 1954 (0 ~ 1953);
     public static List<Integer>[] chunks = new ArrayList[MAX_FILE_COUNT + 1];
+    private static final ExecutorService requesterPool = Executors.newFixedThreadPool(MAX_CLIENT_COUNT);
+    private static final ExecutorService receiverPool = Executors.newFixedThreadPool(MAX_CLIENT_COUNT);
+
     public static final Gson gson = new Gson();
 
     public void start(String clientId) throws IOException {
@@ -49,7 +56,6 @@ public class Client {
 
     public void socketConnection(String clientId) throws IOException {
         sockets[0] = new Socket(SERVERHOST, PORT);
-        System.out.println("test");
 
         if(clientId.equals("1")) {
             sockets[2] = socketBinding(8012);
@@ -87,24 +93,26 @@ public class Client {
         }
     }
 
-    public void sending(String clientId) throws IOException {
-        for(int i = 1; i <= MAX_CLIENT_COUNT; i++) {
-            if(Integer.parseInt(clientId) == i)
-                continue;
-            new Thread(new ServerSender(sockets[0], i)).start();
-        }
-    }
-
     public void receiving(String clientId) throws IOException {
+        ServerReceiver serverReceiver = new ServerReceiver(sockets, clientId);
+        serverReceiver.run();
         for(int i = 1; i <= MAX_CLIENT_COUNT; i++) {
             if(Integer.parseInt(clientId) == i)
                 continue;
             // 밑에 쓰레드 2개 while문 걸어서 클라sender로 [END]전송?
-            new Thread(new ServerReceiver(sockets, clientId)).start();
-            new Thread(new ClientReceiver(sockets[i])).start();
+            ClientReceiver clientReceiver = new ClientReceiver(sockets[i]);
+            receiverPool.execute(clientReceiver);
         }
     }
 
+    public void sending(String clientId) throws IOException {
+        for(int i = 1; i <= MAX_CLIENT_COUNT; i++) {
+            if(Integer.parseInt(clientId) == i)
+                continue;
+            ServerSender requester = new ServerSender(sockets[0], i);
+            requesterPool.execute(requester);
+        }
+    }
 
     public synchronized void log(String message) {
         try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)))) {
