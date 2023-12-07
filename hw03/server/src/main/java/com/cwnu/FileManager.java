@@ -49,8 +49,8 @@ public class FileManager {
 				}
 			}
 		}
-		Logger.log("보유 파일 검색 에러");
-		System.out.println("보유 파일 검색 에러");
+		Logger.log("Retained file chunk retrieval error");
+		System.out.println("Retained file chunk retrieval error");
 		throw new RuntimeException();
 	}
 

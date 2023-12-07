@@ -1,5 +1,6 @@
 package org.example.handler;
 
+import org.example.Logger;
 import org.example.vo.ReqFileChunk;
 
 import java.io.IOException;
@@ -23,6 +24,7 @@ public class ServerSender implements Runnable {
         for(int i = 0; i < MAX_CHUNK_COUNT; i++){
             ReqFileChunk req = new ReqFileChunk(fileId, i);
             request("[REQ] " + gson.toJson(req));
+            Logger.log("(REQ) Request client information with chunk " + i + " of file " + fileId);
         }
     }
 

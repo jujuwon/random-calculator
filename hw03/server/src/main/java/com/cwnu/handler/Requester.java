@@ -3,6 +3,8 @@ package com.cwnu.handler;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import com.cwnu.Logger;
+
 public class Requester implements Runnable {
 	private final ClientHandler handler;
 
@@ -14,6 +16,7 @@ public class Requester implements Runnable {
 	public void run() {
 		try {
 			request("[REQ]");
+			Logger.log("polling");
 			// 1초마다 한번씩 클라이언트의 파일 소유 정보 받기
 			Thread.sleep(1_000);
 		} catch (InterruptedException e) {

@@ -1,5 +1,6 @@
 package org.example.handler;
 
+import org.example.Logger;
 import org.example.vo.ReqFileChunk;
 import org.example.vo.ResFileChunk;
 
@@ -13,9 +14,11 @@ import static org.example.Client.*;
 
 public class ClientReceiver implements Runnable {
     private final Socket socket;
+    private final String clientId;
 
-    public ClientReceiver(Socket socket) {
+    public ClientReceiver(Socket socket, String clientId) {
         this.socket = socket;
+        this.clientId = clientId;
     }
 
     @Override
@@ -27,10 +30,14 @@ public class ClientReceiver implements Runnable {
 
             if("[CHUNKREQ]".equals(type)) {
                 ReqFileChunk req = gson.fromJson(parse(split), ReqFileChunk.class);
-                String chunk = fileReading(req.getFileId(), req.getChunkIndex());
+                int fileId = req.getFileId();
+                int index = req.getChunkIndex();
+                String chunk = fileReading(fileId, index);
                 ResFileChunk res = new ResFileChunk(req, chunk);
                 ClientSender sender = new ClientSender(socket);
+                Logger.log("(CHUNKINFOREC) Chunk " + index + " of file " + fileId);
                 sender.request("[CHUNKRES] " + gson.toJson(res));
+                Logger.log("(CHUNKSEND) Chunk " + index + " of file " + fileId);
             }
             else {
                 ResFileChunk res = gson.fromJson(parse(split), ResFileChunk.class);
@@ -38,6 +45,7 @@ public class ClientReceiver implements Runnable {
                 int fileId = req.getFileId();
                 int index = req.getChunkIndex();
                 fileWriting(fileId, res.getChunk(), index);
+                Logger.log("(CHUNKREC) Chunk " + index + " of file " + fileId);
             }
         } catch (IOException e) {
             e.printStackTrace();

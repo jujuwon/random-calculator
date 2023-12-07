@@ -47,6 +47,7 @@ public class ShutdownServerTask implements Runnable {
 
 		requesterPool.shutdown();
 		receiverPool.shutdown();
+		Logger.log("Server Shutdown");
 
 		// 스레드 풀 종료 대기
 		try {

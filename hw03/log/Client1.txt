@@ -1,0 +1,2 @@
+[22:01:46:470] Socket connected to Server
+[22:01:50:712] (REC) Request file infomation from Server

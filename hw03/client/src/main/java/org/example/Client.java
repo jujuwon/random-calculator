@@ -5,15 +5,13 @@ import org.example.handler.ClientReceiver;
 import org.example.handler.ServerReceiver;
 import org.example.handler.ServerSender;
 
-import java.io.*;
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import static java.lang.System.exit;
 
 public class Client {
     private static final int PORT = 8080;
@@ -56,6 +54,7 @@ public class Client {
 
     public void socketConnection(String clientId) throws IOException {
         sockets[0] = new Socket(SERVERHOST, PORT);
+        Logger.log("Socket connected to Server");
 
         if(clientId.equals("1")) {
             sockets[2] = socketBinding(8012);
@@ -63,19 +62,25 @@ public class Client {
             sockets[4] = socketBinding(8014);
         }
         else if(clientId.equals("2")) {
-            sockets[1] = new Socket(CLIENTHOST, 8012);
+            sockets[1] = new Socket(SERVERHOST, 8012);
+            Logger.log("Client 1 - 2 have socket connections");
             sockets[3] = socketBinding(8023);
             sockets[4] = socketBinding(8024);
         }
         else if(clientId.equals("3")) {
-            sockets[1] = new Socket(CLIENTHOST, 8013);
-            sockets[2] = new Socket(CLIENTHOST, 8023);
+            sockets[1] = new Socket(SERVERHOST, 8013);
+            Logger.log("Client 1 - 3 have socket connections");
+            sockets[2] = new Socket(SERVERHOST, 8023);
+            Logger.log("Client 2 - 3 have socket connections");
             sockets[4] = socketBinding(8034);
         }
         else {
-            sockets[1] = new Socket(CLIENTHOST, 8014);
-            sockets[2] = new Socket(CLIENTHOST, 8024);
+            sockets[1] = new Socket(SERVERHOST, 8014);
+            Logger.log("Client 1 - 4 have socket connections");
+            sockets[2] = new Socket(SERVERHOST, 8024);
+            Logger.log("Client 2 - 4 have socket connections");
             sockets[3] = new Socket(CLIENTHOST, 8034);
+            Logger.log("Client 3 - 4 have socket connections");
         }
     }
 
@@ -94,15 +99,14 @@ public class Client {
     }
 
     public void receiving(String clientId) throws IOException {
-        ServerReceiver serverReceiver = new ServerReceiver(sockets, clientId);
-        serverReceiver.run();
         for(int i = 1; i <= MAX_CLIENT_COUNT; i++) {
             if(Integer.parseInt(clientId) == i)
                 continue;
-            // 밑에 쓰레드 2개 while문 걸어서 클라sender로 [END]전송?
-            ClientReceiver clientReceiver = new ClientReceiver(sockets[i]);
+            ClientReceiver clientReceiver = new ClientReceiver(sockets[i], clientId);
             receiverPool.execute(clientReceiver);
         }
+        ServerReceiver serverReceiver = new ServerReceiver(sockets, clientId);
+        serverReceiver.run();
     }
 
     public void sending(String clientId) throws IOException {
@@ -111,15 +115,6 @@ public class Client {
                 continue;
             ServerSender requester = new ServerSender(sockets[0], i);
             requesterPool.execute(requester);
-        }
-    }
-
-    public synchronized void log(String message) {
-        try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)))) {
-            out.println(message);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }

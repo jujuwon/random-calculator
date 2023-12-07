@@ -1,0 +1,5 @@
+[22:01:50:695] Socket connected to Server
+[22:01:50:706] Client 1 - 4 have socket connections
+[22:01:50:713] Client 2 - 4 have socket connections
+[22:01:50:777] Client 3 - 4 have socket connections
+[22:01:50:810] (REC) Request file infomation from Server
