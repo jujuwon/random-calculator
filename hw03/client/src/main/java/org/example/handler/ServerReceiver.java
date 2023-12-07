@@ -42,7 +42,6 @@ public class ServerReceiver implements Runnable {
                     }
                     ClientFileInfo clientFileInfo = new ClientFileInfo(fileInfo);
                     responser.request("[RES] " + gson.toJson(clientFileInfo));
-                    responser.request("[REQ] ");
                 }
                 else if("[END]".equals(type)) {
                     closeSocket();

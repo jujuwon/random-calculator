@@ -1,4 +1,8 @@
-[22:01:50:615] polling
-[22:01:50:624] polling
-[22:01:50:629] polling
-[22:01:50:631] polling
+[23:21:51:371] Client 1 connected from /127.0.0.1
+[23:21:51:639] Client 2 connected from /127.0.0.1
+[23:21:54:415] Client 3 connected from /127.0.0.1
+[23:21:56:010] Client 4 connected from /127.0.0.1
+[23:21:56:018] polling
+[23:21:56:028] polling
+[23:21:56:038] polling
+[23:21:56:043] polling

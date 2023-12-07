@@ -1,4 +1,28 @@
-[22:01:49:491] Socket connected to Server
-[22:01:49:499] Client 1 - 3 have socket connections
-[22:01:49:501] Client 2 - 3 have socket connections
-[22:01:50:745] (REC) Request file infomation from Server
+[23:21:54:481] Socket connected to Server
+[23:21:54:495] Client 1 - 3 have socket connections
+[23:21:54:497] Client 2 - 3 have socket connections
+[23:21:56:175] (REC) Request file infomation from Server
+[23:21:56:422] (REQ) Request client information with chunk 0 of file 1
+[23:21:56:514] (REQ) Request client information with chunk 0 of file 4
+[23:21:56:553] (REQ) Request client information with chunk 0 of file 2
+[23:21:56:642] (REQ) Request client information with chunk 1 of file 1
+[23:21:56:706] (REQ) Request client information with chunk 1 of file 4
+[23:21:56:764] (REQ) Request client information with chunk 1 of file 2
+[23:21:56:905] (REQ) Request client information with chunk 2 of file 1
+[23:21:56:939] (REQ) Request client information with chunk 2 of file 4
+[23:21:57:057] (REQ) Request client information with chunk 2 of file 2
+[23:21:57:218] (REQ) Request client information with chunk 3 of file 1
+[23:21:57:297] (REQ) Request client information with chunk 3 of file 4
+[23:21:57:481] (REQ) Request client information with chunk 3 of file 2
+[23:21:57:596] (REQ) Request client information with chunk 4 of file 4
+[23:21:57:608] (REQ) Request client information with chunk 4 of file 1
+[23:21:57:623] (REQ) Request client information with chunk 4 of file 2
+[23:21:57:689] (REQ) Request client information with chunk 5 of file 4
+[23:21:57:723] (REQ) Request client information with chunk 5 of file 1
+[23:21:57:738] (REQ) Request client information with chunk 5 of file 2
+[23:21:57:743] (REQ) Request client information with chunk 6 of file 4
+[23:21:57:767] (REQ) Request client information with chunk 6 of file 2
+[23:21:57:836] (REQ) Request client information with chunk 7 of file 4
+[23:21:57:867] (REQ) Request client information with chunk 6 of file 1
+[23:21:57:882] (REQ) Request client information with chunk 7 of file 2
+[23:21:57:941] (REQ) Request client information with chunk 7 of file 1

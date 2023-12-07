@@ -1,5 +1,79 @@
-[22:01:50:695] Socket connected to Server
-[22:01:50:706] Client 1 - 4 have socket connections
-[22:01:50:713] Client 2 - 4 have socket connections
-[22:01:50:777] Client 3 - 4 have socket connections
-[22:01:50:810] (REC) Request file infomation from Server
+[23:21:56:134] Socket connected to Server
+[23:21:56:148] Client 1 - 4 have socket connections
+[23:21:56:161] Client 2 - 4 have socket connections
+[23:21:56:165] Client 3 - 4 have socket connections
+[23:21:56:269] (REC) Request file infomation from Server
+[23:21:56:533] (REQ) Request client information with chunk 0 of file 3
+[23:21:56:552] (REQ) Request client information with chunk 0 of file 2
+[23:21:56:628] (REQ) Request client information with chunk 0 of file 1
+[23:21:56:691] (REQ) Request client information with chunk 1 of file 2
+[23:21:56:829] (REQ) Request client information with chunk 1 of file 1
+[23:21:56:917] (REQ) Request client information with chunk 1 of file 3
+[23:21:56:972] (REQ) Request client information with chunk 2 of file 2
+[23:21:57:078] (REQ) Request client information with chunk 2 of file 1
+[23:21:57:181] (REQ) Request client information with chunk 3 of file 2
+[23:21:57:283] (REQ) Request client information with chunk 2 of file 3
+[23:21:57:466] (REQ) Request client information with chunk 4 of file 2
+[23:21:57:566] (REQ) Request client information with chunk 3 of file 1
+[23:21:57:618] (REQ) Request client information with chunk 5 of file 2
+[23:21:57:710] (REQ) Request client information with chunk 3 of file 3
+[23:21:57:736] (REQ) Request client information with chunk 6 of file 2
+[23:21:57:746] (REQ) Request client information with chunk 4 of file 1
+[23:21:57:771] (REQ) Request client information with chunk 7 of file 2
+[23:21:57:846] (REQ) Request client information with chunk 4 of file 3
+[23:21:57:902] (REQ) Request client information with chunk 5 of file 1
+[23:21:57:919] (REQ) Request client information with chunk 5 of file 3
+[23:21:57:960] (REQ) Request client information with chunk 8 of file 2
+[23:21:57:999] (REQ) Request client information with chunk 6 of file 3
+[23:21:58:010] (REQ) Request client information with chunk 6 of file 1
+[23:21:58:029] (REQ) Request client information with chunk 7 of file 3
+[23:21:58:034] (REQ) Request client information with chunk 9 of file 2
+[23:21:58:045] (REQ) Request client information with chunk 7 of file 1
+[23:21:58:070] (REQ) Request client information with chunk 10 of file 2
+[23:21:58:079] (REQ) Request client information with chunk 8 of file 3
+[23:21:58:096] (REQ) Request client information with chunk 8 of file 1
+[23:21:58:103] (REQ) Request client information with chunk 11 of file 2
+[23:21:58:106] (REQ) Request client information with chunk 9 of file 3
+[23:21:58:112] (REQ) Request client information with chunk 12 of file 2
+[23:21:58:129] (REQ) Request client information with chunk 9 of file 1
+[23:21:58:137] (REQ) Request client information with chunk 13 of file 2
+[23:21:58:147] (REQ) Request client information with chunk 10 of file 3
+[23:21:58:162] (REQ) Request client information with chunk 14 of file 2
+[23:21:58:171] (REQ) Request client information with chunk 11 of file 3
+[23:21:58:175] (REQ) Request client information with chunk 10 of file 1
+[23:21:58:181] (REQ) Request client information with chunk 15 of file 2
+[23:21:58:195] (REQ) Request client information with chunk 11 of file 1
+[23:21:58:200] (REQ) Request client information with chunk 12 of file 3
+[23:21:58:204] (REQ) Request client information with chunk 16 of file 2
+[23:21:58:212] (REQ) Request client information with chunk 13 of file 3
+[23:21:58:216] (REQ) Request client information with chunk 12 of file 1
+[23:21:58:225] (REQ) Request client information with chunk 17 of file 2
+[23:21:58:231] (REQ) Request client information with chunk 13 of file 1
+[23:21:58:236] (REQ) Request client information with chunk 14 of file 3
+[23:21:58:245] (REQ) Request client information with chunk 18 of file 2
+[23:21:58:250] (REQ) Request client information with chunk 14 of file 1
+[23:21:58:267] (REQ) Request client information with chunk 15 of file 3
+[23:21:58:273] (REQ) Request client information with chunk 15 of file 1
+[23:21:58:275] (REQ) Request client information with chunk 19 of file 2
+[23:21:58:280] (REQ) Request client information with chunk 16 of file 3
+[23:21:58:316] (REQ) Request client information with chunk 20 of file 2
+[23:21:58:363] (REQ) Request client information with chunk 17 of file 3
+[23:21:58:369] (REQ) Request client information with chunk 16 of file 1
+[23:21:58:371] (REQ) Request client information with chunk 21 of file 2
+[23:21:58:378] (REQ) Request client information with chunk 17 of file 1
+[23:21:58:388] (REQ) Request client information with chunk 18 of file 3
+[23:21:58:408] (REQ) Request client information with chunk 18 of file 1
+[23:21:58:411] (REQ) Request client information with chunk 22 of file 2
+[23:21:58:422] (REQ) Request client information with chunk 19 of file 3
+[23:21:58:433] (REQ) Request client information with chunk 19 of file 1
+[23:21:58:438] (REQ) Request client information with chunk 20 of file 3
+[23:21:58:443] (REQ) Request client information with chunk 23 of file 2
+[23:21:58:453] (REQ) Request client information with chunk 20 of file 1
+[23:21:58:465] (REQ) Request client information with chunk 24 of file 2
+[23:21:58:469] (REQ) Request client information with chunk 21 of file 3
+[23:21:58:473] (REQ) Request client information with chunk 21 of file 1
+[23:21:58:479] (REQ) Request client information with chunk 25 of file 2
+[23:21:58:488] (REQ) Request client information with chunk 22 of file 3
+[23:21:58:496] (REQ) Request client information with chunk 22 of file 1
+[23:21:58:500] (REQ) Request client information with chunk 26 of file 2
+[23:21:58:504] (REQ) Request client information with chunk 23 of file 3

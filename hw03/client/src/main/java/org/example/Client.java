@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 
 public class Client {
     private static final int PORT = 8080;
-    private static final String SERVERHOST = "3.34.104.196";
+    private static final String SERVERHOST = "127.0.0.1";
     private static final String CLIENTHOST = "127.0.0.1";
     public static String LOG_FILE = "../log/client";
     public static String FILEDIR = "../file/client";

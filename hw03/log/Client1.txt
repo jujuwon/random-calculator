@@ -1,2 +1,10 @@
-[22:01:46:470] Socket connected to Server
-[22:01:50:712] (REC) Request file infomation from Server
+[23:21:51:331] Socket connected to Server
+[23:21:56:157] (REC) Request file infomation from Server
+[23:21:56:608] (REQ) Request client information with chunk 0 of file 3
+[23:21:56:610] (REQ) Request client information with chunk 0 of file 2
+[23:21:56:652] (REQ) Request client information with chunk 0 of file 4
+[23:21:56:688] (REQ) Request client information with chunk 1 of file 3
+[23:21:56:765] (REQ) Request client information with chunk 1 of file 4
+[23:21:56:769] (REQ) Request client information with chunk 1 of file 2
+[23:21:56:845] (REQ) Request client information with chunk 2 of file 4
+[23:21:56:897] (REQ) Request client information with chunk 2 of file 3

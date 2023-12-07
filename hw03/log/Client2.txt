@@ -1,3 +1,14 @@
-[22:01:47:298] Socket connected to Server
-[22:01:47:304] Client 1 - 2 have socket connections
-[22:01:50:721] (REC) Request file infomation from Server
+[23:21:51:701] Socket connected to Server
+[23:21:51:707] Client 1 - 2 have socket connections
+[23:21:56:172] (REC) Request file infomation from Server
+[23:21:56:331] (REQ) Request client information with chunk 0 of file 3
+[23:21:56:542] (REQ) Request client information with chunk 0 of file 1
+[23:21:56:630] (REQ) Request client information with chunk 0 of file 4
+[23:21:56:678] (REQ) Request client information with chunk 1 of file 3
+[23:21:56:824] (REQ) Request client information with chunk 1 of file 4
+[23:21:56:848] (REQ) Request client information with chunk 1 of file 1
+[23:21:56:971] (REQ) Request client information with chunk 2 of file 4
+[23:21:57:087] (REQ) Request client information with chunk 2 of file 1
+[23:21:57:176] (REQ) Request client information with chunk 2 of file 3
+[23:21:57:281] (REQ) Request client information with chunk 3 of file 1
+[23:21:57:300] (REQ) Request client information with chunk 3 of file 4
